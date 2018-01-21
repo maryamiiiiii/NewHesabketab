@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html class="no-js" dir="rtl">
+    <head>
+
+        <meta charset="utf-8">
+        <title>نرم افزار حساب کتاب</title>
+        <!-- Mobile specific metas -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1 user-scalable=no">
+        <!-- Force IE9 to render in normal mode -->
+        <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
+        <meta name="author" content="" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="application-name" content="" />
+        <!-- Import google fonts - Heading first/ text second -->
+        <link href='includes\hesabketab\css\css.css' rel='stylesheet' type='text/css'>
+        <!-- Css files -->
+        <!-- Icons -->
+        <link href="includes\hesabketab\css\icons.css" rel="stylesheet" />
+        <!-- Bootstrap stylesheets (included template modifications) -->
+        <link href="includes\hesabketab\css\bootstrap.css" rel="stylesheet" />
+        <!-- Plugins stylesheets (all plugin custom css) -->
+        <link href="includes\hesabketab\css\plugins.css" rel="stylesheet" />
+        <!-- Main stylesheets (template main css file) -->
+        <link href="includes\hesabketab\css\main.css" rel="stylesheet" />
+        <!-- Custom stylesheets ( Put your own changes here ) -->
+        <link href="includes\hesabketab\css\custom.css" rel="stylesheet" />
+       
+        <meta name="msapplication-TileColor" content="#3399cc" />
+        
+        
+        <!--work time and day-->
+        <link href="includes/hesabketab/css/jquery-ui.css" rel="stylesheet" type="text/css"/>
+
+        <!-- date picker stylesheets for date  -->
+        <link href="includes/hesabketab/css/persian-datepicker.css" rel="stylesheet" type="text/css"/>
+        
+        
+    </head>
+    <body>
+        <!--[if lt IE 9]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+        <!-- .page-navbar -->
+        <div id="headerTop"></div>
+        <!-- / page-navbar -->
+        <!-- #wrapper -->
+        <div id="wrapper">
+            <!-- .page-sidebar menu -->
+            <div id="sidebarFixedbar"></div>
+            <!-- / page-sidebar menu -->
+
+
+            <div class="page-content sidebar-page right-sidebar-page clearfix">
+                <!-- .page-content-wrapper -->
+                <div class="page-content-wrapper">
+                    <div class="page-content-inner">
+                        <!-- Start .page-content-inner -->
+                        <div class="row">
+                            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 p5">
+                                 <div id="page-header" class="clearfix">
+                            <div class="page-header">
+                                <h3>پنل مشتریان</h3>
+                                <span class="txt">می توانید  <span class="text-danger"> فعالیتها و اطلاعات </span> خود را ویرایش کنید.</span>
+                            </div>
+                        </div>
+                            </div>
+                            <!-- .row -->
+                            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 p5">
+                                <!-- .col-md-3 -->
+                                <div class="panel bg-lightgreen text-white tile panelRefresh">
+                                    <!-- Start .panel -->
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">مبلغ کل طرح</h4>
+                                    </div>
+                                    <div class="panel-body pt0">
+                                        <div class="progressbar-stats-1">
+                                            <div class="stats">
+                                                <div class="fa fa-bar-chart-o"></div>
+                                            <span class="number" data-mask='#,##0' data-mask-reverse="true">20000000000 </span><span class="pull-left s8">ريال </span>
+                                            </div>
+                                            <div class="progress animated-bar flat transparent progress-bar-xs mb10 mt0">
+                                                <div class="progress-bar progress-bar-white" role="progressbar" data-transitiongoal="63"></div>
+                                            </div>
+                                            <div class="comparison">
+                                                <p class="mb0"><i class="fa fa-arrow-circle-o-up s20 mr5 pull-left"></i> 10% بیشتر از ماه قبل</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End .panel -->
+                            </div>
+                            <!-- / .col-md-3 -->
+                            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 p5">
+                                <!-- .col-md-3 -->
+                                <div class="panel bg-darkgreen text-white tile panelRefresh">
+                                    <!-- Start .panel -->
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">اعتبار اختصاص یافته</h4>
+                                    </div>
+                                    <div class="panel-body pt0">
+                                        <div class="progressbar-stats-1">
+                                            <div class="stats">
+                                                <div class="fa fa-bar-chart-o"></div>
+                                            <span class="number" data-mask='#,##0' data-mask-reverse="true">22150000051 </span><span class="pull-left s8">ريال </span>
+                                            </div>
+                                            <div class="progress animated-bar flat transparent progress-bar-xs mb10 mt0">
+                                                <div class="progress-bar progress-bar-white" role="progressbar" data-transitiongoal="63"></div>
+                                            </div>
+                                            <div class="comparison">
+                                                <p class="mb0"><i class="fa fa-arrow-circle-o-up s20 mr5 pull-left"></i> 10% بیشتر از ماه قبل</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End .panel -->
+                            </div>
+                            <!-- / .col-md-3 -->
+                            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 p5">
+                                <!-- .col-md-3 -->
+                                <div class="panel bg-lightorange text-white tile panelRefresh">
+                                    <!-- Start .panel -->
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">سقف تعیین شده</h4>
+                                    </div>
+                                    <div class="panel-body pt0">
+                                        <div class="progressbar-stats-1">
+                                            <div class="stats">
+                                                <div class="fa fa-bar-chart-o"></div>
+                                            <span class="number" data-mask='#,##0' data-mask-reverse="true">21510000000 </span><span class="pull-left s8">ريال </span>
+                                            </div>
+                                            <div class="progress animated-bar flat transparent progress-bar-xs mb10 mt0">
+                                                <div class="progress-bar progress-bar-white" role="progressbar" data-transitiongoal="63"></div>
+                                            </div>
+                                            <div class="comparison">
+                                                <p class="mb0"><i class="fa fa-arrow-circle-o-down s20 mr5 pull-left"></i> 10% کمتر از ماه قبل</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End .panel -->
+                            </div>
+                            <!-- / .col-md-3 -->
+                            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 p5">
+                                <!-- .col-md-3 -->
+                                <div class="panel bg-lightblue text-white tile panelRefresh">
+                                    <!-- Start .panel -->
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">مبلغ کل خرید</h4>
+                                    </div>
+                                    <div class="panel-body pt0">
+                                        <div class="progressbar-stats-1">
+                                            <div class="stats">
+                                                <div class="fa fa-bar-chart-o"></div>
+                                            <span class="number" data-mask='#,##0' data-mask-reverse="true">45580564222</span><span class="pull-left s8">ريال </span>
+                                            </div>
+                                            <div class="progress animated-bar flat transparent progress-bar-xs mb10 mt0">
+                                                <div class="progress-bar progress-bar-white" role="progressbar" data-transitiongoal="63"></div>
+                                            </div>
+                                            <div class="comparison">
+                                                <p class="mb0"><i class="fa fa-arrow-circle-o-down s20 mr5 pull-left"></i> 10% کمتر از ماه قبل</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End .panel -->
+                            </div>
+                            <!-- / .col-md-3 -->
+                            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 p5">
+                                <!-- .col-md-3 -->
+                                <div class="panel bg-darkerblue text-white tile panelRefresh">
+                                    <!-- Start .panel -->
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">تخفیف استفاده شده</h4>
+                                    </div>
+                                    <div class="panel-body pt0">
+                                        <div class="progressbar-stats-1">
+                                            <div class="stats">
+                                                <div class="fa fa-bar-chart-o"></div>
+                                            <span class="number" data-mask='#,##0' data-mask-reverse="true">10893238900</span><span class="pull-left s8">ريال </span>
+                                            </div>
+                                            <div class="progress animated-bar flat transparent progress-bar-xs mb10 mt0">
+                                                <div class="progress-bar progress-bar-white" role="progressbar" data-transitiongoal="63"></div>
+                                            </div>
+                                            <div class="comparison">
+                                                <p class="mb0"><i class="fa fa-arrow-circle-o-down s20 mr5 pull-left"></i> 10% کمتر از ماه قبل</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End .panel -->
+                            </div>
+                            <!-- / .col-md-3 -->
+                        </div>
+                       <!-- End .row -->
+                        <!-- start .row -->
+                        <div class="row mt10">
+                            <!-- col-lg-4 end here -->
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                 <div class="panel panel-default">
+                                    <!-- Start .panel -->
+                                    <div class="panel-heading noprint">
+                                        <h4 class="panel-title">ویرایش محصول</h4>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="row profile">
+                                            <!-- Start .row -->
+                                            <div class="col-md-4">
+                                                <div class="profile-name">
+                                                    <h3>نام محصول</h3>
+                                                    <p class="job-title mb0 lh40"> وضعیت: <span class=""><i class="" aria-hidden="true"></i><span></span></span></p>
+                                                    <p class="lh40">
+                                                        نوع همکاری: <span> <span class=""><i class="" aria-hidden="true"></i><span></span></span></span>
+                                                    </p>
+                                                   
+                                                    <a href="profile.html#" class="btn btn-primary btn-large mr10 mb10"> <i class="fa fa-envelope"></i> ارسال ایمیل</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <ul class="list-unstyled mt20 lh40">
+                                                    <li>
+                                                        <span class="strong">
+                                                            تلفن: 
+                                                        </span>
+                                                        <span>021-88252525</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="strong">
+                                                            موبایل:  
+                                                        </span>
+                                                        <span>09124548545</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="strong">
+                                                            ایمیل:  
+                                                        </span>
+                                                        <span>test@yahoo.com</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="strong">
+                                                            وب سایت: 
+                                                        </span>
+                                                        <span>Http://ketab.ir</span>
+                                                    </li>
+                                                </ul>
+                                                        </div>
+
+                                          <div class="col-md-4">
+                                               <ul class="list-unstyled mt20 lh40">
+                                                    <li>
+                                                        <span class="strong">
+                                                            آدرس: 
+                                                        </span>
+                                                        <span>تهران، میدان انقلاب، خ کارگر شمالی ، بن بست اول، پلاک 125، طبقه 7 ، واحد 3</span>
+                                                    </li>
+                                               </ul>
+                                          </div>
+
+                                        </div>
+                                        
+                                        <div class="tabs mb20">
+                                    <ul id="profileTab" class="nav nav-tabs">
+                                        <li class="active"><a href="profile.html#activities" data-toggle="tab">فعالیت ها</a>
+                                        </li>
+                                        <li>
+                                            <a href="profile.html#SalesChart" data-toggle="tab">نمودار فروش</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="profile.html#editingInformation" data-toggle="tab">ویرایش اطلاعات </a>
+                                        </li>
+                                    </ul>
+                                    <div id="myTabContent" class="tab-content" ng-app="">
+                                        <div class="tab-pane tab fade active in" id="activities">
+                                            فعالیت ها
+                                        </div>
+                                        <div class="tab-pane fade pb0" id="SalesChart">
+                                            نمودار فروش
+                                        </div>
+                                        <div class="tab-pane fade pb0" id="editingInformation">
+                                            <div class="panel-heading">
+                                        <h4 class="panel-title"></h4>
+                                        <form class="form-horizontal group-border stripped" role="form">
+                                                <div class="row">
+                                                    <div class="form-group">
+                                                        <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+                                                          <label for="bookName" class="control-label">نام کتاب
+                                                        </label>
+                                                         <div>
+                                                        <label></label>
+                                                           <input id="bookName" type="text" class="form-control col-sm-8" name="bookName">
+                                                        </div>  
+                                                        </div>
+                                                        
+                                                        <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+                                                        <label for="category" class="control-label"> دسته بندی
+                                                        </label>
+                                                        <div>
+                                                             <select class="form-control" id="category" name="category">
+                                                            <option value="0">نوع 1</option>
+                                                            <option value="1">نوع 2</option>
+                                                            <option value="2">نوع 3</option>
+                                                        </select>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+                                                        <label for="writer" class="control-label"> پدیدآوران
+                                                        </label>
+                                                         <div>
+                                                        <label></label>
+                                                           <input id="writer" type="text" class="form-control col-sm-8" name="writer">
+                                                        </div>
+                                                        </div>
+                                                        <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+                                                        <label for="nasher" class="control-label"> ناشر
+                                                        </label>
+                                                        <div>
+                                                             <select class="form-control" id="nasher" name="nasher">
+                                                            <option value="0">نوع 1</option>
+                                                            <option value="1">نوع 2</option>
+                                                            <option value="2">نوع 3</option>
+                                                        </select>
+                                                        </div>
+                                                        </div>
+                                                    </div>   
+                                                     
+                                                    <div class="form-group">
+                                                        <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+                                                        <label for="typeJeld" class="control-label"> نوع جلد
+                                                        </label>
+                                                        <div>
+                                                             <select class="form-control" id="typeJeld" name="typeJeld">
+                                                            <option value="0">نوع 1</option>
+                                                            <option value="1">نوع 2</option>
+                                                            <option value="2">نوع 3</option>
+                                                        </select>
+                                                        </div>
+                                                        </div>
+                                                        <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+                                                        <label for="ghat" class="control-label"> قطع
+                                                        </label>
+                                                        <div>
+                                                             <select class="form-control" id="ghat" name="ghat">
+                                                            <option value="0">نوع 1</option>
+                                                            <option value="1">نوع 2</option>
+                                                            <option value="2">نوع 3</option>
+                                                        </select>
+                                                        </div>
+                                                        </div>
+                                                        <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+                                                        <label for="lang" class="control-label"> زبان
+                                                        </label>
+                                                        <div>
+                                                             <select class="form-control" id="lang" name="lang">
+                                                            <option value="0">نوع 1</option>
+                                                            <option value="1">نوع 2</option>
+                                                            <option value="2">نوع 3</option>
+                                                        </select>
+                                                        </div>
+                                                        </div>
+                                                        <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+                                                        <label for="dioii" class="control-label"> دیویی
+                                                        </label>
+                                                         <div>
+                                                           <input id="dioii" type="text" class="form-control" name="dioii">
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="form-group">
+                                                        <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+                                                        <label for="chap" class="control-label"> نوبت چاپ
+                                                        </label>
+                                                         <div>
+                                                           <input id="chap" type="text" class="form-control" name="chap">
+                                                        </div>
+                                                        </div>
+                                                        <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+                                                        <label for="chapDate" class="control-label"> تاریخ چاپ
+                                                        </label>
+                                                         <div>
+                                                            <input id="chapDate" name="chapDate" class="form-control" type="text"  data-mask="0000/00/00" placeholder="__/__/____">
+                                                         </div>
+                                                        </div>
+                                                        <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+                                                        <label for="numberPage" class="control-label"> تعداد صفحه
+                                                        </label>
+                                                         <div>
+                                                           <input id="numberPage" type="text" class="form-control" name="numberPage">
+                                                        </div>
+                                                        </div>
+                                                        <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+                                                        <label for="weight" class="control-label"> وزن
+                                                        </label>
+                                                         <div>
+                                                           <input id="weight" type="text" class="form-control" name="weight">
+                                                        </div>
+                                                        </div>
+                                                    </div> 
+                                                    
+                                                    <div class="form-group">
+                                                        <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+                                                         <label for="present" class="control-label">معرفی کوتاه
+                                                        </label>
+                                                         <div>
+                                                         <textarea id="present" class="form-control" name="present" style="resize: none;"></textarea>
+                                                        </div>
+                                                        </div>
+                                                        <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+                                                         <label class="control-label">
+                                                        </label>
+                                                         <div class="">
+                                                         <textarea class="form-control" style="resize: none;"></textarea>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                   
+                                                </div>
+                                                <!-- End .form-group  -->
+                                            </form>
+                                    </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End .tabs -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End .row -->
+                    </div>
+                    <!-- End .page-content-inner -->
+                </div>
+                <!-- / page-content-wrapper -->
+            </div>
+
+
+ </div>
+        <!-- / #wrapper -->
+        <div style="margin-top: 100px !important; " class="clearfix sidebar-page left-sidebar-page text-center">
+            <!-- Start #footer  -->
+            <div>
+                طراحی و اجرا توسط  نرم افزار حساب کتاب   &copy;  1396 
+            </div>
+        </div>
+        <!-- End #footer  -->
+        <!-- Back to top -->
+        <div id="back-to-top"><a href="blank.html#">Back to Top</a>
+        </div>
+        
+         <!-- Javascripts -->
+        <!-- Load pace first -->
+        <script src="includes\hesabketab\js\pace.min.js"></script>
+        <!-- Important javascript libs(put in all pages) -->
+        
+        <script src="includes/hesabketab/js/jquery-3.2.1.min.js.js" type="text/javascript"></script>
+       <script> 
+            $(function(){
+                $("#headerTop").load("headerTop.html"); 
+              $("#sidebarFixedbar").load("sidebarFixedbar.html"); 
+              
+            });
+        </script>
+        <script src="includes\hesabketab\js\jquery-ui.js"></script>
+        <script>
+        window.jQuery || document.write('<script src="includes\hesabketab\js\jquery-ui-1.10.4.min.js">\x3C/script>')
+        </script>
+        <!--[if lt IE 9]>
+  <script type="text/javascript" src="js/libs/excanvas.min.js"></script>
+  <script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <script type="text/javascript" src="js/libs/respond.min.js"></script>
+<![endif]-->
+        <!-- Bootstrap plugins -->
+        <script src="includes\hesabketab\js\bootstrap.js"></script>
+        
+        <script src="includes\hesabketab\js\jquery.validate.js"></script>
+        
+        <!--angular js-->
+        <script src="includes/hesabketab/js/angular.min.js" type="text/javascript"></script>
+        
+        <!--validat-->
+        <script src="includes/hesabketab/js/gsdk-bootstrap-wizard.js" type="text/javascript"></script>
+        
+        <!-- Bootbox fast bootstrap modals -->
+        <script src="includes\hesabketab\js\bootbox.js"></script>
+        
+        <!--date picker for date-->
+        <script src="includes/hesabketab/js/persian-date.min.js" type="text/javascript"></script>
+        <script src="includes/hesabketab/js/persian-datepicker.js" type="text/javascript"></script>
+        <script>
+             $('#chapDate').pDatepicker({
+                initialValue:false,
+                observer: true,
+                  format: 'YYYY/MM/DD'
+            });
+        </script>
+         <!--mask-->
+        <script src="includes/hesabketab/js/jquery.mask.js" type="text/javascript"></script>
+        
+
+    </body>
+</html>

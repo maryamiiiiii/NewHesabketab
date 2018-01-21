@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>نرم افزار حساب کتاب</title>
+<!-- Mobile specific metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1 user-scalable=no">
+<!-- Force IE9 to render in normal mode -->
+<!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
+<meta name="author" content="" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="application-name" content="" />
+<!-- Import google fonts - Heading first/ text second -->
+<link href='includes\hesabketab\css\css.css' rel='stylesheet' type='text/css'>
+<!-- Css files -->
+<!-- Icons -->
+<link href="includes\hesabketab\css\icons.css" rel="stylesheet" />
+<!-- Bootstrap stylesheets (included template modifications) -->
+<link href="includes\hesabketab\css\bootstrap.css" rel="stylesheet" />
+<!-- Plugins stylesheets (all plugin custom css) -->
+<link href="includes\hesabketab\css\plugins.css" rel="stylesheet" />
+<!-- Main stylesheets (template main css file) -->
+<link href="includes\hesabketab\css\main.css" rel="stylesheet" />
+<!-- Custom stylesheets ( Put your own changes here ) -->
+<link href="includes\hesabketab\css\custom.css" rel="stylesheet" />
+<meta name="msapplication-TileColor" content="#3399cc" />
+
+<link href="includes/hesabketab/css/style-tree.css" rel="stylesheet" type="text/css"/>
+<style>
+    .demo { overflow:auto; border:1px solid silver; min-height:100px; }
+</style>
+
+
+</head>
+
+<body>
+<button class="btn btn-default mr5 mb10" data-toggle="modal" data-target="#treeModal">درختی</button>
+
+<!------------------------------------------MODALS HTML-----------------------------------------> 
+<div class="modal fade modal-style6" id="treeModal" tabindex="-1" role="dialog" aria-hidden="true" style="z-index:21">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content" style="">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" value=""> <span aria-hidden="true">×</span><span class="sr-only">Close</span> </button>
+        <h4 class="modal-title" id="mySmallModalLabel">ثبت اطلاعات محصول</h4>
+      </div>
+      <div class="modal-body">
+          <div class="">
+                <button type="button"  onclick="demo_create();">افزودن</button>
+                <button type="button"  onclick="demo_rename();">تغییر نام</button>
+        </div>
+        <input type="text" id="html_q" value="" class="input" style="margin:0em auto 1em auto; display:block; padding:4px; border-radius:4px; border:1px solid silver;">
+	<div id="html" class="demo">
+		<ul>
+			<li data-jstree='{ "opened" : true }'>عمومی
+				<ul>
+					<li data-jstree='{ "selected" : true }'>فرهنگ و معارف
+                                            <ul>
+                                                <li>اول</li>
+                                                <li>دوم</li>
+                                            </ul>
+                                        </li>
+					<li> تجربیات علمی</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- Javascripts --> 
+<!-- Load pace first --> 
+<script src="includes\hesabketab\js\pace.min.js"></script> 
+<!-- Important javascript libs(put in all pages) --> 
+<script src="includes\hesabketab\js\jquery-2.1.1.min.js"></script> 
+<script> 
+            <!-- header and sidebar-->
+            $(function(){
+                $("#headerTop").load("headerTop.html"); 
+              $("#sidebarFixedbar").load("sidebarFixedbar.html"); 
+              
+            });
+            <!--End header and sidebar-->
+            
+            
+            
+                 
+        </script> 
+<script>
+        window.jQuery || document.write('<script src="includes\hesabketab\js\jquery-2.1.1.min_2.js">\x3C/script>')
+        </script> 
+<script src="includes\hesabketab\js\jquery-ui.js"></script> 
+<script>
+        window.jQuery || document.write('<script src="includes\hesabketab\js\jquery-ui-1.10.4.min.js">\x3C/script>')
+        </script> 
+<!--[if lt IE 9]>
+  <script type="text/javascript" src="js/libs/excanvas.min.js"></script>
+  <script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <script type="text/javascript" src="js/libs/respond.min.js"></script>
+<![endif]--> 
+<!-- Bootstrap plugins --> 
+<script src="includes\hesabketab\js\bootstrap.js"></script> 
+<!-- Core plugins ( not remove ) --> 
+<script src="includes/hesabketab/js/modernizr.custom.js" type="text/javascript"></script> 
+<!-- Handle responsive view functions --> 
+<script src="includes\hesabketab\js\jRespond.min.js"></script> 
+<!-- Custom scroll for sidebars,tables and etc. --> 
+<script src="includes\hesabketab\js\jquery.slimscroll.min.js"></script> 
+<script src="includes\hesabketab\js\jquery.slimscroll.horizontal.min.js"></script> 
+<!-- Remove click delay in touch --> 
+<script src="includes\hesabketab\js\fastclick.js"></script> 
+<script src="includes/hesabketab/js/main.js"></script> 
+<script src="includes/hesabketab/js/dashboard.js"></script> 
+<script src="includes/hesabketab/js/jquery.countTo.js" type="text/javascript"></script> 
+<script src="includes/hesabketab/js/jquery.sparkline.js"></script> 
+<script src="includes/hesabketab/js/progressbar.js"></script> 
+<script src="includes/hesabketab/js/waypoints.js"></script> 
+<script src="includes/hesabketab/js/skyicons.js"></script> 
+<script src="includes/hesabketab/js/jquery.gritter.js"></script> 
+
+<!--mask number--> 
+<script src="includes/hesabketab/js/jquery.mask.js" type="text/javascript"></script> 
+<!--End mask number--> 
+<!-- Increase jquery animation speed --> 
+<script src="includes\hesabketab\js\jquery.velocity.min.js"></script> 
+<!-- Quick search plugin (fast search for many widgets) --> 
+<script src="includes\hesabketab\js\jquery.quicksearch.js"></script> 
+<!-- Bootbox fast bootstrap modals --> 
+<script src="includes\hesabketab\js\title_notifier.js"></script> 
+<script src="includes\hesabketab\js\jquery.gritter.js"></script> 
+<script src="includes\hesabketab\js\bootbox.js"></script> 
+<!-- Other plugins ( load only nessesary plugins for every page) --> 
+<script src="includes\hesabketab\js\jquery.dynamic.js"></script> 
+<script src="includes/hesabketab/js/title_notifier.js" type="text/javascript"></script> 
+<script src="includes\hesabketab/js/select2.js" type="text/javascript"></script> 
+
+<!--fixed wrapper support--> 
+<script src="includes/hesabketab/js/fixed-wrapper-support.js" type="text/javascript"></script> 
+
+
+
+
+
+<!------- TREE MODAL ------>
+<script src="includes/hesabketab/js/jstree.js" type="text/javascript"></script>
+	<script>
+        function demo_create() {
+            var ref = $('#html').jstree(true),
+                    sel = ref.get_selected();
+            if(!sel.length) { return false; }
+            sel = sel[0];
+            sel = ref.create_node(sel, {"type":"file"});
+            if(sel) {
+                    ref.edit(sel);
+            }
+        };
+        function demo_rename() {
+                var ref = $('#html').jstree(true),
+                        sel = ref.get_selected();
+                if(!sel.length) { return false; }
+                sel = sel[0];
+                ref.edit(sel);
+        };
+
+        $(function () {
+           
+	$('#html').jstree({
+            "checkbox" : {
+      "keep_selected_style" : false
+    },
+    "core" : {
+       // so that create works
+       "check_callback" : true
+     },
+    "plugins" : [ "contextmenu" ,"search","state","unique", "dnd"]
+        });
+        
+          var to = false;
+  $('#html_q').keyup(function () {
+    if(to) { clearTimeout(to); }
+    to = setTimeout(function () {
+      var v = $('#html_q').val();
+      $('#html').jstree(true).search(v);
+    }, 250);
+  });
+});
+
+	</script>
+
+</body>
+</html>

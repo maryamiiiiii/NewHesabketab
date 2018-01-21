@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html class="no-js" dir="rtl">
+    <head>
+
+        <meta charset="utf-8">
+        <title>نرم افزار حساب کتاب</title>
+        <!-- Mobile specific metas -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1 user-scalable=no">
+        <!-- Force IE9 to render in normal mode -->
+        <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
+        <meta name="author" content="" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="application-name" content="" />
+        <!-- Import google fonts - Heading first/ text second -->
+        <link href='includes\hesabketab\css\css.css' rel='stylesheet' type='text/css'>
+        <!-- Css files -->
+        <!-- Icons -->
+        <link href="includes\hesabketab\css\icons.css" rel="stylesheet" />
+        <!-- Bootstrap stylesheets (included template modifications) -->
+        <link href="includes\hesabketab\css\bootstrap.css" rel="stylesheet" />
+        <!-- Plugins stylesheets (all plugin custom css) -->
+        <link href="includes\hesabketab\css\plugins.css" rel="stylesheet" />
+        <!-- Main stylesheets (template main css file) -->
+        <link href="includes\hesabketab\css\main.css" rel="stylesheet" />
+        <!-- Custom stylesheets ( Put your own changes here ) -->
+        <link href="includes\hesabketab\css\custom.css" rel="stylesheet" />
+       
+        <meta name="msapplication-TileColor" content="#3399cc" />
+        
+        
+        <!--work time and day-->
+        <link href="includes/hesabketab/css/jquery-ui.css" rel="stylesheet" type="text/css"/>
+
+        <!-- date picker stylesheets for date  -->
+        <link href="includes/hesabketab/css/persian-datepicker.css" rel="stylesheet" type="text/css"/>
+        
+        
+    </head>
+    <body>
+        <!--[if lt IE 9]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+        <!-- .page-navbar -->
+        <div id="headerTop"></div>
+        <!-- / page-navbar -->
+        <!-- #wrapper -->
+        <div id="wrapper">
+            <!-- .page-sidebar menu -->
+            <div id="sidebarFixedbar"></div>
+            <!-- / page-sidebar menu -->
+
+
+            <div class="page-content sidebar-page right-sidebar-page clearfix">
+                <!-- .page-content-wrapper -->
+                <div class="page-content-wrapper">
+                    <div class="page-content-inner">
+                        <!-- Start .page-content-inner -->
+                        <div class="row">
+                            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 p5">
+                                 <div id="page-header" class="clearfix">
+                            <div class="page-header">
+                                <h3>مشخصات</h3>
+                                <span class="txt">می توانید  <span class="text-danger"> مشخصات </span> خود را ویرایش کنید.</span>
+                            </div>
+                        </div>
+                            </div>
+                            <!-- .row -->
+                            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 p5">
+                                <!-- .col-md-3 -->
+                                <div class="panel bg-lightgreen text-white tile panelRefresh">
+                                    <!-- Start .panel -->
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">مبلغ کل طرح</h4>
+                                    </div>
+                                    <div class="panel-body pt0">
+                                        <div class="progressbar-stats-1">
+                                            <div class="stats">
+                                                <div class="fa fa-bar-chart-o"></div>
+                                            <span class="number" data-mask='#,##0' data-mask-reverse="true">20000000000 </span><span class="pull-left s8">ريال </span>
+                                            </div>
+                                            <div class="progress animated-bar flat transparent progress-bar-xs mb10 mt0">
+                                                <div class="progress-bar progress-bar-white" role="progressbar" data-transitiongoal="63"></div>
+                                            </div>
+                                            <div class="comparison">
+                                                <p class="mb0"><i class="fa fa-arrow-circle-o-up s20 mr5 pull-left"></i> 10% بیشتر از ماه قبل</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End .panel -->
+                            </div>
+                            <!-- / .col-md-3 -->
+                            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 p5">
+                                <!-- .col-md-3 -->
+                                <div class="panel bg-darkgreen text-white tile panelRefresh">
+                                    <!-- Start .panel -->
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">اعتبار اختصاص یافته</h4>
+                                    </div>
+                                    <div class="panel-body pt0">
+                                        <div class="progressbar-stats-1">
+                                            <div class="stats">
+                                                <div class="fa fa-bar-chart-o"></div>
+                                            <span class="number" data-mask='#,##0' data-mask-reverse="true">22150000051 </span><span class="pull-left s8">ريال </span>
+                                            </div>
+                                            <div class="progress animated-bar flat transparent progress-bar-xs mb10 mt0">
+                                                <div class="progress-bar progress-bar-white" role="progressbar" data-transitiongoal="63"></div>
+                                            </div>
+                                            <div class="comparison">
+                                                <p class="mb0"><i class="fa fa-arrow-circle-o-up s20 mr5 pull-left"></i> 10% بیشتر از ماه قبل</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End .panel -->
+                            </div>
+                            <!-- / .col-md-3 -->
+                            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 p5">
+                                <!-- .col-md-3 -->
+                                <div class="panel bg-lightorange text-white tile panelRefresh">
+                                    <!-- Start .panel -->
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">سقف تعیین شده</h4>
+                                    </div>
+                                    <div class="panel-body pt0">
+                                        <div class="progressbar-stats-1">
+                                            <div class="stats">
+                                                <div class="fa fa-bar-chart-o"></div>
+                                            <span class="number" data-mask='#,##0' data-mask-reverse="true">21510000000 </span><span class="pull-left s8">ريال </span>
+                                            </div>
+                                            <div class="progress animated-bar flat transparent progress-bar-xs mb10 mt0">
+                                                <div class="progress-bar progress-bar-white" role="progressbar" data-transitiongoal="63"></div>
+                                            </div>
+                                            <div class="comparison">
+                                                <p class="mb0"><i class="fa fa-arrow-circle-o-down s20 mr5 pull-left"></i> 10% کمتر از ماه قبل</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End .panel -->
+                            </div>
+                            <!-- / .col-md-3 -->
+                            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 p5">
+                                <!-- .col-md-3 -->
+                                <div class="panel bg-lightblue text-white tile panelRefresh">
+                                    <!-- Start .panel -->
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">مبلغ کل خرید</h4>
+                                    </div>
+                                    <div class="panel-body pt0">
+                                        <div class="progressbar-stats-1">
+                                            <div class="stats">
+                                                <div class="fa fa-bar-chart-o"></div>
+                                            <span class="number" data-mask='#,##0' data-mask-reverse="true">45580564222</span><span class="pull-left s8">ريال </span>
+                                            </div>
+                                            <div class="progress animated-bar flat transparent progress-bar-xs mb10 mt0">
+                                                <div class="progress-bar progress-bar-white" role="progressbar" data-transitiongoal="63"></div>
+                                            </div>
+                                            <div class="comparison">
+                                                <p class="mb0"><i class="fa fa-arrow-circle-o-down s20 mr5 pull-left"></i> 10% کمتر از ماه قبل</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End .panel -->
+                            </div>
+                            <!-- / .col-md-3 -->
+                            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 p5">
+                                <!-- .col-md-3 -->
+                                <div class="panel bg-darkerblue text-white tile panelRefresh">
+                                    <!-- Start .panel -->
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">تخفیف استفاده شده</h4>
+                                    </div>
+                                    <div class="panel-body pt0">
+                                        <div class="progressbar-stats-1">
+                                            <div class="stats">
+                                                <div class="fa fa-bar-chart-o"></div>
+                                            <span class="number" data-mask='#,##0' data-mask-reverse="true">10893238900</span><span class="pull-left s8">ريال </span>
+                                            </div>
+                                            <div class="progress animated-bar flat transparent progress-bar-xs mb10 mt0">
+                                                <div class="progress-bar progress-bar-white" role="progressbar" data-transitiongoal="63"></div>
+                                            </div>
+                                            <div class="comparison">
+                                                <p class="mb0"><i class="fa fa-arrow-circle-o-down s20 mr5 pull-left"></i> 10% کمتر از ماه قبل</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End .panel -->
+                            </div>
+                            <!-- / .col-md-3 -->
+                        </div>
+                       <!-- End .row -->
+                        <!-- start .row -->
+                        <div class="row mt10">
+                            
+                            <!-- col-lg-4 end here -->
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <!-- col-lg-4 start here -->
+                                <div class="tabs mb20 profileDetailsPage">
+                                    <ul id="profileTab" class="nav nav-tabs">
+                                        <li class="active"><a href="profile.html#personalDetails" data-toggle="tab">اطلاعات فردی</a>
+                                        </li>
+                                        <li onclick=" setTimeout(function(){ initialize(); }, 300);">
+                                            <a href="profile.html#marketDetails" data-toggle="tab">اطلاعات فروشگاه</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="profile.html#bankDetails" data-toggle="tab">اطلاعات بانکی</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="profile.html#SendMadarek" data-toggle="tab">ارسال مدارک</a>
+                                        </li>
+                                    </ul>
+                                    <div id="myTabContent" class="tab-content" ng-app="">
+                                        <div class="tab-pane tab fade active in" id="personalDetails">
+                                            <form id="editPersonalDetails" class="form-horizontal group-border stripped" role="form">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label class="col-lg-4 control-label" for="name">نام و نام خانوادگی
+                                                              <span class="color-red">*</span>
+                                                                </label>
+                                                                <div class="col-lg-8">
+                                                                    <label>{{name}}</label>
+                                                                    <input ng-model="name" ng-init="name='مریم رجبی'" type="text" class="form-control" id="name" name="name" >
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    <div class="col-md-6">
+                                                         <div class="form-group">
+                                                              <label for="marketName" class="control-label col-sm-4">نام فروشگاه
+                                                              <span class="color-red">*</span>
+                                                              </label>
+                                                             <div class="col-lg-8">
+                                                                <label>{{marketName}}</label>
+                                                                <input ng-model="marketName" ng-init="marketName='فروشگاه 1'" id="marketName" type="text" class="form-control" name="marketName" required>
+                                                             </div>
+                                                        </div>
+                                                    </div> 
+                                                </div>
+                                                <!-- End .form-group  -->
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                         <div class="form-group">
+                                                              <label for="fatherName" class="control-label col-sm-4">نام پدر
+                                                              <span class="color-red">*</span>
+                                                              </label>
+                                                             <div class="col-lg-8">
+                                                                 <label>{{fatherName}}</label>
+                                                                 <input ng-model="fatherName" ng-init="fatherName='پدر 1'" id="fatherName" name="fatherName" class="form-control" type="text">
+                                                             </div>
+                                                          </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                         <div class="form-group">
+                                                              <label for="parvanehKasb" class="control-label col-sm-4">شماره پروانه کسب
+                                                              <span class="color-red">*</span>
+                                                              </label>
+                                                             <div class="col-lg-8">
+                                                                <label>{{parvanehKasb}}</label>
+                                                                <input ng-model="parvanehKasb" ng-init="parvanehKasb='پروانه کسب 1'"  id="parvanehKasb" type="text" class="form-control col-sm-8" name="parvanehKasb" required>                                               
+                                                             </div>
+                                                          </div>
+                                                    </div>   
+                                                </div>
+                                                <!-- End .form-group  -->
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                         <div class="form-group">
+                                                              <label for="codeMelli" class="control-label col-sm-4">کد ملی
+                                                              <span class="color-red">*</span>
+                                                              </label>
+                                                             <div class="col-lg-8">
+                                                                 <label>{{codeMelli}}</label>
+                                                                 <input ng-model="codeMelli" ng-init="codeMelli='6545612315'" id="codeMelli" name="codeMelli" maxlength="10" class="form-control" type="text">  
+                                                             </div>                                             
+                                                          </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                         <div class="form-group">
+                                                              <label for="birthDate" class="control-label col-sm-4">تاریخ تولد
+                                                              <span class="color-red">*</span>
+                                                              </label>
+                                                             <div class="col-lg-8">
+                                                                <label>{{birthDate}}</label>
+                                                                <input ng-model="birthDate" ng-init="birthDate='1485/53/06'" ui-mask="9999/99/99" ui-date-mask="YYYY//MM/DD" id="birthDate" name="birthDate" class="form-control col-sm-8" type="text"  data-mask="0000/00/00" placeholder="__/__/____">                                               
+                                                             </div>
+                                                          </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                               
+                                                <!-- End .form-group  -->
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                         <div class="form-group">
+                                                              <label for="email" class="control-label col-sm-4">ایمیل
+                                                              <span class="color-red">*</span>
+                                                              </label>
+                                                             <div class="col-lg-8">
+                                                                <label>{{email}}</label>
+                                                                <input ng-model="email" ng-init="email='maryam_rajabii86@yahoo.com'"  id="email" name="email" class="form-control" type="email">                                             
+                                                             </div>
+                                                          </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                              <label for="mobileNumber" class="control-label col-sm-4">تلفن همراه
+                                                              <span class="color-red">*</span>
+                                                              </label>
+                                                             <div class="col-lg-8">
+                                                                <label>{{mobileNumber}}</label>
+                                                                <input ng-model="mobileNumber" ng-init="mobileNumber='09104444444'"  id="mobileNumber" name="mobileNumber" class="form-control" type="text">                                             
+                                                             </div>
+                                                          </div>
+                                                    </div>
+                                                     
+                                                </div>
+                                                <!-- End .form-group  -->
+                                                <div class="form-group">
+                                                    <div class="form-group text-center">
+                                                        <button class='btn btn-primary btn-go-next-step mt50 mb50 editPD' name='editPD' onclick="ProfileCustom('editPersonalDetails');" value='' >ویرایش</button>
+                                                        <button  class='btn btn-primary btn-go-next-step mt50 mb50 changePD' style="display: none" name='changePD'  value='' >ثبت و تغییر</button>                            
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="tab-pane fade pb0" id="marketDetails">
+                                            <form id="editMarketDetails" class="form-horizontal group-border stripped" role="form">
+                                                <div class="row text-center">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="phone" class="control-label col-sm-4">تلفن ثابت
+                                                        <span class="color-red">*</span>
+                                                        </label>
+                                                        <div class="col-lg-8">
+                                                            <label>{{phone}}</label>
+                                                            <input id="phone" ng-model="phone" ng-init="phone='0214524515'" type="text" class="form-control" maxlength="11" name="phone">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label col-sm-4">شماره موبایل
+                                                        <span class="color-red">*</span>
+                                                        </label>
+                                                        <div class="col-lg-8">
+                                                        <label>{{mobileNumber}}</label>
+                                                        <input type="text" class="form-control spanInput" name="mobile" disabled placeholder="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="ostan" class="control-label col-sm-4">استان
+                                                        <span class="color-red">*</span>
+                                                        </label>
+                                                        <div class="col-lg-8">
+                                                        <select class="form-control required" id="ostan" name="ostan" required>
+                                                            <option value="0">تهران</option>
+                                                            <option value="1">کرمانشاه</option>
+                                                            <option value="2">مازندران</option>
+                                                        </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="shahr" class="control-label col-sm-4">شهر
+                                                        <span class="color-red">*</span>
+                                                        </label>
+                                                        <div class="col-lg-8">
+                                                             <select class="form-control required" id="shahr" name="shahr" required>
+                                                            <option value="0">تهران</option>
+                                                            <option value="1">رشت</option>
+                                                            <option value="2">کرج</option>
+                                                        </select>
+                                                        </div>
+                                                        <!--<div class="col-lg-8">
+                                                            <label>{{shahr}}</label>
+                                                             <select ng-model="shahr" ng-init="shahr='تهران'"  class="form-control required" id="shahr" name="shahr" required>
+                                                            <option value="تهران">تهران</option>
+                                                            <option value="رشت">رشت</option>
+                                                            <option value="کرج">کرج</option>
+                                                        </select>
+                                                        </div>-->
+                                                    </div>
+                                                     <div class="form-group">
+                                                        <label for="postalCode" class="control-label col-sm-4">کدپستی
+                                                        <span class="color-red"></span>
+                                                        </label>
+                                                         <div class="col-lg-8">
+                                                        <label>{{postalCode}}</label>
+                                                           <input id="postalCode" ng-model="postalCode" ng-init="postalCode='141541111'" type="text" class="form-control col-sm-8" maxlength="10" name="postalCode">
+                                                        </div>
+                                                    </div>
+                                                     <div class="form-group">
+                                                        <label for="website" class="control-label col-sm-4">وب سایت
+                                                        <span class="color-red"></span>
+                                                        </label>
+                                                        <div class="col-lg-8">
+                                                        <label>{{website}}</label>
+                                                         <input id="website" ng-model="website" ng-init="website='http://ketab.ir'" type="text" class="form-control" name="website">
+                                                        </div>
+                                                    </div>
+                                                     <div class="form-group">
+                                                        <label for="address" class="control-label col-sm-4">نشانی
+                                                        <span class="color-red">*</span>
+                                                        </label>
+                                                         <div class="col-lg-8">
+                                                        <label>{{myTextarea}}</label>
+                                                         <textarea id="address" ng-model="myTextarea" ng-init="myTextarea='تهران،تهران، میدان انقلاب، خیابان کارگر جنوبی، پلاک 10'" class="form-control" name="address" style="resize: none;"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                  <div class="">
+                                                      <table class="table table-striped">
+                                                        <thead>
+                                                            <tr class="bg-warning p10 text-center">
+                                                                <th colspan="3" class="text-center">ساعت و روزهای کاری</th>
+                                                          </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                          <tr>
+                                                              <td>
+                                                                  <span class="pannel-checkbox">
+                                                                    <input class="checkbox-inline checkbox" type="checkbox">
+                                                                </span>
+                                                              </td>
+                                                            <td>شنبه</td>
+                                                            <td>
+                                                                <div class="time-range">
+                                                                    <p> <span id="slider-time2-1" class="col-md-6">9:00 عصر</span> <span id="slider-time-1" class="col-md-6">8:30 صبح</span></p>
+                                                                    <div class="sliders_step1-1">
+                                                                      <div id="slider-range-1"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                          </tr>
+                                                          <tr>
+                                                              <td>
+                                                                  <span class="pannel-checkbox">
+                                                                    <input class="checkbox-inline checkbox" type="checkbox">
+                                                                </span>
+                                                              </td>                                            
+                                                              <td>یک شنبه</td>
+                                                            <td>
+                                                                <div class="time-range">
+                                                                    <p> <span id="slider-time2-2" class="col-md-6">9:00 عصر</span> <span id="slider-time-2" class="col-md-6">8:30 صبح</span></p>
+                                                                    <div class="sliders_step1-2">
+                                                                      <div id="slider-range-2"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                          </tr>
+                                                          <tr>
+                                                              <td>
+                                                                  <span class="pannel-checkbox">
+                                                                    <input class="checkbox-inline checkbox" type="checkbox">
+                                                                </span>
+                                                              </td>                                            
+                                                              <td>دو شنبه</td>
+                                                            <td>
+                                                                <div class="time-range">
+                                                                    <p> <span id="slider-time2-3" class="col-md-6">9:00 عصر</span> <span id="slider-time-3" class="col-md-6">8:30 صبح</span></p>
+                                                                    <div class="sliders_step1-3">
+                                                                      <div id="slider-range-3"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                          </tr>
+                                                           <tr>
+                                                              <td>
+                                                                  <span class="pannel-checkbox">
+                                                                    <input class="checkbox-inline checkbox" type="checkbox">
+                                                                </span>
+                                                              </td>                                            
+                                                              <td>سه شنبه</td>
+                                                            <td>
+                                                                <div class="time-range">
+                                                                    <p> <span id="slider-time2-4" class="col-md-6">9:00 عصر</span> <span id="slider-time-4" class="col-md-6">8:30 صبح</span></p>
+                                                                    <div class="sliders_step1-4">
+                                                                      <div id="slider-range-4"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                          </tr>
+                                                           <tr>
+                                                              <td>
+                                                                  <span class="pannel-checkbox">
+                                                                    <input class="checkbox-inline checkbox" type="checkbox">
+                                                                </span>
+                                                              </td>                                            
+                                                              <td>چهار شنبه</td>
+                                                            <td>
+                                                                <div class="time-range">
+                                                                    <p> <span id="slider-time2-5" class="col-md-6">9:00 عصر</span> <span id="slider-time-5" class="col-md-6">8:30 صبح</span></p>
+                                                                    <div class="sliders_step1-5">
+                                                                      <div id="slider-range-5"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                          </tr>
+                                                           <tr>
+                                                              <td>
+                                                                  <span class="pannel-checkbox">
+                                                                    <input class="checkbox-inline checkbox" type="checkbox">
+                                                                </span>
+                                                              </td>                                           
+                                                              <td>پنج شنبه</td>
+                                                            <td>
+                                                                <div class="time-range">
+                                                                    <p> <span id="slider-time2-6" class="col-md-6">9:00 عصر</span> <span id="slider-time-6" class="col-md-6">8:30 صبح</span></p>
+                                                                    <div class="sliders_step1-6">
+                                                                      <div id="slider-range-6"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                          </tr>
+                                                           <tr>
+                                                              <td>
+                                                                  <span class="pannel-checkbox">
+                                                                    <input class="checkbox-inline checkbox" type="checkbox">
+                                                                </span>
+                                                              </td>                                            
+                                                              <td>جمعه</td>
+                                                            <td>
+                                                                <div class="time-range">
+                                                                    <p> <span id="slider-time2-7" class="col-md-6">9:00 عصر</span> <span id="slider-time-7" class="col-md-6">8:30 صبح</span></p>
+                                                                    <div class="sliders_step1-7">
+                                                                      <div id="slider-range-7"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                          </tr>
+                                                        </tbody>
+                                                    </table>
+                                                  </div>
+                                              </div>
+                                                </div>
+                                                <div class="row text-center"> 
+                                              <div class="col-md-2">
+                                                   <label class="control-label">
+                                                        ثبت روی نقشه
+                                                        <span class="color-red">*</span>
+                                                    </label>
+                                              </div>
+                                              <div id="googleMap" class="col-md-9 mb15" style="height: 400px;"></div>
+                                              <div class="col-md-1"></div>
+                                              <div class="col-md-2"></div>
+                                                <div class="col-md-6">
+                                                    <span class="color-red-light">با حرکت دادن پین و رها کردن محل فروشگاه خود را مشخص کنید و یا طول و عرض جغرافیایی را وارد کنید</span>
+                                                </div>
+                                              <div class="form-group col-md-4">
+                                                  <div>
+                                                      <label>طول : {{lat}}</label>
+                                                   <input type='text' ng-model="lat" ng-init="lat='35.68877923212278'" class="form-control"  name='lat' id='lat' required>  
+                                                  </div>
+                                                  <div>
+                                                      <label>عرض: {{lng}}</label>
+                                                   <input type='text' ng-model="lng" ng-init="lng='51.388973599999986'" class="form-control" name='lng' id='lng' required>  
+                                                  </div>
+                                              </div>
+                                          </div>
+                                                <div class="form-group">
+                                                    <div class="form-group text-center">
+                                                        <button class='btn btn-primary btn-go-next-step mt50 mb50 editPD' name='editPD' onclick="ProfileCustom('editMarketDetails');" value='' >ویرایش</button>
+                                                        <button  class='btn btn-primary btn-go-next-step mt50 mb50 changePD' style="display: none" name='changePD'  value='' >ثبت و تغییر</button>                            
+                                                    </div>
+                                                </div>
+                                                <!-- End .form-group  -->
+                                                
+                                            </form>
+                                        </div>
+                                        <div class="tab-pane fade pb0" id="bankDetails">
+                                            <form id="editBankDetails" class="form-horizontal group-border stripped" role="form">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                         <div class="form-group">
+                                                              <label for="bankName" class="control-label col-sm-4">نام بانک
+                                                              <span class="color-red">*</span>
+                                                              </label>
+                                                             <div class="col-lg-8">
+                                                                <label>{{bankName}}</label>
+                                                                <input ng-model="bankName" ng-init="bankName='ملت'"  id="bankName" type="text" class="form-control" name="bankName" required>                                         
+                                                             </div>
+                                                          </div>
+                                                    </div>   
+                                                <div class="col-md-6">
+                                                         <div class="form-group">
+                                                              <label for="shebaNumber" class="control-label col-sm-4">شماره شبا
+                                                              <span class="color-red">*</span>
+                                                              </label>
+                                                             <div class="col-lg-8">                                                                    
+                                                                    <label>{{shebaNumber}}</label>
+                                                                <input ng-model="shebaNumber" ng-init="shebaNumber='IR456415555555555555555555555165'"  id="shebaNumber" type="text" class="form-control" name="shebaNumber" required>
+                                                                
+                                                             </div>
+                                                          </div>
+                                                    </div> 
+                                                </div> 
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                         <div class="form-group">
+                                                              <label for="cardNumber" class="control-label col-sm-4">شماره کارت
+                                                              <span class="color-red">*</span>
+                                                              </label>
+                                                             <div class="col-lg-8">
+                                                                <label>{{cardNumber}}</label>
+                                                                <input ng-model="cardNumber" ng-init="cardNumber='21651651651635465231'"  id="cardNumber" type="text" class="form-control" name="cardNumber" required>                                         
+                                                             </div>
+                                                          </div>
+                                                    </div>   
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="form-group text-center">
+                                                        <button class='btn btn-primary btn-go-next-step mt50 mb50 editPD' name='editPD' onclick="ProfileCustom('editBankDetails');" value='' >ویرایش</button>
+                                                        <button  class='btn btn-primary btn-go-next-step mt50 mb50 changePD' style="display: none" name='changePD'  value='' >ثبت و تغییر</button>                            
+                                                    </div>
+                                                </div>
+                                                <!-- End .form-group  -->
+                                            </form>
+                                        </div>
+                                        <div class="tab-pane fade pb0" id="SendMadarek">
+                                            <form id="editSendMadarek" class="form-horizontal group-border stripped" role="form">
+                                                <div class="row">
+                                                    <div class="col-md-2"></div>
+                                                    <div class="col-md-8">
+                                                        <div class="row">
+                                                            <div class="form-group">
+                                                                <h5 class="text-right">تصویر کارت ملی</h5>
+                                                              <div class="panel panel-default">
+                                                                <div class="panel-body">
+                                                                    <p class="file">
+                                                                        <input type="file" ng-model="MelliCardpic" ng-init="MelliCardpic='data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAMCAgICAgMCAgIDAwMDBAYEBAQEBAgGBgUGCQgKCgkICQkKDA8MCgsOCwkJDRENDg8QEBEQCgwSExIQEw8QEBD/2wBDAQMDAwQDBAgEBAgQCwkLEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBD/wAARCAAwADADASIAAhEBAxEB/8QAGgAAAgMBAQAAAAAAAAAAAAAABQgDBgcEAv/EAC4QAAEDAwMCBQQBBQAAAAAAAAECAwQFBhEABxIIIRMxQVFhIiNicTIJM4GCkf/EABkBAQEAAwEAAAAAAAAAAAAAAAUDAQIEBv/EACgRAAEDAgQGAgMAAAAAAAAAAAEAAgMEERIhMUETIjJRYfAFcRSxwf/aAAwDAQACEQMRAD8A1O3bUSeP28+XpqwXPJt3by1Zt3XK94EGA3yVgZW4s9ktoHqpR7DV5tigJ4p+gaUf+o9eFXdrFk7EWuCmbVc1SSoq4pPJSmmgfgcXVH/GjaaDjSAOyG/0sPu0Zapdd4ep/dO8628beuN226e2opYhwZBa4pz2K1J+pavcnt7AaBWj1K752fVItRlXk/clPaWDJp010PJdb9UgkcknHkQexx5+WnP6cei7Z6nUpio3lbSLpqbiEqckT1lTfLHcIaB4gZ9wTqHqc6U+nqBRnKlAgwLIn9/AlRpHgtlX5NKOFDPsAfnSQr6K3DEfLpe3p/q2PxlQMy4XRy0K/bW7Nkwb5tcqMOckhbLg+5GeT2W0seikn/owR2OqfeFuBtCyG/L41nvQjVp9C3CvTZ6uSUKccipqMcNq5NOONKCVOIPlhTa0n5CR7aY2/aIhDDh4+h0bURCCUhhuNvoqbbkcwzTKWvASUJGPTS3daWyabm3l2hvZoFlpxNRo02QABwCWy8yc+/8Aexpl7NmNPNNqSoHsNdW9dsyLr2nrUelxg/UoDQqMJITlRdZPMpT7FSAtH+2qxdJtrY/pVFg4E9wlHpO18nbl1u5KXVn3zG8NqI2JLxLiuR5KcyrCuQKRj3TkeeNFqhQK1uRV6hWWpUdEijzXI7rL7PiJLJb7JTnsP5AnOc4x5HVGre/7VRtKNaFk02TUKtL8N8TM+GzC4rABWSCc5BwAPTXm1t86hbNwXTR79pzrAr7vixqrHXyjpUln6ULHFPFWEkA4Gca4bSdZ1snAGYbDTugnTbYVMa6w7znUBkmm2/bAZUsJHBLr7yQlA9uyV4HsNbzuW2hqO6Pg6F9HcWAna+4b9S02F3PXpLqHuxWthgJaRyPnjklwgfkffXNunXWyHhzHr66vKScIOoACEltjcR3QK4usqy9oKcWVpXWKyEZTCZWEIbPp4rh/j+gCf1pYt0uvfeLdBRo9QudVBt551Ifp9EzHK2c90LdyXF5GexVg58tKRWLkn1eYt995aiVeqidRB9WMqUSTr0dPQxQttqUY+Z7/AAE21yUyrbfXFMuOxJEmZbtaY8RmM2rlhC+6OCs/kT59j+9U+oV7c2/YMa0cyYFPjyQ4tbyPulIHbKiSSckjv6aqu0vUbVNvobdv1+jpr1EbUVNtLc4PRwfMNqIIKc9+JH6I0U3O6nnLvpyqNZVpt29HdSUPyVOhyQtJ8wnAARkevc/I0f8AhTCS2EHz7ukhVx4NSPHuyqDG5d77O3rUU7V31UIMVpwNuJZe5xpKkgBRU2rKFjORkjWp0Tq/qF1xhTNwmGIs5QwidHTxZcP5pz9B+R2/WloUrHfPl8ajUtt5JDgHb1xpOSiilaA4Z990bxnYiV//2Q=='" class="required col-md-6" id="MelliCardpic" name="MelliCardpic" multiple accept="image/gif, image/jpeg, image/png" /> 
+                                                                        <span class="pip">
+                                                                            <img class="imageThumb" src="{{MelliCardpic}}" title="undefined"><br>
+                                                                            <span class="remove"><i class="fa fa-times"></i></span></span>
+                                                                        <img id="blah" src="#" alt="" class="img-responsive col-md-6" />
+                                                                    </p>
+                                                                </div>
+                                                             </div>
+                                                            </div>
+                                                           </div>
+                                                     <div class="row">
+                                                         <div class="form-group">
+                                                            <h5 class="text-right">تصویرجواز کسب</h5>
+                                                            <div class="panel panel-default">
+                                                                <div class="panel-body">
+                                                                    <p class="file">
+                                                                        <input type="file" class="required col-md-6" id="JavazeKasbpic" name="JavazeKasbpic" multiple accept="image/gif, image/jpeg, image/png"/> 
+                                                                        <img id="blah-2" src="#" alt="" class="img-responsive col-md-6" />
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                         </div>
+                                                  </div>
+                                                    <div class="row">
+                                                        <div class="form-group">
+                                                            <h5 class="text-right">تصویر مدرک بعدی</h5>
+                                                        <div class="panel panel-default">
+                                                            <div class="panel-body">
+                                                                <p class="file">
+                                                                   <input type="file" class="required col-md-6" id="OtherPic" name="OtherPic" multiple accept="image/gif, image/jpeg, image/png" /> 
+                                                                   <img id="blah-3" src="#" alt="" class="img-responsive col-md-6" />
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                    <div class="col-md-2"></div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="form-group text-center">
+                                                        <button class='btn btn-primary btn-go-next-step mt50 mb50 editPD' name='editPD' onclick="ProfileCustom('editSendMadarek');" value='' >ویرایش</button>
+                                                        <button  class='btn btn-primary btn-go-next-step mt50 mb50 changePD' style="display: none" name='changePD'  value='' >ثبت و تغییر</button>                            
+                                                    </div>
+                                                </div>
+                                                <!-- End .form-group  -->
+                                            </form>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <!-- End .tabs -->
+                            </div>
+                            <!-- col-lg-4 end here -->
+                            
+                            <!-- col-lg-4 end here -->
+                        </div>
+                        <!-- End .row -->
+                    </div>
+                    <!-- End .page-content-inner -->
+                </div>
+                <!-- / page-content-wrapper -->
+            </div>
+
+
+ </div>
+        <!-- / #wrapper -->
+        <div style="margin-top: 100px !important; " class="clearfix sidebar-page left-sidebar-page text-center">
+            <!-- Start #footer  -->
+            <div>
+                طراحی و اجرا توسط  نرم افزار حساب کتاب   &copy;  1396 
+            </div>
+        </div>
+        <!-- End #footer  -->
+        <!-- Back to top -->
+        <div id="back-to-top"><a href="blank.html#">Back to Top</a>
+        </div>
+        
+         <!-- Javascripts -->
+        <!-- Load pace first -->
+        <script src="includes\hesabketab\js\pace.min.js"></script>
+        <!-- Important javascript libs(put in all pages) -->
+        
+        <script src="includes/hesabketab/js/jquery-3.2.1.min.js.js" type="text/javascript"></script>
+       <script> 
+            $(function(){
+                $("#headerTop").load("headerTop.html"); 
+              $("#sidebarFixedbar").load("sidebarFixedbar.html"); 
+              
+            });
+        </script>
+        <script src="includes\hesabketab\js\jquery-ui.js"></script>
+        <script>
+        window.jQuery || document.write('<script src="includes\hesabketab\js\jquery-ui-1.10.4.min.js">\x3C/script>')
+        </script>
+        <!--[if lt IE 9]>
+  <script type="text/javascript" src="js/libs/excanvas.min.js"></script>
+  <script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <script type="text/javascript" src="js/libs/respond.min.js"></script>
+<![endif]-->
+        <!-- Bootstrap plugins -->
+        <script src="includes\hesabketab\js\bootstrap.js"></script>
+        
+        <script src="includes\hesabketab\js\jquery.validate.js"></script>
+        
+        <!--angular js-->
+        <script src="includes/hesabketab/js/angular.min.js" type="text/javascript"></script>
+        
+        <!--validat-->
+        <script src="includes/hesabketab/js/gsdk-bootstrap-wizard.js" type="text/javascript"></script>
+        
+        <!-- Bootbox fast bootstrap modals -->
+        <script src="includes\hesabketab\js\bootbox.js"></script>
+        
+        
+        
+        <script src="includes/hesabketab/js/Chart.js" type="text/javascript"></script>
+        <script src="includes\hesabketab\js\jquery.dynamic.js"></script>
+        <script src="includes\hesabketab\js\main.js"></script>
+        <script src="includes/hesabketab/js/profile.js" type="text/javascript"></script>
+        
+        
+        
+         <!-- google map -->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3tThWlP99pVgY6b5djDXKw4KRif7828g&libraries=places&callback=initAutocomplete"
+         async defer></script>
+         <script src="includes/hesabketab/js/googleMap.js" type="text/javascript"></script>
+         
+         <!--mask-->
+        <script src="includes/hesabketab/js/jquery.mask.js" type="text/javascript"></script>
+        
+        <!--date picker for date-->
+        <script src="includes/hesabketab/js/persian-date.min.js" type="text/javascript"></script>
+        <script src="includes/hesabketab/js/persian-datepicker.js" type="text/javascript"></script>
+        <script>
+             $('#birthDate').pDatepicker({
+                initialValue:false,
+                observer: true,
+                  format: 'YYYY/MM/DD'
+            });
+        </script>
+        
+         <!--work time and days-->
+        <script src="includes/hesabketab/js/work time and day_1.js" type="text/javascript"></script>
+     
+        <!--previewImageBeforeUpload js--> 
+        <script src="includes/hesabketab/js/previewImageBeforeUpload.js" type="text/javascript"></script>
+
+    </body>
+</html>

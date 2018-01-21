@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1 user-scalable=no">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-language" content="ar">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paper-css/0.2.3/paper.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<title>فاکتور</title>
+<link href="css/style-tag.css" rel="stylesheet" type="text/css">
+<style>
+    @media print {
+        @page { size: tag }
+        .result ,.result-underLogo,.result span{
+
+            background-color: #000 !important;
+            color: #fff !important;
+            -webkit-print-color-adjust: exact;
+        }
+        .result li{
+             text-align: center;
+        }
+    }
+</style>
+</head>
+
+<body class="tag tag-single">
+    <section class="sheet padding-1mm">
+		<div class="row">
+        <div class="col-md-2 col-sm-2 col-xs-2 br1">
+            <div class="barcode-center">
+           		<svg id="barcode"></svg>
+           </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-6">
+        	<ul class=" detail-list list-unstyled">
+                    <li>
+                    	<span> کتاب من پیش از تو</span>
+                    </li>
+                     <li>
+                    	 <span> الیف شاکاف</span>/<span>ارسلان فصیحی</span>
+                    </li>
+                    <li>
+                    	موضوع: <span> رمان</span>/<span>داستان های ترکی</span>
+                    </li>
+                    <li>
+                    	ناشر: <span> چشمه</span>
+                    </li>
+                    <li>
+                    	قیمت: <span> 20/000</span><span> تومان</span>
+                    </li>
+                    <li class="book-location result">
+                    	<i class="fa fa-map-marker" aria-hidden="true"></i>
+                    	<span>راهرو</span><span>َA</span><span>ردیف</span><span>راهرو</span><span>ردیف</span><span>3</span><span>قفسه</span><span>4</span><span>شماره</span>
+                    	<span>24</span>
+                    </li>
+                </ul>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-4 bl1">
+       	 <div class="details-fish">
+              <img style="margin-bottom: 3px" src="img/MellateEshghBW.jpg" width="95">
+               <img src="img/DonyayeKetabLogo-01.svg" width="95">
+            </div>
+        	 
+        </div>
+    </div>
+    
+
+  </section>
+	
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/JsBarcode.all.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+	JsBarcode("#barcode", "9786001147685", {
+  format: "CODE128",
+  lineColor: "",
+  height:"20",
+  width:1,
+  font: "monospace",
+  fontSize:15,
+  textMargin: 0,
+  textAlign:"center"
+});
+	
+</script>
+</body>
+</html>

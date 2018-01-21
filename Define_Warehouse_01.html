@@ -1,0 +1,1318 @@
+<!DOCTYPE html>
+<html class="no-js" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>نرم افزار حساب کتاب</title>
+<!-- Mobile specific metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1 user-scalable=no">
+<!-- Force IE9 to render in normal mode -->
+<!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
+<meta name="author" content="" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="application-name" content="" />
+<!-- Import google fonts - Heading first/ text second -->
+<link href='includes\hesabketab\css\css.css' rel='stylesheet' type='text/css'>
+<!-- Css files -->
+<!-- Icons -->
+<link href="includes\hesabketab\css\icons.css" rel="stylesheet" />
+<!-- Bootstrap stylesheets (included template modifications) -->
+<link href="includes\hesabketab\css\bootstrap.css" rel="stylesheet" />
+<!-- Plugins stylesheets (all plugin custom css) -->
+<link href="includes\hesabketab\css\plugins.css" rel="stylesheet" />
+<!-- Main stylesheets (template main css file) -->
+<link href="includes\hesabketab\css\main.css" rel="stylesheet" />
+<!-- Custom stylesheets ( Put your own changes here ) -->
+<link href="includes\hesabketab\css\custom.css" rel="stylesheet" />
+<meta name="msapplication-TileColor" content="#3399cc" />
+
+<!--slick slider css-->
+<link href="includes/hesabketab/css/slick.css" rel="stylesheet" type="text/css"/>
+<link href="includes/hesabketab/css/slick-theme.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!--[if lt IE 9]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+<div id="headerTop"></div>
+
+<!--modal popUp on load page-->
+<div class="modal fade" id="myModal-Popup" tabindex="-1" role="dialog" aria-hidden="true" >
+  <div class="modal-dialog modal-dialog-center"  style="width: 80%; max-width: 400px; margin-top: -169px; margin-right: -128px;">
+    <div class="text-center" style="margin-top:50px;"> <a target="_blank" href="#"> <img src="includes/hesabketab/images/Ketabir_Paiize96_PopUp.jpg" class="img-responsive center-block" alt="پاییزه  کتاب"> </a>
+      <div class="dis-flex" >
+        <div class="text-right" style="flex: 1" > <a class="sweet-1" target="_blank" href="#"><img src="includes/hesabketab/images/Ketabir_Paiize96_PopUp_Acc.jpg" class="img-responsive center-block" alt="پاییزه  کتاب"></a></div>
+        <div class="text-left" style="flex: 1"> <a class="sweet-2" target="_blank" href="#"><img src="includes/hesabketab/images/Ketabir_Paiize96_PopUp_Rej.jpg" class="img-responsive center-block" alt="پاییزه  کتاب"></a></div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--End modal popUp on load page--> 
+
+<!-- #wrapper -->
+<div id="wrapper">
+  <div id="sidebarFixedbar"></div>
+  
+  <!--fixed wrapp-->
+  <div class="amaran-wrapper bottom left"> <a href="#" class="MybtnCustom"><span class="icon-phone fixed-ico"></span></a>
+    <div class="amaran default ok">
+      <p class="bold">تلفن پشتیبانی</p>
+      <p><span>02166962330</span><span class="light"></span></p>
+    </div>
+  </div>
+  <!--End fixed wrapp-->
+  
+  <div class="page-content sidebar-page clearfix"> 
+    <!-- .page-content-wrapper -->
+    <div class="page-content-wrapper">
+      <div class="page-content-inner"> 
+        <!-- Start .page-content-inner -->
+        
+        <div class="row">
+          <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 p5">
+            <div id="page-header" class="clearfix">
+              <div class="page-header">
+                <h3>ثبت انبار</h3>
+                <span class="txt">تعداد <span class="text-danger">انبار </span> و نوع چیدمان آن ها را مشخص کنید.</span> </div>
+            </div>
+          </div>
+          <!-- .row -->
+          <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 p5"> 
+            <!-- .col-md-3 -->
+            <div class="panel bg-lightgreen text-white tile panelRefresh"> 
+              <!-- Start .panel -->
+              <div class="panel-heading">
+                <h4 class="panel-title">مبلغ کل طرح</h4>
+              </div>
+              <div class="panel-body pt0">
+                <div class="progressbar-stats-1">
+                  <div class="stats">
+                    <div class="fa fa-bar-chart-o"></div>
+                    <span class="number" data-mask='#,##0' data-mask-reverse="true">20000000000 </span><span class="pull-left s8">ريال </span> </div>
+                  <div class="progress animated-bar flat transparent progress-bar-xs mb10 mt0">
+                    <div class="progress-bar progress-bar-white" role="progressbar" data-transitiongoal="63"></div>
+                  </div>
+                  <div class="comparison">
+                    <p class="mb0"><i class="fa fa-arrow-circle-o-up s20 mr5 pull-left"></i> 10% بیشتر از ماه قبل</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End .panel --> 
+          </div>
+          <!-- / .col-md-3 -->
+          <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 p5"> 
+            <!-- .col-md-3 -->
+            <div class="panel bg-darkgreen text-white tile panelRefresh"> 
+              <!-- Start .panel -->
+              <div class="panel-heading">
+                <h4 class="panel-title">اعتبار اختصاص یافته</h4>
+              </div>
+              <div class="panel-body pt0">
+                <div class="progressbar-stats-1">
+                  <div class="stats">
+                    <div class="fa fa-bar-chart-o"></div>
+                    <span class="number" data-mask='#,##0' data-mask-reverse="true">22150000051 </span><span class="pull-left s8">ريال </span> </div>
+                  <div class="progress animated-bar flat transparent progress-bar-xs mb10 mt0">
+                    <div class="progress-bar progress-bar-white" role="progressbar" data-transitiongoal="63"></div>
+                  </div>
+                  <div class="comparison">
+                    <p class="mb0"><i class="fa fa-arrow-circle-o-up s20 mr5 pull-left"></i> 10% بیشتر از ماه قبل</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End .panel --> 
+          </div>
+          <!-- / .col-md-3 -->
+          <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 p5"> 
+            <!-- .col-md-3 -->
+            <div class="panel bg-lightorange text-white tile panelRefresh"> 
+              <!-- Start .panel -->
+              <div class="panel-heading">
+                <h4 class="panel-title">سقف تعیین شده</h4>
+              </div>
+              <div class="panel-body pt0">
+                <div class="progressbar-stats-1">
+                  <div class="stats">
+                    <div class="fa fa-bar-chart-o"></div>
+                    <span class="number" data-mask='#,##0' data-mask-reverse="true">21510000000 </span><span class="pull-left s8">ريال </span> </div>
+                  <div class="progress animated-bar flat transparent progress-bar-xs mb10 mt0">
+                    <div class="progress-bar progress-bar-white" role="progressbar" data-transitiongoal="63"></div>
+                  </div>
+                  <div class="comparison">
+                    <p class="mb0"><i class="fa fa-arrow-circle-o-down s20 mr5 pull-left"></i> 10% کمتر از ماه قبل</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End .panel --> 
+          </div>
+          <!-- / .col-md-3 -->
+          <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 p5"> 
+            <!-- .col-md-3 -->
+            <div class="panel bg-lightblue text-white tile panelRefresh"> 
+              <!-- Start .panel -->
+              <div class="panel-heading">
+                <h4 class="panel-title">مبلغ کل خرید</h4>
+              </div>
+              <div class="panel-body pt0">
+                <div class="progressbar-stats-1">
+                  <div class="stats">
+                    <div class="fa fa-bar-chart-o"></div>
+                    <span class="number" data-mask='#,##0' data-mask-reverse="true">45580564222</span><span class="pull-left s8">ريال </span> </div>
+                  <div class="progress animated-bar flat transparent progress-bar-xs mb10 mt0">
+                    <div class="progress-bar progress-bar-white" role="progressbar" data-transitiongoal="63"></div>
+                  </div>
+                  <div class="comparison">
+                    <p class="mb0"><i class="fa fa-arrow-circle-o-down s20 mr5 pull-left"></i> 10% کمتر از ماه قبل</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End .panel --> 
+          </div>
+          <!-- / .col-md-3 -->
+          <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 p5"> 
+            <!-- .col-md-3 -->
+            <div class="panel bg-darkerblue text-white tile panelRefresh"> 
+              <!-- Start .panel -->
+              <div class="panel-heading">
+                <h4 class="panel-title">تخفیف استفاده شده</h4>
+              </div>
+              <div class="panel-body pt0">
+                <div class="progressbar-stats-1">
+                  <div class="stats">
+                    <div class="fa fa-bar-chart-o"></div>
+                    <span class="number" data-mask='#,##0' data-mask-reverse="true">10893238900</span><span class="pull-left s8">ريال </span> </div>
+                  <div class="progress animated-bar flat transparent progress-bar-xs mb10 mt0">
+                    <div class="progress-bar progress-bar-white" role="progressbar" data-transitiongoal="63"></div>
+                  </div>
+                  <div class="comparison">
+                    <p class="mb0"><i class="fa fa-arrow-circle-o-down s20 mr5 pull-left"></i> 10% کمتر از ماه قبل</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End .panel --> 
+          </div>
+          <!-- / .col-md-3 --> 
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="panel panel-default toggle panelMove panelClose" id="dyn_8"> 
+              <!-- Start .panel -->
+              <div class="panel-heading">
+                <h4 class="panel-title">تعریف ردیف و قفسه جدید</h4>
+              </div>
+              <div class="panel-body">
+                <div class="row p10 m10">
+                  <div class="alret alert-warning p10 b brad6 text-center col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <p>در این بخش شما می توانید دسته بندی هر قفسه از انبار یا فروشگاه خود را مشخص کنید.</p>
+                    <p>این دسته بندی برای ورود محصولات و قرارگیری آن ها اهمیت دارد.</p>
+                  </div>
+                </div>
+                <div class="row p10 m10">
+                  <form action="" id="addToWerhouse">
+                    <div class="row">
+                      <div class="form-group col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <label for="warehouseSelect">انتخاب انبار: </label>
+                        <select name="warehouseSelect" id="warehouseSelect" class="form-control">
+                          <option value="">انبار مورد نظر را انتخاب کنید</option>
+                          <option value="1">انبار 1</option>
+                          <option value="2">انبار 2</option>
+                          <option value="3">انبار 3</option>
+                          <option value="4">انبار 4</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <label for="categorySelect">دسته بندی: </label>
+                        <select name="categorySelect" id="categorySelect" class="form-control" disabled>
+                          <option value="">ابتدا انبار مورد نظر را انتخاب کنید</option>
+                          <option value="دسته بندی 1">دسته بندی 1</option>
+                          <option value="دسته بندی 2">دسته بندی 2</option>
+                          <option value="دسته بندی 3">دسته بندی 3</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <label for="subcategorySelect">زیر مجموعه: </label>
+                        <select name="subcategorySelect" id="subcategorySelect" class="form-control" disabled>
+                          <option value="">ابتدا دسته بندی مورد نظر را انتخاب کنید</option>
+                          <option value="1">دسته  1</option>
+                          <option value="2">دسته  2</option>
+                          <option value="3">دسته  3</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="divider-dashed clearfix m20"></div>
+                    <div class="row">
+                      <div id="shelfs" style="display: none">
+                        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12"> 
+                          <!-- col-lg-4 start here -->
+                          <div class="panel panel-default plain shelfs"> 
+                            <!-- Start .panel -->
+                            <div class="panel-heading">
+                              <h4 class="panel-title"> <i class="fa fa-bullseye" aria-hidden="true"></i> قفسه شماره 1 <a href="#" data-target="#myBookshelfModa2" data-toggle="modal" class="identifyingClass" data-id="1"> <i class="fa fa-cog pull-left ml30" aria-hidden="true"></i> </a> </h4>
+                            </div>
+                            <div class="panel-body" onclick="addbookshelf();">
+                              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <div class="img-cover"> </div>
+                              </div>
+                              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 p0">
+                                <div class="text-center">
+                                  <div class="custom-progressbar green" style="">
+                                    <div class="percent s28 mtm30 strong">400<span></span> </div>
+                                    <div class="description s16 color-green-custom m0 strong">محصول موجود</div>
+                                    <svg viewBox="0 0 100 100"><path d="M 50,50 m 0,-48 a 48,48 0 1 1 0,96 a 48,48 0 1 1 0,-96" stroke="#50a875" stroke-width="4" fill="#f2fcf7" style="stroke-dasharray: 301.635, 301.635;stroke-dashoffset: 100.01;"></path></svg>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- End .panel --> 
+                        </div>
+                        <!-- col-lg-4 end here -->
+                        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12"> 
+                          <!-- col-lg-4 start here -->
+                          <div class="panel panel-default plain shelfs"> 
+                            <!-- Start .panel -->
+                            <div class="panel-heading">
+                              <h4 class="panel-title"> <i class="fa fa-bullseye" aria-hidden="true"></i> قفسه شماره 2 <a href="#" data-target="#myBookshelfModa2" data-toggle="modal" class="identifyingClass" data-id="2"> <i class="fa fa-cog pull-left ml30" aria-hidden="true"></i> </a> </h4>
+                            </div>
+                            <div class="panel-body" onclick="addbookshelf();">
+                              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <div class="img-cover"> </div>
+                              </div>
+                              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 p0">
+                                <div class="text-center">
+                                  <div class="custom-progressbar yellow">
+                                    <div class="percent s28 mtm30 strong">500<span></span> </div>
+                                    <div class="description s16 color-yellow-custom m0 strong">محصول موجود</div>
+                                    <svg viewBox="0 0 100 100"><path d="M 50,50 m 0,-48 a 48,48 0 1 1 0,96 a 48,48 0 1 1 0,-96" stroke="#cfc51e" stroke-width="4" fill="#fefcf0" style="stroke-dasharray: 301.635, 301.635; stroke-dashoffset: 60.3271;"></path></svg>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- End .panel --> 
+                        </div>
+                        <!-- col-lg-4 end here -->
+                        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12"> 
+                          <!-- col-lg-4 start here -->
+                          <div class="panel panel-default plain shelfs"> 
+                            <!-- Start .panel -->
+                            <div class="panel-heading">
+                              <h4 class="panel-title"> <i class="fa fa-bullseye" aria-hidden="true"></i> قفسه شماره 3 <a href="#" data-target="#myBookshelfModa2" data-toggle="modal" class="identifyingClass" data-id="3"> <i class="fa fa-cog pull-left ml30" aria-hidden="true"></i> </a> </h4>
+                            </div>
+                            <div class="panel-body" onclick="addbookshelf();">
+                              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <div class="img-cover"> </div>
+                              </div>
+                              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 p0">
+                                <div class="text-center">
+                                  <div class="custom-progressbar red">
+                                    <div class="percent s28 mtm30 strong">800<span></span> </div>
+                                    <div class="description s16 color-red-custom m0 strong">محصول موجود</div>
+                                    <svg viewBox="0 0 100 100"><path d="M 50,50 m 0,-48 a 48,48 0 1 1 0,96 a 48,48 0 1 1 0,-96" stroke="#e62f2d" stroke-width="4" fill="#fbedee" style="stroke-dasharray: 301.635, 301.635; stroke-dashoffset: 0;"></path></svg>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- End .panel --> 
+                        </div>
+                        <!-- col-lg-4 end here --> 
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div id="addShelfs" class="" style="display: none;">
+                        <h5 class="strong text-center">قفسه شماره <span>1</span></h5>
+                        <div class="rowBookshelf mt20 mb20">
+                          <div class="bookshelf regular slider" data-BookshelfId="0">
+                            <div class="slider-box">
+                              <div class="book" data-toggle="modal" data-target="#myModal7">
+                                <h2>بینوایان 1</h2>
+                              </div>
+                            </div>
+                            <div class="slider-box">
+                              <div class="book" data-toggle="modal" data-target="#myModal7">
+                                <h2>بینوایان 2</h2>
+                              </div>
+                            </div>
+                            <div class="slider-box">
+                              <div class="book" data-toggle="modal" data-target="#myModal7">
+                                <h2>بینوایان 3</h2>
+                              </div>
+                            </div>
+                            <div class="slider-box">
+                              <div class="book" data-toggle="modal" data-target="#myModal7">
+                                <h2>بینوایان4</h2>
+                              </div>
+                            </div>
+                            <div class="slider-box">
+                              <div class="book" data-toggle="modal" data-target="#myModal7">
+                                <h2>بینوایان5</h2>
+                              </div>
+                            </div>
+                            <div class="slider-box">
+                              <div class="book" data-toggle="modal" data-target="#myModal7">
+                                <h2>بینوایان6</h2>
+                              </div>
+                            </div>
+                            <div class="slider-box">
+                              <div class="book" data-toggle="modal" data-target="#myModal7">
+                                <h2>بینوایان7</h2>
+                              </div>
+                            </div>
+                            <div class="slider-box">
+                              <div class="book" data-toggle="modal" data-target="#myModal7">
+                                <h2>بینوایان8</h2>
+                              </div>
+                            </div>
+                            <div class="slider-box">
+                              <div class="book" data-toggle="modal" data-target="#myModal7">
+                                <h2>بینوایان9</h2>
+                              </div>
+                            </div>
+                            <div class="slider-box">
+                              <div class="book" data-toggle="modal" data-target="#myModal7">
+                                <h2>بینوایان10</h2>
+                              </div>
+                            </div>
+                            <div class="slider-box">
+                              <div class="book" data-toggle="modal" data-target="#myModal7">
+                                <h2>بینوایان11</h2>
+                              </div>
+                            </div>
+                            <div class="slider-box">
+                              <div class="book" data-toggle="modal" data-target="#myModal7">
+                                <h2>بینوایان11</h2>
+                              </div>
+                            </div>
+                            <div class="slider-box">
+                              <div class="book" data-toggle="modal" data-target="#myModal7">
+                                <h2>بینوایان11</h2>
+                              </div>
+                            </div>
+                            <div class="slider-box">
+                              <div class="book" data-toggle="modal" data-target="#myModal7">
+                                <h2>بینوایان11</h2>
+                              </div>
+                            </div>
+                            <div class="slider-box">
+                              <div class="book" data-toggle="modal" data-target="#myModal7">
+                                <h2>بینوایان11</h2>
+                              </div>
+                            </div>
+                            <div class="slider-box">
+                              <div class="book" data-toggle="modal" data-target="#myModal7">
+                                <h2>بینوایان11</h2>
+                              </div>
+                            </div>
+                            <div class="slider-box">
+                              <div class="book" data-toggle="modal" data-target="#myModal7">
+                                <h2>بینوایان11</h2>
+                              </div>
+                            </div>
+                            <div class="slider-box">
+                              <div class="book" data-toggle="modal" data-target="#myModal7">
+                                <h2>بینوایان11</h2>
+                              </div>
+                            </div>
+                            <div class="slider-box">
+                              <div class="book" data-toggle="modal" data-target="#myModal7">
+                                <h2>بینوایان11</h2>
+                              </div>
+                            </div>
+                            <div class="slider-box">
+                              <div class="book" data-toggle="modal" data-target="#myModal7">
+                                <h2>بینوایان11</h2>
+                              </div>
+                            </div>
+                            <div class="slider-box">
+                              <div class="book" data-toggle="modal" data-target="#myModal7">
+                                <h2>بینوایان11</h2>
+                              </div>
+                            </div>
+                            <div class="slider-box">
+                              <div class="book" data-toggle="modal" data-target="#myModal7">
+                                <h2>بینوایان11</h2>
+                              </div>
+                            </div>
+                            <div class="slider-box">
+                              <div class="book" data-toggle="modal" data-target="#myModal7">
+                                <h2>بینوایان11</h2>
+                              </div>
+                            </div>
+                            <div class="slider-box">
+                              <div class="book" data-toggle="modal" data-target="#myModal7">
+                                <h2>بینوایان11</h2>
+                              </div>
+                            </div>
+                            <div class="slider-box">
+                              <div class="book" data-toggle="modal" data-target="#myModal7">
+                                <h2>بینوایان11</h2>
+                              </div>
+                            </div>
+                            <div class="slider-box">
+                              <div class="book" data-toggle="modal" data-target="#myModal7">
+                                <h2>بینوایان11</h2>
+                              </div>
+                            </div>
+                            <div class="slider-box">
+                              <div class="book" data-toggle="modal" data-target="#myModal7">
+                                <h2>بینوایان11</h2>
+                              </div>
+                            </div>
+                            <div class="slider-box">
+                              <div class="book" data-toggle="modal" data-target="#myModal7">
+                                <h2>بینوایان11</h2>
+                              </div>
+                            </div>
+                            <div class="slider-box">
+                              <div class="book" data-toggle="modal" data-target="#myModal7">
+                                <h2>بینوایان11</h2>
+                              </div>
+                            </div>
+                            <div class="slider-box">
+                              <div class="book" data-toggle="modal" data-target="#myModal7">
+                                <h2>بینوایان11</h2>
+                              </div>
+                            </div>
+                            <div class="slider-box">
+                              <div class="book" data-toggle="modal" data-target="#myModal7">
+                                <h2>بینوایانآخر</h2>
+                              </div>
+                            </div>
+                            <div class="slider-box addnewbook">
+                              <div class="book book-addnew" data-toggle="modal" data-target="#myBookshelfModal1">
+                                <h2 class="color-green-custom"> <i class="fa fa-plus-circle" aria-hidden="true"></i> <a href="#"  title="" class="color-green-custom strong bb textDecorationNone"> افزودن کتاب جدید</a> </h2>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="bookshelf-bottom row p5 strong">
+                            <div class="col-xs-2">ردیف 1 </div>
+                            <div class="col-xs-7 text-center"><span class="alertbookshelf"></span></div>
+                            <div class="col-xs-3 text-left"> <a href="#" onclick="takmilZarfiat(this);" class="color-red closeShelf">بستن قفسه</a> <a href="#" onclick="virayesheZarfiat(this);" class="color-white editShelf">ویرایش قفسه</a> </div>
+                          </div>
+                        </div>
+                        <div class="rowBookshelf mt20 mb20" >
+                          <div class="bookshelf regular slider" data-BookshelfId="1">
+                            <div class="slider-box">
+                              <div class="book" data-toggle="modal" data-target="#myModal7">
+                                <h2>بینوایان 1</h2>
+                              </div>
+                            </div>
+                            <div class="slider-box">
+                              <div class="book" data-toggle="modal" data-target="#myModal7">
+                                <h2>بینوایان 2</h2>
+                              </div>
+                            </div>
+                            <div class="slider-box">
+                              <div class="book" data-toggle="modal" data-target="#myModal7">
+                                <h2>بینوایان 3</h2>
+                              </div>
+                            </div>
+                            <div class="slider-box">
+                              <div class="book" data-toggle="modal" data-target="#myModal7">
+                                <h2>بینوایان4</h2>
+                              </div>
+                            </div>
+                            <div class="slider-box">
+                              <div class="book" data-toggle="modal" data-target="#myModal7">
+                                <h2>بینوایان5</h2>
+                              </div>
+                            </div>
+                            <div class="slider-box">
+                              <div class="book" data-toggle="modal" data-target="#myModal7">
+                                <h2>بینوایان6</h2>
+                              </div>
+                            </div>
+                            <div class="slider-box">
+                              <div class="book" data-toggle="modal" data-target="#myModal7">
+                                <h2>بینوایانآخر</h2>
+                              </div>
+                            </div>
+                            <div class="slider-box addnewbook">
+                              <div class="book book-addnew" data-toggle="modal" data-target="#myBookshelfModal1">
+                                <h2 class="color-green-custom"> <i class="fa fa-plus-circle" aria-hidden="true"></i> <a href="#"  title="" class="color-green-custom strong bb textDecorationNone" > افزودن کتاب جدید</a> </h2>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="bookshelf-bottom row p5 strong">
+                            <div class="col-xs-2">ردیف 2</div>
+                            <div class="col-xs-7 text-center"><span class="alertbookshelf"></span></div>
+                            <div class="col-xs-3 text-left"> <a href="#" onclick="takmilZarfiat(this);" class="color-red">بستن قفسه</a> <a href="#" onclick="virayesheZarfiat(this);" class="color-white">ویرایش قفسه</a> </div>
+                          </div>
+                        </div>
+                        <div class="rowBookshelf mt20 mb20">
+                          <div class="bookshelf regular slider" data-BookshelfId="2">
+                            <div class="slider-box">
+                              <div class="book" data-toggle="modal" data-target="#myModal7">
+                                <h2>بینوایان 1</h2>
+                              </div>
+                            </div>
+                            <div class="slider-box">
+                              <div class="book" data-toggle="modal" data-target="#myModal7">
+                                <h2>بینوایان 2</h2>
+                              </div>
+                            </div>
+                            <div class="slider-box">
+                              <div class="book" data-toggle="modal" data-target="#myModal7">
+                                <h2>بینوایان 3</h2>
+                              </div>
+                            </div>
+                            <div class="slider-box">
+                              <div class="book" data-toggle="modal" data-target="#myModal7">
+                                <h2>بینوایان4</h2>
+                              </div>
+                            </div>
+                            <div class="slider-box">
+                              <div class="book" data-toggle="modal" data-target="#myModal7">
+                                <h2>بینوایان5</h2>
+                              </div>
+                            </div>
+                            <div class="slider-box">
+                              <div class="book" data-toggle="modal" data-target="#myModal7">
+                                <h2>بینوایان6</h2>
+                              </div>
+                            </div>
+                            <div class="slider-box">
+                              <div class="book" data-toggle="modal" data-target="#myModal7">
+                                <h2>بینوایان7</h2>
+                              </div>
+                            </div>
+                            <div class="slider-box">
+                              <div class="book" data-toggle="modal" data-target="#myModal7">
+                                <h2>بینوایان8</h2>
+                              </div>
+                            </div>
+                            <div class="slider-box">
+                              <div class="book" data-toggle="modal" data-target="#myModal7">
+                                <h2>بینوایان9</h2>
+                              </div>
+                            </div>
+                            <div class="slider-box">
+                              <div class="book" data-toggle="modal" data-target="#myModal7">
+                                <h2>بینوایان10</h2>
+                              </div>
+                            </div>
+                            <div class="slider-box">
+                              <div class="book" data-toggle="modal" data-target="#myModal7">
+                                <h2>بینوایان11</h2>
+                              </div>
+                            </div>
+                            <div class="slider-box">
+                              <div class="book" data-toggle="modal" data-target="#myModal7">
+                                <h2>بینوایان11</h2>
+                              </div>
+                            </div>
+                            <div class="slider-box">
+                              <div class="book" data-toggle="modal" data-target="#myModal7">
+                                <h2>بینوایان11</h2>
+                              </div>
+                            </div>
+                            <div class="slider-box">
+                              <div class="book" data-toggle="modal" data-target="#myModal7">
+                                <h2>بینوایان11</h2>
+                              </div>
+                            </div>
+                            <div class="slider-box">
+                              <div class="book" data-toggle="modal" data-target="#myModal7">
+                                <h2>بینوایان11</h2>
+                              </div>
+                            </div>
+                            <div class="slider-box">
+                              <div class="book" data-toggle="modal" data-target="#myModal7">
+                                <h2>بینوایان11</h2>
+                              </div>
+                            </div>
+                            <div class="slider-box">
+                              <div class="book" data-toggle="modal" data-target="#myModal7">
+                                <h2>بینوایان11</h2>
+                              </div>
+                            </div>
+                            <div class="slider-box">
+                              <div class="book" data-toggle="modal" data-target="#myModal7">
+                                <h2>بینوایان11</h2>
+                              </div>
+                            </div>
+                            <div class="slider-box">
+                              <div class="book" data-toggle="modal" data-target="#myModal7">
+                                <h2>بینوایان11</h2>
+                              </div>
+                            </div>
+                            <div class="slider-box">
+                              <div class="book" data-toggle="modal" data-target="#myModal7">
+                                <h2>بینوایان11</h2>
+                              </div>
+                            </div>
+                            <div class="slider-box">
+                              <div class="book" data-toggle="modal" data-target="#myModal7">
+                                <h2>بینوایان11</h2>
+                              </div>
+                            </div>
+                            <div class="slider-box">
+                              <div class="book" data-toggle="modal" data-target="#myModal7">
+                                <h2>بینوایانآخر</h2>
+                              </div>
+                            </div>
+                            <div class="slider-box addnewbook">
+                              <div class="book book-addnew" data-toggle="modal" data-target="#myBookshelfModal1">
+                                <h2 class="color-green-custom"> <i class="fa fa-plus-circle" aria-hidden="true"></i> <a href="#"  title="" class="color-green-custom strong bb textDecorationNone"> افزودن کتاب جدید</a> </h2>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="bookshelf-bottom row p5 strong">
+                            <div class="col-xs-2">ردیف 3 </div>
+                            <div class="col-xs-7 text-center"><span class="alertbookshelf"></span></div>
+                            <div class="col-xs-3 text-left"> <a href="#" onclick="takmilZarfiat(this);" class="color-red">بستن قفسه</a> <a href="#" onclick="virayesheZarfiat(this);" class="color-white">ویرایش قفسه</a> </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                  <div class="row">
+                    <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                      <div class="text-center"> <a href="#"  title="" class="color-blue-dark strong bb textDecorationNone" data-toggle="modal" data-target="#myBookshelfModal">+ افزودن قفسه جدید</a> </div>
+                    </div>
+                  </div>
+                  <div class="modal fade" id="myBookshelfModal" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header white-bg">
+                          <button type="button" class="close" data-dismiss="modal"> <span aria-hidden="true">&times;</span><span class="sr-only">Close</span> </button>
+                          <h4 class="modal-title text-center color-blue-dark strong" id="myBookshelfModalLabel">تخصیص قفسه جدید به دسته بندی <span>هنر و سرگرمی</span></h4>
+                        </div>
+                        <div class="modal-body">
+                          <div class="row">
+                            <div class="alret alert-warning p10 b brad6 text-center col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                              <p> در حال حاضر <span> 2 </span> قفسه به این دسته بندی اختصاص دارد. </p>
+                            </div>
+                          </div>
+                          <form action="" id="addToShelf">
+                            <div class="row">
+                              <div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                                <label>راهرو: </label>
+                                <select  class="form-control">
+                                  <option value=""></option>
+                                  <option value="1"> 1</option>
+                                  <option value="2"> 2</option>
+                                  <option value="3"> 3</option>
+                                  <option value="4"> 4</option>
+                                </select>
+                              </div>
+                              <div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                                <label>قفسه: </label>
+                                <select class="form-control">
+                                  <option value=""></option>
+                                  <option value="1"> 1</option>
+                                  <option value="2"> 2</option>
+                                  <option value="3"> 3</option>
+                                  <option value="4"> 4</option>
+                                </select>
+                              </div>
+                              <div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                                <label>ردیف: </label>
+                                <select name="shelfRow" id="shelfRow" class="form-control">
+                                  <option value=""></option>
+                                  <option value="1">ردیف 1</option>
+                                  <option value="2">ردیف 2</option>
+                                  <option value="3">ردیف 3</option>
+                                  <option value="4">ردیف 4</option>
+                                </select>
+                              </div>
+                              
+                              <div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                                <label>تعداد: </label>
+                                <input name="NumberOf" id="NumberOf" class="form-control" disabled>
+                                  
+                                
+                              </div>
+                              <div class="form-group col-lg-8 col-md-8 col-sm-1 col-xs-10">
+                                <label> دسته بندی: </label>
+                                <select name="cat" id="cat" class="form-control" disabled>
+                                  <option value=""></option>
+                                  <option value="1"> 10</option>
+                                  <option value="2"> 20</option>
+                                  <option value="3"> 30</option>
+                                </select>
+                              </div>
+                              <div class="form-group text-center">
+                                <button type="button" id="submit2" class="btn btn-success pr50 pl50" disabled>تخصیص قفسه</button>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="modal fade" id="myBookshelfModa2" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header white-bg">
+                          <button type="button" class="close" data-dismiss="modal"> <span aria-hidden="true">&times;</span><span class="sr-only">Close</span> </button>
+                          <h4 class="modal-title text-center color-blue-dark strong" id="myBookshelfModalLabe2">ویرایش قفسه شماره <span class="numberOfShelf pr5 pl5"></span>از دسته بندی <span>هنر و سرگرمی</span></h4>
+                        </div>
+                        <div class="modal-body">
+                          <div class="row">
+                            <div class="alret alert-warning p10 b brad6 text-center col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                              <p> در حال حاضر <span> 2 </span> قفسه به این دسته بندی اختصاص دارد. </p>
+                            </div>
+                          </div>
+                          <form action="" id="addToShelf2">
+                            <div class="row">
+                              <div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                                <label>راهرو: </label>
+                                <select  class="form-control">
+                                  <option value="0">8</option>
+                                  <option value="1"> 1</option>
+                                  <option value="2"> 2</option>
+                                  <option value="3"> 3</option>
+                                  <option value="4"> 4</option>
+                                </select>
+                              </div>
+                              <div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                                <label>قسمت: </label>
+                                <select class="form-control">
+                                  <option value="0">5</option>
+                                  <option value="1"> 1</option>
+                                  <option value="2"> 2</option>
+                                  <option value="3"> 3</option>
+                                  <option value="4"> 4</option>
+                                </select>
+                              </div>
+                              <div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                                <label>ردیف: </label>
+                                <select class="form-control">
+                                  <option value="0">10</option>
+                                  <option value="1">ردیف 1</option>
+                                  <option value="2">ردیف 2</option>
+                                  <option value="3">ردیف 3</option>
+                                  <option value="4">ردیف 4</option>
+                                </select>
+                              </div>
+                              <div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                                <label>قفسه: </label>
+                                <select class="form-control">
+                                  <option value="0">4</option>
+                                  <option value="1">قفسه  1</option>
+                                  <option value="2">قفسه  2</option>
+                                  <option value="3">قفسه  3</option>
+                                </select>
+                              </div>
+                              <div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                                <label>تعداد: </label>
+                                <select class="form-control">
+                                  <option value=""></option>
+                                  <option value="1"> 1</option>
+                                  <option value="2"> 2</option>
+                                  <option value="3"> 3</option>
+                                </select>
+                              </div>
+                              <div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                                <label> دسته بندی: </label>
+                                <select class="choice form-control">
+                                  <option value=""></option>
+                                </select>
+                                <div class="elements pt20 b brad6">
+                                  <div class="p5 librePanelHeading">
+                                    <div class="panel-title"> <a data-toggle="collapse" href="#menuPanelListGroup"> <i class="fa fa-plus" aria-hidden="true"></i> <span>عمومی</span> </a> </div>
+                                  </div>
+                                  <ul class="list-group collapse out" id="menuPanelListGroup">
+                                    <li class="list-group-item librePanelListGroupItem"> <a data-toggle="collapse" href="#menuPanelSubListGroup"> <i class="fa fa-plus" aria-hidden="true"></i> <span>دسته بندی 1</span> </a>
+                                      <ul id="menuPanelSubListGroup" class="collapse librePanelSubListGroupItem">
+                                        <li class="list-group-item librePanelListGroupItem"> <span><a href="#">زیرمجموعه 1</a></span> </li>
+                                        <li class="list-group-item librePanelListGroupItem"> <span><a href="#">زیرمجموعه 2</a></span> </li>
+                                        <li class="list-group-item librePanelListGroupItem"> <span><a href="#">زیرمجموعه 3</a></span> </li>
+                                      </ul>
+                                    </li>
+                                    <li class="list-group-item librePanelListGroupItem"> <span><a href="#">دسته بندی  2</a></span> </li>
+                                    <li class="list-group-item librePanelListGroupItem"> <span><a href="#">دسته بندی  3</a></span> </li>
+                                    <li class="list-group-item librePanelListGroupItem"> <span><a href="#">دسته بندی  4</a></span> </li>
+                                    <li class="list-group-item librePanelListGroupItem"> <span><a href="#">دسته بندی  5</a></span> </li>
+                                  </ul>
+                                  <div class="p5 librePanelHeading">
+                                    <div class="panel-title"> <a data-toggle="collapse" href="#menu2PanelListGroup"> <i class="fa fa-plus" aria-hidden="true"></i> <span>عمومی 2</span> </a> </div>
+                                  </div>
+                                  <ul class="list-group collapse out" id="menu2PanelListGroup">
+                                    <li class="list-group-item librePanelListGroupItem"> <a data-toggle="collapse" href="#menu2PanelSubListGroup"> <i class="fa fa-plus" aria-hidden="true"></i> <span>دسته بندی  1</span> </a>
+                                      <ul id="menu2PanelSubListGroup" class="collapse librePanelSubListGroupItem">
+                                        <li class="list-group-item librePanelListGroupItem"> <span><a href="#">زیرمجموعه 1</a></span> </li>
+                                        <li class="list-group-item librePanelListGroupItem"> <span><a href="#">زیرمجموعه 2</a></span> </li>
+                                        <li class="list-group-item librePanelListGroupItem"> <span><a href="#">زیرمجموعه 3</a></span> </li>
+                                      </ul>
+                                    </li>
+                                    <li class="list-group-item librePanelListGroupItem"> <span><a href="#">دسته بندی  2</a></span> </li>
+                                    <li class="list-group-item librePanelListGroupItem"> <span><a href="#">دسته بندی  3</a></span> </li>
+                                    <li class="list-group-item librePanelListGroupItem"> <span><a href="#">دسته بندی  4</a></span> </li>
+                                    <li class="list-group-item librePanelListGroupItem"> <span><a href="#">دسته بندی  5</a></span> </li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="form-group text-center">
+                                <button type="submit" id="submit" class="btn btn-success pr50 pl50">تخصیص قفسه</button>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                    <div class="modal fade modal-style6" id="myModal7" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                          <div class="modal-content" style="max-height: 314px;">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" value=""> <span aria-hidden="true">×</span><span class="sr-only">Close</span> </button>
+                              <h4 class="modal-title" id="mySmallModalLabel">معرفی محصول </h4>
+                            </div>
+                            <div class="modal-body" style="max-height: 261px;">
+                              <div id="wizard" class="bwizard"> 
+                                <!-- Start .bwizard -->
+                                
+                                <div class="tab-content">
+                                  
+                                  <div class="tab-pane active" id="tab2">
+                                    <div class="col-md-12">
+                                      <div class="row pb25" id="resp_ajax">
+                                        <div id="take_div">
+                                          <div class="col-lg-2 col-md-2">
+                                            <div class="relative"> <img src="http://164.138.18.205/database/BookImages/96/96507219.jpg" width="100px" height="auto" class="thumbnail img-responsive center-block" alt="">
+                                              <div class="absolute icon-custom ">
+                                                <div class="col-lg-6 col-md-6 col-xs-6 col-sm-6">
+                                                  <ul class="custom-ul">
+                                                    <li class="video-li"> <a href="#" class="btn btn-block pull-right" title="مشاهده فیلم مربوط به کتاب"> <i class="fa fa-video-camera" aria-hidden="true"></i> </a> </li>
+                                                    <li> <a href="#" class="btn btn-block pull-left" title="مشاهده فایل پی دی اف مربوط به کتاب"> <i class="fa fa-file-pdf-o" aria-hidden="true"></i> </a> </li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="col-lg-10 col-md-10">
+                                            <form role="form" id="form_product">
+                                              <table class="table table-striped book-descriptions">
+                                                <thead>
+                                                  <tr> </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr>
+                                                    <td>نام کتاب :</td>
+                                                    <td><div class="iffyTip wd100">راهنمای کامل طراحی خطوط انتقال هواییاحی خطوط انتقال هواییاحی خطوط انتقال هوایی </div>
+                                                      <input type="hidden" value="راهنمای کامل طراحی خطوط انتقال هوایی" name="product_title"></td>
+                                                    <td>نام کتاب :</td>
+                                                    <td><div class="iffyTip wd100">راهنمای کامل طراحی خطوط انتقال هوایی </div>
+                                                      <input type="hidden" value="راهنمای کامل طراحی خطوط انتقال هوایی" name="product_title"></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>نام کتاب :</td>
+                                                    <td><div class="iffyTip wd100">راهنمای کامل طراحی خطوط انتقال هوایی </div>
+                                                      <input type="hidden" value="راهنمای کامل طراحی خطوط انتقال هوایی" name="product_title"></td>
+                                                    <td>نام کتاب :</td>
+                                                    <td><div class="iffyTip wd100">راهنمای کامل طراحی خطوط انتقال هوایی </div>
+                                                      <input type="hidden" value="راهنمای کامل طراحی خطوط انتقال هوایی" name="product_title"></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>نام کتاب :</td>
+                                                    <td><div class="iffyTip wd100">راهنمای کامل طراحی خطوط انتقال هوایی </div>
+                                                      <input type="hidden" value="راهنمای کامل طراحی خطوط انتقال هوایی" name="product_title"></td>
+                                                    <td>نام کتاب :</td>
+                                                    <td><div class="iffyTip wd100">راهنمای کامل طراحی خطوط انتقال هوایی </div>
+                                                      <input type="hidden" value="راهنمای کامل طراحی خطوط انتقال هوایی" name="product_title"></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>نام کتاب :</td>
+                                                    <td><div class="iffyTip wd100">راهنمای کامل طراحی خطوط انتقال هوایی </div>
+                                                      <input type="hidden" value="راهنمای کامل طراحی خطوط انتقال هوایی" name="product_title"></td>
+                                                    <td>نام کتاب :</td>
+                                                    <td><div class="iffyTip wd100">راهنمای کامل طراحی خطوط انتقال هوایی </div>
+                                                      <input type="hidden" value="راهنمای کامل طراحی خطوط انتقال هوایی" name="product_title"></td>
+                                                  </tr><tr>
+                                                    <td>نام کتاب :</td>
+                                                    <td><div class="iffyTip wd100">راهنمای کامل طراحی خطوط انتقال هوایی </div>
+                                                      <input type="hidden" value="راهنمای کامل طراحی خطوط انتقال هوایی" name="product_title"></td>
+                                                    <td>نام کتاب :</td>
+                                                    <td><div class="iffyTip wd100">راهنمای کامل طراحی خطوط انتقال هوایی </div>
+                                                      <input type="hidden" value="راهنمای کامل طراحی خطوط انتقال هوایی" name="product_title"></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>نام کتاب :</td>
+                                                    <td><div class="iffyTip wd100">راهنمای کامل طراحی خطوط انتقال هوایی </div>
+                                                      <input type="hidden" value="راهنمای کامل طراحی خطوط انتقال هوایی" name="product_title"></td>
+                                                    <td>نام کتاب :</td>
+                                                    <td><div class="iffyTip wd100">راهنمای کامل طراحی خطوط انتقال هوایی </div>
+                                                      <input type="hidden" value="راهنمای کامل طراحی خطوط انتقال هوایی" name="product_title"></td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                            </form>
+                                          </div>
+                                          <div class="col-lg-12 col-md-12">
+                                            <p class="well-product text-justify s12"> معرفی کوتاه:کتاب حاضر، رمانی انگلیسی است که با زبانی ساده و روان نگاشته شده است. داستان با پرداخت مناسب شخصیت&zwnj;ها و توصیف عمیق&zwnj;ترین احساسات و افکار آن&zwnj;ها و همچنین با بیان دقیق جزئیات صحنه&zwnj;ها، نگاشته شده و خواننده را با خود همراه می&zwnj;کند. در داستان می&zwnj;خوانیم: «زن بیدار شده است، به بالش تکیه داده و کتابچه راهنمای مسافرت کنار تختخوابش را ورق می&zwnj;زند. آن&zwnj;ها از زندگی&zwnj;شان راضی و خوشحال هستند و می&zwnj;خواهند برای اولین تعطیلات درست&zwnj;وحسابی&zwnj;شان، بهترین جا را انتخاب کنند. اما هر کدام از آن&zwnj;ها جاهای متفاوتی را برای مسافرت پیشنهاد می&zwnj;دهند». </p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      </div>
+                      </div>
+                    
+                    <div class="modal fade modal-style6" id="myBookshelfModal1" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content" style="max-height: 314px;">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" value=""> <span aria-hidden="true">×</span><span class="sr-only">Close</span> </button>
+        <h4 class="modal-title" id="mySmallModalLabel">ثبت محصول جدید</h4>
+      </div>
+      <div class="modal-body" style="max-height: 261px;">
+        <div id="wizard" class="bwizard"> 
+          <!-- Start .bwizard -->
+          <div class="col-md-12 text-center bb1 mb5">
+            <ul class="bwizard-steps">
+              <li class="active"> <a href="#tab1-1" data-toggle="tab" aria-expanded="false"> <span class="step-number"><i class="icon-edit"></i></span> <span class="step-text">اسکن بارکد</span> </a> </li>
+              <li> <a href="#tab2-1" data-toggle="tab" aria-expanded="false"> <span class="step-number"><i class="fa fa-check" aria-hidden="true"></i></span> <span class="step-text">تایید اطلاعات</span> </a> </li>
+              <li> <a href="#tab3-1" data-toggle="tab" aria-expanded="false"> <span class="step-number"><i class="icon-checklist"></i></span> <span class="step-text">ورود محصول به انبار/فروشگاه</span> </a> </li>
+            </ul>
+          </div>
+          <div class="tab-content">
+            <div class="tab-pane active in" id="tab1-1">
+              <div class="row">
+                <div class="col-md-12 text-center">
+                  <div class="alert alert-warning fade in"> </div>
+                </div>
+                <div class="col-sm-4 col-sm-offset-4  text-center">
+                  <form class="form-horizontal" role="form" novalidate>
+                    <img src="includes/hesabketab/images/barcode.png" class="img-responsive center-block" alt="">
+                    <div class="form-group">
+                      <div class="col-lg-6 col-md-6 col-md-offset-3 pt10">
+                        <input class="form-control valid" id="probarcode" name="probarcode" type="text" aria-required="true">
+                      </div>
+                      <input type="hidden" value="0" name="flag" id="flag">
+                      <div class="col-lg-6 col-md-6 col-md-offset-3 pt10" text-center=""> <a class="form-control btn btn-primary next" id="checkbarcode" data-toggle="tab" href="#" aria-expanded="false" style="display: inline-block;">بررسی</a> </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="tab2-1">
+              <div class="col-md-12">
+                <div class="row pb25" id="resp_ajax">
+                  <div id="take_div">
+                    <div class="col-lg-2 col-md-2">
+                      <div class="relative"> <img src="http://164.138.18.205/database/BookImages/96/96507219.jpg" width="100px" height="auto" class="thumbnail img-responsive center-block" alt="">
+                        <div class="absolute icon-custom ">
+                          <div class="col-lg-6 col-md-6 col-xs-6 col-sm-6">
+                            <ul class="custom-ul">
+                              <li class="video-li"> <a href="#" class="btn btn-block pull-right" title="مشاهده فیلم مربوط به کتاب"> <i class="fa fa-video-camera" aria-hidden="true"></i> </a> </li>
+                              <li> <a href="#" class="btn btn-block pull-left" title="مشاهده فایل پی دی اف مربوط به کتاب"> <i class="fa fa-file-pdf-o" aria-hidden="true"></i> </a> </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-10 col-md-10">
+                      <form role="form" id="form_product">
+                        <table class="table table-striped book-descriptions">
+                          <thead>
+                            <tr> </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <input type="hidden" value="9786003443570" name="product_barcode">
+                              <input type="hidden" value="96507219" name="product_monthbook">
+                              <td>نام کتاب :</td>
+                              <td><div class="iffyTip wd100">راهنمای کامل طراحی خطوط انتقال هوایی </div>
+                                <input type="hidden" value="راهنمای کامل طراحی خطوط انتقال هوایی" name="product_title"></td>
+                              <td>نام کتاب :</td>
+                              <td><div class="iffyTip wd100">راهنمای کامل طراحی خطوط انتقال هوایی </div>
+                                <input type="hidden" value="راهنمای کامل طراحی خطوط انتقال هوایی" name="product_title"></td>
+                            </tr>
+                            <tr>
+                              <input type="hidden" value="9786003443570" name="product_barcode">
+                              <input type="hidden" value="96507219" name="product_monthbook">
+                              <td>نام کتاب :</td>
+                              <td><div class="iffyTip wd100">راهنمای کامل طراحی خطوط انتقال هوایی </div>
+                                <input type="hidden" value="راهنمای کامل طراحی خطوط انتقال هوایی" name="product_title"></td>
+                              <td>نام کتاب :</td>
+                              <td><div class="iffyTip wd100">راهنمای کامل طراحی خطوط انتقال هوایی </div>
+                                <input type="hidden" value="راهنمای کامل طراحی خطوط انتقال هوایی" name="product_title"></td>
+                            </tr>
+                            <tr>
+                              <input type="hidden" value="9786003443570" name="product_barcode">
+                              <input type="hidden" value="96507219" name="product_monthbook">
+                              <td>نام کتاب :</td>
+                              <td><div class="iffyTip wd100">راهنمای کامل طراحی خطوط انتقال هوایی </div>
+                                <input type="hidden" value="راهنمای کامل طراحی خطوط انتقال هوایی" name="product_title"></td>
+                              <td>نام کتاب :</td>
+                              <td><div class="iffyTip wd100">راهنمای کامل طراحی خطوط انتقال هوایی </div>
+                                <input type="hidden" value="راهنمای کامل طراحی خطوط انتقال هوایی" name="product_title"></td>
+                            </tr>
+                            <tr>
+                              <input type="hidden" value="9786003443570" name="product_barcode">
+                              <input type="hidden" value="96507219" name="product_monthbook">
+                              <td>نام کتاب :</td>
+                              <td><div class="iffyTip wd100">راهنمای کامل طراحی خطوط انتقال هوایی </div>
+                                <input type="hidden" value="راهنمای کامل طراحی خطوط انتقال هوایی" name="product_title"></td>
+                              <td>نام کتاب :</td>
+                              <td><div class="iffyTip wd100">راهنمای کامل طراحی خطوط انتقال هوایی </div>
+                                <input type="hidden" value="راهنمای کامل طراحی خطوط انتقال هوایی" name="product_title"></td>
+                            </tr>
+                            <tr>
+                              <input type="hidden" value="9786003443570" name="product_barcode">
+                              <input type="hidden" value="96507219" name="product_monthbook">
+                              <td>نام کتاب :</td>
+                              <td><div class="iffyTip wd100">راهنمای کامل طراحی خطوط انتقال هوایی </div>
+                                <input type="hidden" value="راهنمای کامل طراحی خطوط انتقال هوایی" name="product_title"></td>
+                              <td>نام کتاب :</td>
+                              <td><div class="iffyTip wd100">راهنمای کامل طراحی خطوط انتقال هوایی </div>
+                                <input type="hidden" value="راهنمای کامل طراحی خطوط انتقال هوایی" name="product_title"></td>
+                            </tr>
+                            <tr>
+                              <input type="hidden" value="9786003443570" name="product_barcode">
+                              <input type="hidden" value="96507219" name="product_monthbook">
+                              <td>نام کتاب :</td>
+                              <td><div class="iffyTip wd100">راهنمای کامل طراحی خطوط انتقال هوایی </div>
+                                <input type="hidden" value="راهنمای کامل طراحی خطوط انتقال هوایی" name="product_title"></td>
+                              <td>نام کتاب :</td>
+                              <td><div class="iffyTip wd100">راهنمای کامل طراحی خطوط انتقال هوایی </div>
+                                <input type="hidden" value="راهنمای کامل طراحی خطوط انتقال هوایی" name="product_title"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </form>
+                    </div>
+                    <input type="hidden" value="900000" name="product_price">
+                    <textarea name="product_description" style="display:none">900000</textarea>
+                    <div class="col-lg-12 col-md-12">
+                      <p class="well-product text-justify s12"> معرفی کوتاه:کتاب حاضر، رمانی انگلیسی است که با زبانی ساده و روان نگاشته شده است. داستان با پرداخت مناسب شخصیت&zwnj;ها و توصیف عمیق&zwnj;ترین احساسات و افکار آن&zwnj;ها و همچنین با بیان دقیق جزئیات صحنه&zwnj;ها، نگاشته شده و خواننده را با خود همراه می&zwnj;کند. در داستان می&zwnj;خوانیم: «زن بیدار شده است، به بالش تکیه داده و کتابچه راهنمای مسافرت کنار تختخوابش را ورق می&zwnj;زند. آن&zwnj;ها از زندگی&zwnj;شان راضی و خوشحال هستند و می&zwnj;خواهند برای اولین تعطیلات درست&zwnj;وحسابی&zwnj;شان، بهترین جا را انتخاب کنند. اما هر کدام از آن&zwnj;ها جاهای متفاوتی را برای مسافرت پیشنهاد می&zwnj;دهند». </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row pb25"> <a href="#tab1-1" class="btn btn-warning button-previous previous" id="edit-back" onclick="editproduct()">ویرایش</a> <a href="#tab3-1" class="btn btn-success button-next next pull-left" data-toggle="tab" aria-expanded="true" style="display: block;">ورود به انبار / فروشگاه</a> </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="tab3-1">
+              <form id="submit_product" novalidate>
+              <div class="col-md-12 text-center">
+                <div class="alert alert-warning fade in title-tab">
+                  <div>شما تا کنون قفسه ای را به دسته بندی <span class="strong">معارف</span> تخصیص نداده اید.</div>
+                  <div class="col-md-6 col-xs-12">
+                    <button class="btn text-primary newWarehouse-btn" type="button" style="background-color:inherit;">تخصیص قفسه جدید</button>
+                  </div>
+                  <div class="col-md-6 col-xs-12">
+                    <button class="btn text-primary chooseWarehouse-btn" type="button" style="background-color:inherit;">انتخاب از بین قفسه های موجود</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12">
+              <div class="table-responsive">
+              <table class="table table-striped text-center tab-3-table" disabled>
+                <tbody>
+                  <tr>
+                    <td>راهرو</td>
+                    <td>قفسه</td>
+                    <td>ردیف</td>
+                  </tr>
+                  <tr>
+                    <td><div>
+                        <input class="form-control" name="warehouse_detail_coridor" type="text">
+                      </div></td>
+                    <td><div>
+                        <input class="form-control" name="warehouse_detail_row" type="text">
+                      </div></td>
+                    <td><div>
+                        <input class="form-control" name="warehouse_detail_shelf" type="text">
+                      </div></td>
+                  </tr>
+                  <tr>
+                    <td>قیمت پشت جلد</td>
+                    <td>درصد تخفیف</td>
+                    <td>تعداد</td>
+                  </tr>
+                  <tr>
+                    <td><div name="modal1">
+                        <input class="form-control" type="text" onkeyup="calculatePay()" name="warehouse_detail_sales" id="backprice">
+                      </div></td>
+                    <td><div name="modal1">
+                        <input class="form-control" name="warehouse_detail_Purchase" onkeyup="calculatePay()" id="discountfinall" type="text">
+                      </div></td>
+                    <td><div name="modal1">
+                        <input class="form-control" name="warehouse_detail_inventory" onkeyup="calculatePay()" id="quantityfinall" type="text">
+                      </div></td>
+                  </tr>
+                  <tr>
+                    <td>قیمت خرید</td>
+                    <td colspan="2"><div name="modal1">قیمت کل</div></td>
+                  </tr>
+                  <tr>
+                    <td><div name="modal1">
+                        <input class="form-control" id="payableprice" name="warehouse_detail_purchase" type="text">
+                      </div></td>
+                    <td colspan="2" id="totalpayable"></td>
+                  </tr>
+                  <tr>
+                    <td>نقطه سفارش</td>
+                    <td>واحد محصول</td>
+                    <td>روش قیمت گذاری</td>
+                  </tr>
+                  <tr>
+                    <td><input class="form-control" name="warehouse_detail_reorderpoint" type="text"></td>
+                    <td><select name="warehouse_detail_pricetype" id="warehouse_detail_pricetype" class="form-control">
+                        <option value="" selected="">انتخاب کنید</option>
+                      </select></td>
+                    <td><select name="warehouse_detail_unittype" id="warehouse_detail_unittype" class="form-control">
+                        <option value="" selected="">انتخاب کنید</option>
+                      </select></td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="newWarehouse">
+              	<form class="">
+              <div class="col-md-12 text-center dis-flex bb1">
+              	<div class="col-md-6 p15 pb25 text-right">
+               	 انتخاب انبار
+                <select name="warehouse_choose_new" id="warehouse_choose_new" class="form-control">
+                  <option value="" selected="">انتخاب کنید</option>
+                  <option value="">انبار مرکزی</option>
+                </select>
+               </div>
+              </div>
+              <div class="col-md-12 text-center p15">
+              	<div class="col-md-6 text-right">
+              	 انتخاب قفسه
+              		<select name="warehouse_choose_new_shelf" id="warehouse_choose_new_shelf" class="form-control">
+                  <option value="" selected="">انتخاب کنید</option>
+                  <option value="">قفسه 1 (ردیف 5)</option>
+                </select>
+              	</div>
+              	<div class="col-md-6 text-right">
+              	 انتخاب ردیف
+              		<select name="warehouse_choose_new_row" id="warehouse_choose_new_row" class="form-control">
+                  <option value="" selected="">انتخاب کنید</option>
+                  <option value="">ردیف 1 (موجودی 5)</option>
+                </select>
+              	</div>
+              </div>
+               
+              </form>
+              </div>
+              
+            </div>
+            <div class="row pb25 text-center">
+              <input type="hidden" name="lastproductid" id="lastproductid" value="">
+              <div name="modal1">
+                <input type="hidden" value="9786003443570" name="barcode_edit">
+              </div>
+              <a class="btn btn-success" onclick="tablewarehouse2()" id="AddBookInShelf">ثبت محصول</a> </div>
+          </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End .page-content-inner --> 
+    </div>
+    <!-- / page-content-wrapper --> 
+  </div>
+</div>
+<!-- / #wrapper -->
+<div style="margin-top: 100px !important; " class="clearfix sidebar-page left-sidebar-page text-center"> 
+  <!-- Start #footer  -->
+  <div> طراحی و اجرا توسط  نرم افزار حساب کتاب   &copy;  1396 </div>
+</div>
+<!-- End #footer  --> 
+<!-- Back to top -->
+<div id="back-to-top"><a href="blank.html#">Back to Top</a> </div>
+<!-- Javascripts --> 
+<!-- Load pace first --> 
+<script src="includes\hesabketab\js\pace.min.js"></script> 
+<!-- Important javascript libs(put in all pages) --> 
+<script src="includes\hesabketab\js\jquery-2.1.1.min.js"></script> 
+<script> 
+            <!-- header and sidebar-->
+            $(function(){
+                $("#headerTop").load("headerTop.html"); 
+              $("#sidebarFixedbar").load("sidebarFixedbar.html"); 
+              
+            });
+            <!--End header and sidebar-->
+            
+            
+            
+                 
+        </script> 
+<script>
+        window.jQuery || document.write('<script src="includes\hesabketab\js\jquery-2.1.1.min_2.js">\x3C/script>')
+        </script> 
+<script src="includes\hesabketab\js\jquery-ui.js"></script> 
+<script>
+        window.jQuery || document.write('<script src="includes\hesabketab\js\jquery-ui-1.10.4.min.js">\x3C/script>')
+        </script> 
+<!--[if lt IE 9]>
+  <script type="text/javascript" src="js/libs/excanvas.min.js"></script>
+  <script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <script type="text/javascript" src="js/libs/respond.min.js"></script>
+<![endif]--> 
+<!-- Bootstrap plugins --> 
+<script src="includes\hesabketab\js\bootstrap.js"></script> 
+<!-- Core plugins ( not remove ) --> 
+<script src="includes/hesabketab/js/modernizr.custom.js" type="text/javascript"></script> 
+<!-- Handle responsive view functions --> 
+<script src="includes\hesabketab\js\jRespond.min.js"></script> 
+<!-- Custom scroll for sidebars,tables and etc. --> 
+<script src="includes\hesabketab\js\jquery.slimscroll.min.js"></script> 
+<script src="includes\hesabketab\js\jquery.slimscroll.horizontal.min.js"></script> 
+<!-- Remove click delay in touch --> 
+<script src="includes\hesabketab\js\fastclick.js"></script> 
+<script src="includes/hesabketab/js/main.js"></script> 
+<script src="includes/hesabketab/js/dashboard.js"></script> 
+<script src="includes/hesabketab/js/jquery.countTo.js" type="text/javascript"></script> 
+<script src="includes/hesabketab/js/jquery.sparkline.js"></script> 
+<script src="includes/hesabketab/js/progressbar.js"></script> 
+<script src="includes/hesabketab/js/waypoints.js"></script> 
+<script src="includes/hesabketab/js/skyicons.js"></script> 
+<script src="includes/hesabketab/js/jquery.gritter.js"></script> 
+
+<!--mask number--> 
+<script src="includes/hesabketab/js/jquery.mask.js" type="text/javascript"></script> 
+<!--End mask number--> 
+
+<!-- Increase jquery animation speed --> 
+<script src="includes\hesabketab\js\jquery.velocity.min.js"></script> 
+<!-- Quick search plugin (fast search for many widgets) --> 
+<script src="includes\hesabketab\js\jquery.quicksearch.js"></script> 
+<!-- Bootbox fast bootstrap modals --> 
+<script src="includes\hesabketab\js\notifications.js"></script> 
+<script src="includes\hesabketab\js\title_notifier.js"></script> 
+<script src="includes\hesabketab\js\jquery.gritter.js"></script> 
+<script src="includes\hesabketab\js\sweet-alert.js"></script> 
+<script src="includes\hesabketab\js\bootbox.js"></script> 
+<!-- Other plugins ( load only nessesary plugins for every page) --> 
+<script src="includes\hesabketab\js\jquery.dynamic.js"></script> 
+<script src="includes/hesabketab/js/title_notifier.js" type="text/javascript"></script> 
+<script src="includes/hesabketab/js/notifications.js" type="text/javascript"></script> 
+
+<!--fixed wrapper support--> 
+<script src="includes/hesabketab/js/fixed-wrapper-support.js" type="text/javascript"></script> 
+
+<!--define werhouse js--> 
+<script src="includes/hesabketab/js/define_Werhouse_01.js" type="text/javascript"></script> 
+
+<!--slick slider js--> 
+<script src="includes/hesabketab/js/slick.js" type="text/javascript"></script>
+</body>
+</html>

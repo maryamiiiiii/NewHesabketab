@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html class="no-js" dir="rtl">
+    <head>
+
+        <meta charset="utf-8">
+        <title>نرم افزار حساب کتاب</title>
+        <!-- Mobile specific metas -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1 user-scalable=no">
+        <!-- Force IE9 to render in normal mode -->
+        <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
+        <meta name="author" content="" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="application-name" content="" />
+        <!-- Import google fonts - Heading first/ text second -->
+        <link href='includes\hesabketab\css\css.css' rel='stylesheet' type='text/css'>
+        <!-- Css files -->
+        <!-- Icons -->
+        <link href="includes\hesabketab\css\icons.css" rel="stylesheet" />
+        <!-- Bootstrap stylesheets (included template modifications) -->
+        <link href="includes\hesabketab\css\bootstrap.css" rel="stylesheet" />
+        <!-- Plugins stylesheets (all plugin custom css) -->
+        <link href="includes\hesabketab\css\plugins.css" rel="stylesheet" />
+        <!-- Main stylesheets (template main css file) -->
+        <link href="includes\hesabketab\css\main.css" rel="stylesheet" />
+        <!-- Custom stylesheets ( Put your own changes here ) -->
+        <link href="includes\hesabketab\css\custom.css" rel="stylesheet" />
+       
+        <meta name="msapplication-TileColor" content="#3399cc" />
+        
+        
+        <!--for this page-->
+        <link href="includes\hesabketab\css/bootstrap-select.css" rel="stylesheet" />
+
+    </head>
+    <body>
+        <!--[if lt IE 9]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+        <!-- .page-navbar -->
+        <div id="headerTop"></div>
+        <!-- / page-navbar -->
+        <!-- #wrapper -->
+        <div id="wrapper">
+            <!-- .page-sidebar menu -->
+            <div id="sidebarFixedbar"></div>
+            <!-- / page-sidebar menu -->
+
+
+            <div class="page-content sidebar-page right-sidebar-page clearfix">
+                <!-- .page-content-wrapper -->
+                <div class="page-content-wrapper">
+                    <div class="page-content-inner">
+                        <!-- Start .page-content-inner -->
+                        <div class="row">
+                            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 p5">
+                                 <div id="page-header" class="clearfix">
+                            <div class="page-header">
+                                <h3>صدور فاکتور</h3>
+                                <span class="txt"><span class="text-danger">فاکتور </span>محصولات فروخته شده</span>
+                            </div>
+                        </div>
+                            </div>
+                            <!-- .row -->
+                            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 p5">
+                                <!-- .col-md-3 -->
+                                <div class="panel bg-lightgreen text-white tile panelRefresh">
+                                    <!-- Start .panel -->
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">مبلغ کل طرح</h4>
+                                    </div>
+                                    <div class="panel-body pt0">
+                                        <div class="progressbar-stats-1">
+                                            <div class="stats">
+                                                <div class="fa fa-bar-chart-o"></div>
+                                            <span class="number" data-mask='#,##0' data-mask-reverse="true">20000000000 </span><span class="pull-left s8">ريال </span>
+                                            </div>
+                                            <div class="progress animated-bar flat transparent progress-bar-xs mb10 mt0">
+                                                <div class="progress-bar progress-bar-white" role="progressbar" data-transitiongoal="63"></div>
+                                            </div>
+                                            <div class="comparison">
+                                                <p class="mb0"><i class="fa fa-arrow-circle-o-up s20 mr5 pull-left"></i> 10% بیشتر از ماه قبل</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End .panel -->
+                            </div>
+                            <!-- / .col-md-3 -->
+                            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 p5">
+                                <!-- .col-md-3 -->
+                                <div class="panel bg-darkgreen text-white tile panelRefresh">
+                                    <!-- Start .panel -->
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">اعتبار اختصاص یافته</h4>
+                                    </div>
+                                    <div class="panel-body pt0">
+                                        <div class="progressbar-stats-1">
+                                            <div class="stats">
+                                                <div class="fa fa-bar-chart-o"></div>
+                                            <span class="number" data-mask='#,##0' data-mask-reverse="true">22150000051 </span><span class="pull-left s8">ريال </span>
+                                            </div>
+                                            <div class="progress animated-bar flat transparent progress-bar-xs mb10 mt0">
+                                                <div class="progress-bar progress-bar-white" role="progressbar" data-transitiongoal="63"></div>
+                                            </div>
+                                            <div class="comparison">
+                                                <p class="mb0"><i class="fa fa-arrow-circle-o-up s20 mr5 pull-left"></i> 10% بیشتر از ماه قبل</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End .panel -->
+                            </div>
+                            <!-- / .col-md-3 -->
+                            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 p5">
+                                <!-- .col-md-3 -->
+                                <div class="panel bg-lightorange text-white tile panelRefresh">
+                                    <!-- Start .panel -->
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">سقف تعیین شده</h4>
+                                    </div>
+                                    <div class="panel-body pt0">
+                                        <div class="progressbar-stats-1">
+                                            <div class="stats">
+                                                <div class="fa fa-bar-chart-o"></div>
+                                            <span class="number" data-mask='#,##0' data-mask-reverse="true">21510000000 </span><span class="pull-left s8">ريال </span>
+                                            </div>
+                                            <div class="progress animated-bar flat transparent progress-bar-xs mb10 mt0">
+                                                <div class="progress-bar progress-bar-white" role="progressbar" data-transitiongoal="63"></div>
+                                            </div>
+                                            <div class="comparison">
+                                                <p class="mb0"><i class="fa fa-arrow-circle-o-down s20 mr5 pull-left"></i> 10% کمتر از ماه قبل</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End .panel -->
+                            </div>
+                            <!-- / .col-md-3 -->
+                            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 p5">
+                                <!-- .col-md-3 -->
+                                <div class="panel bg-lightblue text-white tile panelRefresh">
+                                    <!-- Start .panel -->
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">مبلغ کل خرید</h4>
+                                    </div>
+                                    <div class="panel-body pt0">
+                                        <div class="progressbar-stats-1">
+                                            <div class="stats">
+                                                <div class="fa fa-bar-chart-o"></div>
+                                            <span class="number" data-mask='#,##0' data-mask-reverse="true">45580564222</span><span class="pull-left s8">ريال </span>
+                                            </div>
+                                            <div class="progress animated-bar flat transparent progress-bar-xs mb10 mt0">
+                                                <div class="progress-bar progress-bar-white" role="progressbar" data-transitiongoal="63"></div>
+                                            </div>
+                                            <div class="comparison">
+                                                <p class="mb0"><i class="fa fa-arrow-circle-o-down s20 mr5 pull-left"></i> 10% کمتر از ماه قبل</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End .panel -->
+                            </div>
+                            <!-- / .col-md-3 -->
+                            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 p5">
+                                <!-- .col-md-3 -->
+                                <div class="panel bg-darkerblue text-white tile panelRefresh">
+                                    <!-- Start .panel -->
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">تخفیف استفاده شده</h4>
+                                    </div>
+                                    <div class="panel-body pt0">
+                                        <div class="progressbar-stats-1">
+                                            <div class="stats">
+                                                <div class="fa fa-bar-chart-o"></div>
+                                            <span class="number" data-mask='#,##0' data-mask-reverse="true">10893238900</span><span class="pull-left s8">ريال </span>
+                                            </div>
+                                            <div class="progress animated-bar flat transparent progress-bar-xs mb10 mt0">
+                                                <div class="progress-bar progress-bar-white" role="progressbar" data-transitiongoal="63"></div>
+                                            </div>
+                                            <div class="comparison">
+                                                <p class="mb0"><i class="fa fa-arrow-circle-o-down s20 mr5 pull-left"></i> 10% کمتر از ماه قبل</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End .panel -->
+                            </div>
+                            <!-- / .col-md-3 -->
+                        </div>
+                       <!-- End .row -->
+                        <!-- start .row -->
+                        <div class="row mt10">
+                            <!-- col-lg-4 end here -->
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                 <div class="panel panel-default">
+                                    <!-- Start .panel -->
+                                    <div class="panel-heading noprint">
+                                        <h4 class="panel-title">صدور فاکتورر جدید</h4>
+                                    </div>
+                                    <div class="panel-body">
+                                        <form class="form-horizontal group-border stripped" role="form">
+                                            
+                                            <div class="form-group">
+                                                <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+                                                  <label for="sellerName" class="control-label">نام خریدار
+                                                </label>
+                                                 <div>
+                                                   <input id="sellerName" type="text" class="form-control" name="sellerName">
+                                                </div>  
+                                                    <div class="text-left">
+                                                        <a class="bb" data-toggle="modal" data-target="#NewSellerModal">+خریدار جدید</a>
+                                                        <div class="modal fade" id="NewSellerModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content"> 
+      
+     
+      
+      <!-----------------------M A I N-------------------------->
+      
+      <div class="modal-body" style="min-height: 400px;">
+                  <button type="button" class="close" data-dismiss="modal"> <span aria-hidden="true">&times;</span><span class="sr-only">Close</span> </button>
+        <div class="row text-right">
+          <div class="col-md-12">
+              <div class="form-group" >
+                <label for="">عنوان : </label>
+                <select class="form-control selectpicker" data-live-search="true" id="ShelfNumber" onChange="suggestRow();">
+                      <option selected disabled>انتخاب کنید</option>
+                      <option class="strong color-blue">+ افزودن</option>
+                      <option data-tokens="1">1</option>
+                      <option data-tokens="2">2</option>
+                      <option data-tokens="3">3</option>
+                      <option data-tokens="4">4</option>
+                      <option data-tokens="5">5</option>
+                      <option data-tokens="6">6</option>
+                </select>
+              </div>
+            </div>
+        </div>
+      </div>
+      
+      <!-----------------------F O O T E R-------------------------->
+      <div class="modal-footer border-0">
+        <div class="col-md-12 text-center">
+          <button type="button" class="btn btn-md pl50 pr50 btn-danger" data-dismiss="modal">انتخاب </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+                                                                                                   
+                    <div class="modal fade" id="OnvanModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content"> 
+      
+     
+      
+      <!-----------------------M A I N-------------------------->
+      
+      <div class="modal-body" style="min-height: 400px;">
+                  <button type="button" class="close" data-dismiss="modal"> <span aria-hidden="true">&times;</span><span class="sr-only">Close</span> </button>
+        <div class="row text-right">
+          <div class="col-md-12">
+              <div class="form-group">
+                <label for="Onvan" class="control-label">لطفا عنوان دسته بندی را وارد کنید : </label>
+                <input id="Onvan" type="text" class="form-control" name="Onvan">
+              </div>
+            </div>
+        </div>
+      </div>
+      
+      <!-----------------------F O O T E R-------------------------->
+      <div class="modal-footer border-0">
+        <div class="col-md-12 text-center">
+          <button type="button" class="btn btn-md pl50 pr50 btn-success" id="addOnvan" data-dismiss="modal">افزودن </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+                                                <label for="mobile" class="control-label"> تلفن همراه
+                                                </label>
+                                                 <div>
+                                                   <input id="mobile" type="text" class="form-control" name="mobile">
+                                                </div>
+                                                </div>
+                                                
+
+                                                <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+                                                <label for="visitorName" class="control-label">کد ملی
+                                                </label>
+                                                 <div>
+                                                   <input id="visitorName" type="text" class="form-control" name="visitorName">
+                                                </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="form-group">
+                                                         <div class="col-md-1 col-lg-1 col-sm-2 col-xs-12">
+                                                             <label for="barcode" class="control-label"> ثبت بارکد
+                                                            </label>
+                                                         </div>
+                                                        <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+                                                            <div class="input-group input-icon">
+                                                                <span class="input-group-addon"><i class="fa fa-barcode fa-lg color-dark-dark" aria-hidden="true"></i></span>
+                                                                <input id="barcodeInput" type="text" class="form-control" name="barcode" placeholder="بارکد را اسکن یا وارد کنید">
+                                                                <span class="color-red"></span>
+                                                            </div>
+                                                          
+                                                        </div>
+                                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-12 text-center">
+                                                            <a class="btn btn-primary sabteBarcodeWithCheck">ثبت بارکد</a>
+                                                        </div>
+                                                        <div class="col-md-3 col-lg-3 col-sm-2 col-xs-12 pt10">
+                                                            <a href="#" class="color-blue">ثبت محصول به صورت دستی</a>
+                                                        </div>
+                                                    </div> 
+                                            
+                                        </form>         
+                                            <div class="form-group">
+                                                <div class="table-responsive">
+                                                    <table id="table-mostSeller2" class="table table-striped table-bordered table-responsive" cellspacing="0" width="100%">
+                                            <thead>
+                                                <tr>
+                                                    <th>ردیف</th>
+                                                    <th>کد کالا</th>
+                                                    <th>نام کتاب</th>
+                                                    <th>دوره چاپ</th>
+                                                    <th>نویسنده/مترجم</th>
+                                                    <th>ناشر</th>
+                                                    <th>تعداد</th>
+                                                    <th>قیمت</th>
+                                                    <th>تخفیف</th>
+                                                    <th>جمع</th>
+                                                    <th></th>
+                                                </tr>
+                                            </thead> 
+                                            <tfoot>
+                                                
+                                            </tfoot>
+                                        </table>
+                                                </div>
+                                            </div>
+                                            <div class="form-group pt10">
+                                                <div class="col-md-1 col-lg-1 col-sm-2 col-xs-12 pr0 pt10 text-center">
+                                                    <span class="strong">تعداد کل: </span>
+                                                    <span id="SumTedad"></span>
+                                                </div>
+                                                <div class="col-md-1 col-lg-1 col-sm-2 col-xs-12 p0 pt10 text-center">
+                                                    <span class="strong">وزن کل: </span>
+                                                    <span>50</span>
+                                                    <span>گرم</span>
+
+                                                </div>
+                                                <div class="col-md-2 col-lg-2 col-sm-2 col-xs-12 pt10 text-center">
+                                                    <span class="strong">جمع کل:</span>
+                                                    <span id="sumGheimatbooks" class="number" data-mask='#,##0' data-mask-reverse="true">500000 </span>
+                                                    <span>ریال</span>
+
+                                                </div>
+                                                <div class="col-md-3 col-lg-3 col-sm-2 col-xs-12 pt10 pl0 pr0 text-center">
+                                                    <span class="strong">تخفیف ها:</span>
+                                                    <span>30 </span>
+                                                    <span>%</span>
+                                                    <a href="#">بررسی کد تخفیف</a>
+
+                                                </div>
+                                                <div class="col-md-5 col-lg-5 col-sm-2 col-xs-12 p0 text-center">
+                                                    <span class="col-lg-4 col-md-4 col-sm-2 col-xs-12 pl0 pt10 mb10 strong">هزینه های متفرقه: </span>
+                                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pl0">
+                                                        <input id="onvaneHazineh" type="text" class="form-control mb10" name="onvaneHazineh" placeholder="عنوان هزینه">
+                                                    </div>
+                                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pl0">
+                                                    <div class="input-group input-icon">
+                                                        <input id="hazineh" type="text" class="form-control" name="hazineh" placeholder="مبلغ هزینه">
+                                                        <span class="input-group-addon white-bg"><i class="pull-left">ریال</i></span>
+                                                    </div>
+                                                        </div>
+                                                </div>
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center p10 mt50 mb50">
+                                                <span class="color-green-custom s24 strong">قابل پرداخت:
+                                                <span class="number" data-mask='#,##0' data-mask-reverse="true">500000 </span>
+                                                <span>ریال</span>
+                                                </span>
+                                            </div>
+                                            </div>
+                                        <div class="clearfix"></div>
+                                            <div class="form-group payType">
+                                                <div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 pl0 pr0 pt10 text-center">نوع پرداخت</div>
+                                                <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12  text-center">
+                                                    <input type="radio" class="radioCustom" id="test1" name="radio-group" checked>
+                                                    <label for="test1">
+                                                        <i class="fa fa-money" aria-hidden="true"></i>
+                                                        نقدی
+                                                    </label>
+                                                </div>
+                                                <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12 text-center">
+                                                    <input type="radio" class="radioCustom" id="test2" name="radio-group">
+                                                    <label for="test2" id="selectLabel">
+                                                        <i class="fa fa-credit-card" aria-hidden="true"></i>
+                                                        <span class="txt"> غیر نقدی</span>
+                                                        <select id="creditCard" name="creditCard">
+                                                    <option value=""></option>
+                                                    <option value="غیر نقدی 1">غیر نقدی 1</option>
+                                                    <option value="غیر نقدی 2">غیر نقدی 2</option>
+                                                </select>
+                                                    </label>
+                                                </div>
+                                                <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12 text-center">
+                                                    <input type="radio" class="radioCustom" id="test3" name="radio-group">
+                                                    <label for="test3">
+                                                        <i class="fa fa-arrows-h" aria-hidden="true"></i>
+                                                        مبادله
+                                                    </label>
+                                                </div>
+                                                <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12 text-center">
+                                                    <input type="radio" class="radioCustom" id="test4" name="radio-group">
+                                                    <label for="test4">
+                                                        <i class="fa fa-ticket" aria-hidden="true"></i>
+                                                        امانی
+                                                    </label>
+                                                </div>
+                                                <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12 text-center">
+                                                    <input type="radio" class="radioCustom" id="test5" name="radio-group">
+                                                    <label for="test5">
+                                                        <i class="fa fa-gift" aria-hidden="true"></i>
+                                                        هدیه
+                                                    </label>
+                                                </div>
+                                                <div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 pl0 pr0 pt10"></div>
+                                            </div>
+                                        <div class="clearfix"></div>
+                                        <div class="form-group payType mt50 mb50">
+                                            <div class="b p10 text-center">
+                                                <div class="row p10">
+                                                    <div class="col-md-1 col-lg-1 col-sm-6 col-xs-12 pt10">
+                                                نوع ارسال
+                                            </div>
+                                                    <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
+                                                        <input type="checkbox" class="checkboxCustom" id="btnbookrunModal" name="radio-group">
+                                                        <label for="btnbookrunModal" class="btnbookrunModal"  data-toggle="modal" data-target="#bookrunModal" >
+                                                        <i class="fa bookrunIcon fa-bookrun" aria-hidden="true"></i>
+                                                        <span class="spanBookrunModal">ارسال با بوکران</span>
+                                                    </label>
+                                                        <div class="modal fade" id="bookrunModal" tabindex="-1" role="dialog" aria-hidden="true">
+                                                            <div class="modal-dialog modal-lg">
+                                                              <div class="modal-content"> 
+
+                                                                <!-----------------------M A I N-------------------------->
+
+                                                                <div class="modal-body">
+                                                                     <div class="row">
+                                                                                    <div class="col-xs-12">
+                                                                                      <div class="card ">
+                                                                                        <div class="section">
+
+                                                                                          <div class="wizard-container">
+
+                                                                                            <div class="card wizard-card" data-color="orange" id="wizardProfile">
+                                                                                            <div class="section-body">
+                                                                                             <div class="section-body-header">
+                                                                                                <h2>
+                                                                                                        ثبت مرسوله جدید
+                                                                                                </h2>
+                                                                                                
+                                                                                             </div>
+                                                                                             <form class="cmxform form" id="signupForm" data-toggle="validator" >
+                                                                                              <div class="mystep">
+                                                                                                <ul class="nav nav-tabs nav-justified" role="tablist">
+                                                                                                    <li role="mystep" class="mystep-li1 active">
+                                                                                                        <a href="#step1" onClick="showMyIntro();" class="part-1" data-step="1" data-intro="گام اول: اطلاعات مربوط به مرسوله و گیرنده را در این قسمت برای ثبت سفارش وارد کنید." id="step1-tab" data-toggle="tab" aria-controls="home" aria-expanded="true">
+                                                                                                            <div class="icon step-first"><img class="first-step-icon" src="includes/hesabketab/images/Bookrun_SVG_Icons_Panel_SubmitOrder.svg"></div>
+                                                                                                            <div class="heading">
+                                                                                                                <div class="title">ثبت مرسوله</div>
+                                                                                                                <div class="description first-step-des">محتویات مرسوله را انتخاب کنید</div>
+                                                                                                            </div>
+                                                                                                        </a>
+                                                                                                    </li>
+                                                                                                    <li role="mystep" class="mystep-li2">
+                                                                                                        <a href="#step2" class="part-2" id="step2-tab" data-toggle="tab" aria-controls="profile">
+                                                                                                            <div class="icon step-two"><img class="first-step-icon" src="includes/hesabketab/images/Bookrun_SVG_Icons_Panel_Pay.svg"></div>
+                                                                                                            <div class="heading step-sec">
+                                                                                                                <div class="title">پرداخت</div>
+                                                                                                                <div class="description first-step-des">یکی از گروه ها رو انتخاب کنید</div>
+                                                                                                            </div>
+                                                                                                        </a>
+                                                                                                    </li>
+                                                                                                    <li role="mystep" class="mystep-li3">
+                                                                                                        <a href="#step3" class="part-3" id="step3-tab" data-toggle="tab" aria-controls="profile">
+                                                                                                            <div class="icon step-three"><img class="first-step-icon" src="includes/hesabketab/images/Bookrun_SVG_Icons_Panel_Print.svg"></div>
+                                                                                                            <div class="heading step-thrd">
+                                                                                                                <div class="title">پرینت </div>
+                                                                                                                <div class="description first-step-des">بازیانی مرسولات</div>
+                                                                                                            </div>
+                                                                                                        </a>
+                                                                                                    </li>
+                                                                                                </ul>
+                                                                                                <!-- Tab panes -->
+                                                                                                <div class="tab-content">
+                                                                                                    <div role="tabpanel" class="tab-pane active" id="step1">
+                                                                                                      <div class="row">
+                                                                                                       <div class="col-md-12">
+                                                                                                         <div class="col-md-6">
+                                                                                                          <div class="alert alert-warning text-center">مشخصات سفارش</div>
+
+                                                                                                            <div class="form-group">
+                                                                                                              <div class="col-md-6">
+                                                                                                               <div class="input-group" id="error-proweight-group" data-step="2" data-intro="گام دوم: وزن مرسوله به گرم وارد کنید.">
+                                                                                                                <span class="input-group-addon" id="basic-addonmobile">
+                                                                                                                 <i class="fa fa-balance-scale" aria-hidden="true"></i>
+                                                                                                                </span>
+                                                                                                                <input type="text" id="proweight" class="form-control" min="1" max="20000" placeholder="وزن مرسوله" value="" name="proweight" required>
+                                                                                                                  <label class="input-group-addon input-gram control-label">گرم</label>
+                                                                                                               </div>
+                                                                                                               <small class="has-error" id="error_proweight"></small>  
+                                                                                                              </div>
+                                                                                                                <div class="col-md-6">
+                                                                                                               <div class="input-group" data-step="3" data-intro="گام سوم: با توجه به ارزش کالا، ارزش مرسوله را به ریال وارد کنید.">
+                                                                                                                <span class="input-group-addon" id="basic-addonmobile">
+                                                                                                                 <i class="" aria-hidden="true"><img src="includes/hesabketab/images/Bookrun_SVG_Icons_Panel_Money.svg" width="20px"></i>
+                                                                                                                </span>
+                                                                                                                <input type="text" class="form-control" placeholder="ارزش مرسوله"  aria-describedby="basic-addonmobile"  value="" id="provalue" name="provalue" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                                                                                                                  <span class="input-group-addon input-gram">ريال</span>
+                                                                                                               </div>
+                                                                                                              </div>
+                                                                                                            </div>
+
+                                                                                                            <div class="form-group">
+                                                                                                             <div class="col-md-12">
+                                                                                                              <div class="input-group input-group-simple" data-step="4" data-intro="گام چهارم: نوع ارسال را با توجه به سرویس درخواستی خود انتخاب کنید.">
+                                                                                                               <span class="input-group-addon input-simple input-left-pad" id="basic-addonmobile">
+                                                                                                                <label class="control-label"> نوع ارسال </label>
+                                                                                                                </span>
+                                                                                                               <div class="radio radio-inline">
+                                                                                                                    <input type="radio" name="postkind" id="postkind0" value="پست عادی">
+                                                                                                                    <label for="postkind0" class="input-label" data-step="5" data-intro="پست عادی : توزیع مرسولات در سطح شهر تهران درهمان روز ثبت سفارش  با پیک">
+                                                                                                                      پست عادی
+                                                                                                                    </label>
+                                                                                                                    <input type="radio" name="postkind" id="postkind1" value="پست سفارشی" >
+                                                                                                                    <label for="postkind1" class="input-label" data-step="6" data-intro="پست سفارشی: ارسال مرسولات شما در بازه ی زمانی 3 تا 4 روز کاری ">
+                                                                                                                      پست سفارشی
+                                                                                                                    </label>
+                                                                                                                    <input type="radio" name="postkind" id="postkind2" value="پست پیشتاز" >
+                                                                                                                    <label for="postkind2" class="input-label" data-step="7" data-intro="پست پیشتاز: ارسال مرسولات شما در بازه ی زمانی 48 ساعت تا 72 ساعت کاری ">
+                                                                                                                      پست پیشتاز
+                                                                                                                    </label>
+                                                                                                                </div>
+                                                                                                                
+                                                                                                              </div>
+                                                                                                              </div>
+                                                                                                            </div>
+
+                                                                                                             <div id="myform_paykind_errorloc"  class="alert-danger"></div>
+                                                                                                            <div class="form-group">
+                                                                                                             <div class="col-md-12">
+                                                                                                              <div class="input-group input-group-simple input-mrg" data-step="8" data-intro="گام پنجم: نوع پرداخت هزینه پستی خود را انتخاب کنید." required id="commuteType" name="commuteType">
+                                                                                                               <span class="input-group-addon input-simple " id="basic-addonmobile">
+                                                                                                                 <label class="control-label"> نوع پرداخت </label>
+                                                                                                              </span>
+                                                                                                                <div class="radio radio-inline">
+                                                                                                                    <input type="radio" name="paykind" id="paykind1" value="پرداخت توسط فروشگاه" >
+                                                                                                                    <label for="paykind1" class="input-label" data-step="9" data-intro="پرداخت توسط فروشگاه: پرداخت هزینه پستی توسط خود شما انجام میشود.">
+                                                                                                                       پرداخت توسط فروشگاه
+                                                                                                                    </label>
+                                                                                                                    <input type="radio" name="paykind" id="paykind0" value="پرداخت توسط مشتری" >
+                                                                                                                    <label for="paykind0" class="input-label" data-step="10" data-intro="پرداخت توسط مشتری: هزینه پستی و هزینه مربوط  به کالای ارسال شده هر دو در مقصد و توسط گیرنده پس از تحویل بسته دریافت میشود.">
+                                                                                                                       پرداخت توسط مشتری
+                                                                                                                    </label>
+                                                                                                                </div>
+                                                                                                                </div>
+                                                                                                              </div>
+
+                                                                                                            </div>
+
+                                                                                                            <div class="form-group" >
+                                                                                                              <div class="col-md-2">
+                                                                                                                <label class="control-label">محتویات مرسوله</label>
+                                                                                                              </div>
+                                                                                                              <div class="col-md-10">
+                                                                                                                <textarea class="form-control first-step-textarea" id="prodes" data-step="11" data-intro="گام ششم: نام و تعداد محتویات داخل بسته را در این قسمت وارد کنید." name="prodes" width="400px" height="250px" ></textarea>
+                                                                                                              </div>
+                                                                                                            </div>
+
+
+
+                                                                                                          </div>
+
+                                                                                                         <div class="col-md-6">
+
+                                                                                                          <div class="alert alert-warning text-center">مشخصات گیرنده </div>
+
+                                                                                                            <div class="form-group" >
+                                                                                                              <div class="col-md-6">
+                                                                                                               <div class="input-group" data-step="12" data-intro="گام هفتم: نام و نام خانوادگی گیرنده مرسوله را وارد کنید." id="error_buyname_group">
+                                                                                                                <span class="input-group-addon" id="basic-addonmobile">
+                                                                                                                 <i class="fa fa-user fa-lg" aria-hidden="true"></i>
+                                                                                                                </span>
+                                                                                                                <input type="text" class="form-control" data-rule-required="true"  placeholder="نام و نام خانوادگی" aria-describedby="basic-addonmobile"   id="userInfo" name="userInfo">
+                                                                                                                <i style="display: none;" name="name" minlength="5" class="icon-validate" id="buyname-icon"></i>
+                                                                                                               </div>
+                                                                                                             </div>
+                                                                                                                <div class="col-md-6">
+                                                                                                               <div class="input-group">
+                                                                                                                <span class="input-group-addon" id="basic-addonmobile">
+                                                                                                                 <i class="fa fa-mobile fa-lg" aria-hidden="true"></i>
+                                                                                                                </span>
+                                                                                                                <input type="text" class="form-control" data-step="13" data-intro="گام هشتم: موبایل گیرنده مرسوله را وارد کنید." placeholder="موبایل" aria-describedby="basic-addonmobile" id="userMobile" name="userMobile" onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="11" required>
+                                                                                                               </div>
+                                                                                                              </div>
+                                                                                                            </div>
+                                                                                                            <div class="form-group">
+                                                                                                              <div class="col-md-6">
+                                                                                                               <div class="input-group" data-step="14" data-intro="گام نهم: نام استان خود را انتخاب کنید">
+                                                                                                                <span class="input-group-addon" id="basic-addonmobile">
+                                                                                                                 <i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>
+                                                                                                                </span>
+                                                                                                                <select type="text" class="form-control" placeholder="نام استان را وارد کنید" aria-describedby="basic-addonmobile" name="state" id="state" required>
+                                                                                                                <option value=""></option>
+                                                                                                                <option value="تهران">تهران</option>
+                                                                                                                </select>
+
+                                                                                                               </div>
+                                                                                                              </div>
+                                                                                                                <div class="col-md-6">
+                                                                                                               <div class="input-group" data-step="15" data-intro="گام دهم : نام شهرستان خود را نیز انتخاب کنید.">
+                                                                                                                <span class="input-group-addon" id="basic-addonmobile">
+                                                                                                                 <i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>
+                                                                                                                </span>
+                                                                                                                <select type="text" class="form-control" placeholder="شهرستان خود را وارد کنید" aria-describedby="basic-addonmobile" name="city" id="city" required>
+                                                                                                                <option value=""></option>
+                                                                                                                <option value="تهران">تهران</option>
+
+                                                                                                                </select>
+
+                                                                                                               </div>
+                                                                                                              </div>
+                                                                                                            </div>
+                                                                                                             <div class="form-group">
+                                                                                                              <div class="col-md-6">
+                                                                                                               <div class="input-group input-address-mrg" data-step="16" data-intro="گام یازدهم: تلفن ثابت گیرنده مرسوله را وارد کنید.">
+                                                                                                                <span class="input-group-addon" id="basic-addonmobile">
+                                                                                                                 <i class="fa fa-phone" aria-hidden="true"></i>
+                                                                                                                </span>
+                                                                                                                   <input type="text" class="form-control " placeholder="تلفن" maxlength="11" aria-describedby="basic-addonmobile" name="tel" id="tel" onkeypress="return event.charCode >= 48 && event.charCode <= 57" required >
+                                                                                                               </div>
+                                                                                                              </div>
+                                                                                                                 <div class="col-md-6">
+                                                                                                               <div class="input-group">
+                                                                                                                <span class="input-group-addon" id="basic-addonmobile">
+                                                                                                                 <i class="fa fa-envelope" aria-hidden="true"></i>
+                                                                                                                </span>
+                                                                                                                   <input type="text" class="form-control" placeholder="کد پستی" aria-describedby="basic-addonmobile" maxlength="10" name="postalCode" id="postalCode" required onkeypress="return event.charCode >= 48 && event.charCode <= 57" data-step="17" data-intro="گام یازدهم : کد پستی گیرنده را وارد کنید. 
+                                                                                در صورت موجود نبودن کد پستی مرسوله شهرستان وارد کردن کد پستی الزامی نمیباشد.
+                                                                                کد پستی برای مرسوله تهران الزامی میباشد، در صورت موجود نبودن کد پستی گیرنده، کد پستی منطقه را با وارد کردن نام منطقه در کادر جستجو کنید.
+
+                                                                                ">
+                                                                                                               </div>
+                                                                                                              </div>
+                                                                                                            </div>
+                                                                                                            <div class="form-group form-address">
+                                                                                                              <div class="col-md-2 address-title">
+                                                                                                                <label class="control-label">آدرس</label>
+                                                                                                              </div>
+                                                                                                              <div class="col-md-10">
+                                                                                                                <textarea data-step="18" data-intro="گام دوازدهم : آدرس گیرنده را کامل بدون وارد کردن استان و شهرستان در این قسمت ثبت کنید.<br>درصورتی که از گیرنده خود فقط صندوق پستی دارید پس از انتخاب استان و شهرستان مقصد در قسمت آدرس صندوق پستی گیرنده را وارد کنید." class="form-control address-textarea" name="address" id="address"></textarea>
+                                                                                                              </div>
+                                                                                                            </div>
+
+                                                                                                          </div>
+
+                                                                                                      </div> 
+
+                                                                                                        <div class="form-footer">
+                                                                                                         <div class="form-group">
+                                                                                                          <div class="col-md-3 col-md-offset-9">
+                                                                                                           <input type='button' class='btn btn-next btn-fill  btn-success btn-wd btn-sm' id="nextLevel" data-step="19" name='next' data-intro="گام سیزدهم: بر روی گزینه مرحله بعد کلیک کنید تا اطلاعات شما ثبت شود." value='مرحله بعد' onClick="" />
+                                                                                                          </div>
+                                                                                                         </div>
+                                                                                                        </div>
+
+                                                                                                      </div>
+                                                                                                   </div>
+
+                                                                                                    <div role="tabpanel" class="tab-pane" id="step2">
+                                                                                                    <div class="container-fluid">
+                                                                                                     <div class="row"> 
+                                                                                                       <div class="col-md-12">
+
+                                                                                                       </div>
+                                                                                                                                 <div class="col-md-6">
+                                                                                                                                        <div class="">
+                                                                                                                                                <div class="order-des-title"><h2>
+                                                                                                                                                        مشخصات سفارش
+                                                                                                                                                </h2></div>
+                                                                                                                                        <table class="table table-striped second-step-table">
+
+                                                                                                                                                          <tbody>
+                                                                                                                                                                <tr>
+                                                                                                                                                                  <th class="second-step-th" scope="row"></th>
+                                                                                                                                                                        <td>شناسه سفارش : <label></label></td>
+                                                                                                                                                                  <td>بارکد پستی : <label></label></td>
+                                                                                                                                                                </tr>
+                                                                                                                                                                <tr>
+                                                                                                                                                                  <th class="second-step-th" scope="row"></th>
+                                                                                                                                                                  <td>تاریخ : <label></label></td>
+                                                                                                                                                                  <td>همکار : <label></label></td>
+                                                                                                                                                                </tr>
+                                                                                                                                                                <tr>
+                                                                                                                                                                  <th class="second-step-th" scope="row"></th>
+                                                                                                                                                                        <td>نوع پرداخت : <span class="paykind_label" type="text" name="paykind_label"></span></td>
+                                                                                                                                                                  <td>نوع سرویس پستی : <span class="postkind_label" type="text" name="postkind_label"></span></td>
+                                                                                                                                                                </tr>
+                                                                                                                                                                <tr>
+                                                                                                                                                                  <th class="second-step-th" scope="row"></th>
+                                                                                                                                                                        <td>وزن : <span class="weight_label" type="text" name="weight_label"></td>
+                                                                                                                                                                  <td>وضعیت سفارش : <label></label></td>
+                                                                                                                                                                </tr>
+                                                                                                                                                          </tbody>
+                                                                                                                                                        </table>
+
+                                                                                                                                         </div>
+                                                                                                                                 </div>
+                                                                                                        <div class="col-md-6">
+                                                                                                                                        <div class="">
+                                                                                                                                                <div class="order-des-title"><h2>
+                                                                                                                                                        مشخصات خریدار
+                                                                                                                                                </h2></div>
+                                                                                                                                        <table class="table table-striped second-step-table">
+
+                                                                                                                                                          <tbody>
+                                                                                                                                                                <tr>
+                                                                                                                                                                  <th class="second-step-th" scope="row"></th>
+                                                                                                                                                                  <td>نام و نام خانوادگی : <span class="userinfo_label" type="text" name="userinfo_label"></span></td>
+                                                                                                                                                                  <td>بارکد پستی : </td>
+                                                                                                                                                                </tr>
+                                                                                                                                                                <tr>
+                                                                                                                                                                  <th class="second-step-th" scope="row"></th>
+                                                                                                                                                                        <td>استان : <span class="state_label" type="text" name="state_label"></span></td>
+                                                                                                                                                                        <td>شهرستان : <span class="city_label" type="text" name="city_label"></span></td>
+                                                                                                                                                                </tr>
+                                                                                                                                                                <tr>
+                                                                                                                                                                  <th class="second-step-th" scope="row"></th>
+                                                                                                                                                                        <td>تلفن : <span class="tel_label" type="text" name="tel_label" ></span> - <span class="mobile_label" type="text" name="mobile_label"></span></td>
+                                                                                                                                                                        <td>کد پستی : <span class="postalcode_label" type="text" name="postalcode_label"></span></td>
+                                                                                                                                                                </tr>
+                                                                                                                                                                <tr >
+                                                                                                                                                                  <th class="second-step-th" scope="row" ></th>
+                                                                                                                                                                  <td colspan="2" class="address-tr">نشانی : <span class="address_label" type="text" name="address_label"></span></td>
+
+                                                                                                                                                                </tr>
+                                                                                                                                                          </tbody>
+                                                                                                                                                        </table>
+                                                                                                                                         </div>
+                                                                                                                                 </div>
+                                                                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                                                                                                                                        <div class="">
+                                                                                                                                                <div class="order-des-title"><h2>
+                                                                                                                                                        مشخصات محصولات
+                                                                                                                                                </h2></div>
+                                                                                                                                        <table class="table table-striped second-step-table overview-table">
+                                                                                                                                        <tbody>
+                                                                                                                                                        <tr>
+                                                                                                                                                                  <th class="second-step-th" scope="row"></th>
+                                                                                                                                                                  <td>نام محصول</td>
+                                                                                                                                                                  <td>تعداد</td>
+                                                                                                                                                                  <td>قیمت واحد</td>
+                                                                                                                                                                  <td>قیمت کل</td>
+                                                                                                                                                                </tr>
+                                                                                                                                                                <tr>
+                                                                                                                                                                  <th class="second-step-th" scope="row"></th>
+                                                                                                                                                                  <td><span class="prodes_label" type="text" name="mobile_label" ></span></td>
+                                                                                                                                                                  <td>1</td>
+                                                                                                                                                                        <td><span class="provalue_label" type="text" name="mobile_label"></span></td>
+                                                                                                                                                                        <td><span class="provalue_label" type="text" name="mobile_label"></span></td>
+                                                                                                                                                                </tr>
+                                                                                                                                                                <tr>
+                                                                                                                                                                  <th class="second-step-th" scope="row"></th>
+                                                                                                                                                                  <td>-</td>
+                                                                                                                                                                  <td>-</td>
+                                                                                                                                                                  <td>-</td>
+                                                                                                                                                                  <td>-</td>
+                                                                                                                                                                  </tr>
+                                                                                                                                                          </tbody>
+                                                                                                                                                        </table>
+                                                                                                                                         </div>
+                                                                                                                                 </div>
+                                                                                                        <div class="col-md-4 pay-status">
+                                                                                                                <label class="pay-label">وضعیت : <label>پرداخت نشده</label></label>
+                                                                                                        </div>
+                                                                                                         <div class="col-md-6 text-left console-section">
+                                                                                                           <a  class="btn btn-success" href="#" target="_blank">پرداخت</a>
+                                                                                                           <a  class="btn btn-info btn-previous" onClick="showMyIntro();">ویرایش</a>
+                                                                                                           <input type="reset" class="btn btn-default btn-previous" value="انصراف" onClick="showMyIntro();">
+                                                                                                           <input type="text" class="form-control hidden-input" name="hiddenHandler" id="hidden-handler" required>
+                                                                                                         </div>
+                                                                                                     </div>
+
+                                                                                                    </div>   
+                                                                                                                  </div>                  
+
+                                                                                                    <div role="tabpanel" class="tab-pane" id="step3">
+                                                                                                     <div class="row"> 
+                                                                                                       <div class="col-md-12" >
+                                                                                                        <div id="myProgress" class="progress" style="display:none;">
+                                                                                                          <div id="myBar" class="progress-bar progress-bar-success  progress-bar-striped active" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                                                                                            <div id="label">0%</div>
+                                                                                                          </div>
+                                                                                                        </div>                       
+                                                                                                                        <div class="container-fluid">
+                                                                                                     <div class="row"> 
+                                                                                                       <div class="col-md-12 extra-width-91 print-title-section text-center">
+                                                                                                                                   <div class="col-md-6">
+                                                                                                                           <h2>
+                                                                                                                                مشخصات سفارش : <span>12345678943232</span>
+                                                                                                                           </h2>
+                                                                                                                           </div>
+                                                                                                                           <div class="col-md-6">
+                                                                                                                                <h2>
+                                                                                                                                بارکد پستی : <span>34212345678943324232</span>
+                                                                                                                           </h2>
+                                                                                                                           </div>
+                                                                                                                  </div>
+                                                                                                       <div class="col-md-12 extra-width-91 print-des-section text-right">
+                                                                                                                <div class="">
+                                                                                                                        <ul>	
+                                                                                                                                <li>
+                                                                                                                                        <span>توضیح شماره یک : <span></span></span>
+                                                                                                                                </li>
+                                                                                                                                <li>
+                                                                                                                                        <span>توضیح شماره دو : <span></span></span>
+                                                                                                                                </li>
+                                                                                                                                <li>
+                                                                                                                                        <span>توضیح شماره سه: <span></span></span>
+                                                                                                                                </li>
+
+                                                                                                                                                </ul>
+                                                                                                                                   </div>
+
+                                                                                                                                 </div>
+                                                                                                      <div class="col-md-12 extra-width-91 overview-table-last">
+                                                                                                       <table class="table table-striped second-step-table overview-list">
+                                                                                                                                        <tbody>
+                                                                                                                                                        <tr>
+                                                                                                                                                                  <th class="second-step-th" scope="row"></th>
+                                                                                                                                                                <td>نام خریدار : <span class="userinfo_label" type="text" name="userinfo_label"></span></td>
+                                                                                                                                                                <td>موبایل : <span class="mobile_label" type="text" name="mobile_label"></span></td>
+                                                                                                                                                                <td>نوع ارسال : <span class="postkind_label" type="text" name="postkind_label"></span></td>
+                                                                                                                                                                <td>وزن : <span class="weight_label" type="text" name="weight_label"></span></td>
+                                                                                                                                                                </tr>
+                                                                                                                                                                <tr>
+                                                                                                                                                                  <th class="second-step-th" scope="row"></th>
+                                                                                                                                                                        <td>نوع پرداخت : <span class="postkind_label" type="text" name="postkind_label"></span></td>
+                                                                                                                                                                        <td>استان : <span class="state_label" type="text" name="state_label"></span></td>
+                                                                                                                                                                        <td>شهرستان : <span class="city_label" type="text" name="city_label"></span></td>
+                                                                                                                                                                  <td>نوع وضعیت :<span>آنلاین-پرداخت نشده</span></td>
+                                                                                                                                                                </tr>
+                                                                                                                                                                <tr>
+                                                                                                                                                                  <th class="second-step-th" scope="row"></th>
+                                                                                                                                                                  <td>هزینه کالا و خدمات : <span><span> تومان</span></span></td>
+                                                                                                                                                                  <td>جمع هزینه ارسال : <span><span> تومان</span></span></td>
+                                                                                                                                                                  <td>تخفیف : <span><span></span></span></td>
+                                                                                                                                                                  <td>قابل پرداخت : <span><span> تومان</span></span></td>
+                                                                                                                                                                  </tr>
+                                                                                                                                                          </tbody>
+                                                                                                                                                        </table>
+                                                                                                        <div class="row"> 
+                                                                                                         <div class="col-md-7 col-md-offset-5 text-left print-console">
+                                                                                                                                         <a class="btn btn-default btn-previous">بازگشت</a>
+                                                                                                           <a href="javascript:window.print()" class="third-step-print" onClick=""><img src="includes/img/Bookrun_SVG_Icons_Panel_Print_final.svg" width="50px" title="از هر فاکتور 2 نسخه پرینت گرفته و بر روی بسته بندی مرسوله بچسبانید.
+                                                                                در بخش داشبورد، سفارشات آماده ارسال یک نسخه از لیست آماده ارسال به عنوان رسید مرسوله پستی خود پرینت بگیرید.
+                                                                                "></a>
+                                                                                                        <input type="text" class="form-control hidden-input" name="hiddenHandler" id="hidden-handler" required>
+
+
+                                                                                                         </div>
+                                                                                                        </div>
+
+                                                                                                      </div>
+                                                                                                                                </div>
+                                                                                                                                   </div>
+                                                                                                    </div>
+                                                                                                 </div>
+                                                                                               </div>
+                                                                                              </div>
+                                                                                           </div>
+                                                                                           </form>
+                                                                                        </div>
+
+                                                                                                        </div>
+                                                                                                  </div>
+                                                                                    </div>
+                                                                                   </div>          
+                                                                                </div>
+                                                                                </div>
+                                                                </div>
+
+                                                                
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                    </div>
+                                                    <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12 pt10">
+                                                        <span>هزینه ارسال :
+                                                <span class="number" data-mask='#,##0' data-mask-reverse="true">100000 </span>
+                                                <span>ریال</span>
+                                                </span>
+                                                    </div>
+                                                    <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
+                                                        
+                                                    </div>
+                                                    <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12 pt10">
+                                                        <span class="strong">
+                                                            بوکران
+                                                        </span>
+                                                        <span>
+                                                            سرویس پست اختصاصی کتاب می باید.
+                                                        </span>
+                                                        <span>
+                                                            <a href="#">اطلاعات بیشتر</a>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                          
+                                        <div class="form-group mt50">
+                                            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12"></div>
+                                            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                <a href="#" class="btn btn-primary pr50 pl50 mb10">ثبت پیش فاکتور</a>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                <a href="#" class="btn btn-success pr50 pl50">ثبت نهایی و پرینت</a>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12"></div>
+
+                                        </div>
+                                        <!-- End .form-group  -->   
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End .row -->
+                    </div>
+                    <!-- End .page-content-inner -->
+                </div>
+                <!-- / page-content-wrapper -->
+            </div>
+
+
+ </div>
+        <!-- / #wrapper -->
+        <div style="margin-top: 100px !important; " class="clearfix sidebar-page left-sidebar-page text-center">
+            <!-- Start #footer  -->
+            <div>
+                طراحی و اجرا توسط  نرم افزار حساب کتاب   &copy;  1396 
+            </div>
+        </div>
+        <!-- End #footer  -->
+        <!-- Back to top -->
+        <div id="back-to-top"><a href="blank.html#">Back to Top</a>
+        </div>
+        
+         <!-- Javascripts -->
+        <!-- Load pace first -->
+        <script src="includes\hesabketab\js\pace.min.js"></script>
+        <!-- Important javascript libs(put in all pages) -->
+        <script src="includes/hesabketab/js/jquery-2.1.1.min.js" type="text/javascript"></script>
+       <script> 
+            $(function(){
+                $("#headerTop").load("headerTop.html"); 
+              $("#sidebarFixedbar").load("sidebarFixedbar.html"); 
+              
+            });
+        </script>
+        <script src="includes\hesabketab\js\jquery-ui.js"></script>
+        <script>
+        window.jQuery || document.write('<script src="includes\hesabketab\js\jquery-ui-1.10.4.min.js">\x3C/script>')
+        </script>
+        <!--[if lt IE 9]>
+  <script type="text/javascript" src="js/libs/excanvas.min.js"></script>
+  <script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <script type="text/javascript" src="js/libs/respond.min.js"></script>
+<![endif]-->
+        <!-- Bootstrap plugins -->
+        <script src="includes\hesabketab\js\bootstrap.js"></script>
+        
+        <script src="includes\hesabketab\js\jquery.validate.js"></script>
+                
+        <!-- Bootbox fast bootstrap modals -->
+        <script src="includes\hesabketab\js\bootbox.js"></script>
+        
+         <!--mask-->
+        <script src="includes/hesabketab/js/jquery.mask.js" type="text/javascript"></script>
+        
+        <!--for this page js-->
+        <script src="includes/hesabketab/js/warehouseingFactor.js" type="text/javascript"></script>
+        <script src="includes/hesabketab/js/jquery.bootstrap.wizard.js" type="text/javascript"></script>
+        <script src="includes/hesabketab/js/jquery.sparkline.js"></script>
+        <script src="includes/hesabketab/js/bootstrap-select.js" type="text/javascript"></script>
+
+
+        <script src="includes/hesabketab/js/jquery.dataTables.js" type="text/javascript"></script>
+        <script src="includes/hesabketab/js/tables-ajax_1.js" type="text/javascript"></script>
+         <script>
+              $(function() {
+                 
+                  
+                /*Delete row*/
+                var table = $('#table-mostSeller2').DataTable();
+                $('#table-mostSeller2 tbody').on( 'click', '.icon-delete', function () {
+                table
+                    .row($(this).parents('tr'))
+                    .remove()
+                    .draw();
+                });
+
+                
+
+                $('.selectpicker').on('change', function(){
+                    
+                  var selected = $(this).find("option:selected").text();
+                  if(selected==='+ افزودن'){
+                      $('#OnvanModal').modal();
+                      $('#Onvan').val('');
+                  }
+                });
+
+                $('#addOnvan').click(function (){
+                    var onvan=$('#Onvan').val();
+                    $(".selectpicker").append('<option value="'+onvan+'" selected="">'+onvan+'</option>');
+                  $(".selectpicker").selectpicker("refresh");
+                });
+
+              });                            
+              $('.sabteBarcodeWithCheck').click(function (){
+                  var thisindx;
+                  var ss;
+                  var foundRow='';
+                  var getBarcode=$('#barcodeInput').val();
+                var table = $('#table-mostSeller2').DataTable(); 
+                
+                
+                table.rows().every( function ( rowIdx, tableLoop, rowLoop ) {
+                    var tableData = this.data(); 
+                ss=tableData.kalaCode;
+                
+                if(getBarcode===ss){
+                    foundRow=ss;
+                }
+                
+                });
+                           
+                if(foundRow !== ''){
+                     var tdData;
+                // Find indexes of rows which have `Yes` in the second column
+                var indexes = table.rows().eq( 0 ).filter( function (rowIdx) {
+                    return table.cell( rowIdx, 1 ).data() === foundRow ? true : false;
+                    tdData= table.cell( rowIdx, 1 ).data();
+
+                } );
+                // Add a class to those rows using an index selector
+
+                var inputVal=table.cell(indexes,6)
+                .nodes().to$().find('input').val();
+                       inputVal=parseInt(inputVal)+1;
+                       table.cell(indexes,6)
+                .nodes().to$().find('input').val(inputVal);
+                }
+                else if(getBarcode === ''){
+                     $('#barcodeInput').parent().find('span').text(' بارکد را وارد کنید');
+                }
+                else{
+                     $('#barcodeInput').parent().find('span').text('');
+                                        table.row.add( {
+                                    "kalaCode":       "95428818",
+                                    "bookName":   "جدید",
+                                    "chap":     "2",
+                                    "writer": "نویسنده",
+                                    "nasher":     "ناشر",
+                                    "gheimat":       "20000",
+                                    "takhfif":       "1000",
+                                    "jam":       "125"
+                                } ).draw();
+                }
+                
+              });
+              
+        </script>   
+    </body>
+</html>

@@ -1,0 +1,136 @@
+{
+    "data": [
+
+        {
+            "kalaCode": "9789646314139",
+            "bookName": "پاداش نیکیها و کیفر گناهان",
+            "chap": "دوم",
+            "writer": "شیخ صدوق",
+            "nasher": "ققنوس",
+            "gheimat": "300000",
+            "takhfif": "50",
+            "jam": "300000"
+        },
+        {
+            "kalaCode": "9789644709685",
+            "bookName": "امامت و مهدویت",
+            "chap": "یکم",
+            "writer": "کوفی",
+            "nasher": "سرور",
+            "gheimat": "300000",
+            "takhfif": "30",
+            "jam": "210000"
+        },
+        {
+            "kalaCode": "9789644701368",
+            "bookName": "معاد",
+            "chap": "سوم",
+            "writer": "مولانا",
+            "nasher": "انتشارات کومه",
+            "gheimat": "110000",
+            "takhfif": "30",
+            "jam": "154000"
+        }
+,
+        {
+            "kalaCode": "9789644701789",
+            "bookName": "نبوت",
+            "chap": "دهم",
+            "writer": "سعدی",
+            "nasher": "انتشارات کومه",
+            "gheimat": "110000",
+            "takhfif": "30",
+            "jam": "154000"
+        },
+        {
+            "kalaCode": "9789644701789",
+            "bookName": "نبوت",
+            "chap": "دهم",
+            "writer": "سعدی",
+            "nasher": "انتشارات کومه",
+            "gheimat": "110000",
+            "takhfif": "30",
+            "jam": "154000"
+        },
+        {
+            "kalaCode": "9789644701789",
+            "bookName": "نبوت",
+            "chap": "دهم",
+            "writer": "سعدی",
+            "nasher": "انتشارات کومه",
+            "gheimat": "110000",
+            "takhfif": "30",
+            "jam": "154000"
+        },
+        {
+            "kalaCode": "9789644701789",
+            "bookName": "نبوت",
+            "chap": "دهم",
+            "writer": "سعدی",
+            "nasher": "انتشارات کومه",
+            "gheimat": "110000",
+            "takhfif": "30",
+            "jam": "154000"
+        },
+        {
+            "kalaCode": "9789644701789",
+            "bookName": "نبوت",
+            "chap": "دهم",
+            "writer": "سعدی",
+            "nasher": "انتشارات کومه",
+            "gheimat": "110000",
+            "takhfif": "30",
+            "jam": "154000"
+        },
+        {
+            "kalaCode": "9789644701789",
+            "bookName": "نبوت",
+            "chap": "دهم",
+            "writer": "سعدی",
+            "nasher": "انتشارات کومه",
+            "gheimat": "110000",
+            "takhfif": "30",
+            "jam": "154000"
+        },
+        {
+            "kalaCode": "9789644701789",
+            "bookName": "نبوت",
+            "chap": "دهم",
+            "writer": "سعدی",
+            "nasher": "انتشارات کومه",
+            "gheimat": "110000",
+            "takhfif": "30",
+            "jam": "154000"
+        },
+        {
+            "kalaCode": "9789644701789",
+            "bookName": "نبوت",
+            "chap": "دهم",
+            "writer": "سعدی",
+            "nasher": "انتشارات کومه",
+            "gheimat": "110000",
+            "takhfif": "30",
+            "jam": "154000"
+        },
+        {
+            "kalaCode": "9789644701789",
+            "bookName": "نبوت",
+            "chap": "دهم",
+            "writer": "سعدی",
+            "nasher": "انتشارات کومه",
+            "gheimat": "110000",
+            "takhfif": "30",
+            "jam": "154000"
+        },
+        {
+            "kalaCode": "2010",
+            "bookName": "نبوت",
+            "chap": "دهم",
+            "writer": "سعدی",
+            "nasher": "انتشارات کومه",
+            "gheimat": "110000",
+            "takhfif": "30",
+            "jam": "154000"
+        }
+    ]
+}

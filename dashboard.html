@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html class="no-js" dir="rtl">
+    <head>
+
+        <meta charset="utf-8">
+        <title>نرم افزار حساب کتاب</title>
+        <!-- Mobile specific metas -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1 user-scalable=no">
+        <!-- Force IE9 to render in normal mode -->
+        <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
+        <meta name="author" content="" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="application-name" content="" />
+        <!-- Import google fonts - Heading first/ text second -->
+        <link href='includes\hesabketab\css\css.css' rel='stylesheet' type='text/css'>
+        <!-- Css files -->
+        <!-- Icons -->
+        <link href="includes\hesabketab\css\icons.css" rel="stylesheet" />
+        <!-- Bootstrap stylesheets (included template modifications) -->
+        <link href="includes\hesabketab\css\bootstrap.css" rel="stylesheet" />
+        <!-- Plugins stylesheets (all plugin custom css) -->
+        <link href="includes\hesabketab\css\plugins.css" rel="stylesheet" />
+        <!-- Main stylesheets (template main css file) -->
+        <link href="includes\hesabketab\css\main.css" rel="stylesheet" />
+        <!-- Custom stylesheets ( Put your own changes here ) -->
+        <link href="includes\hesabketab\css\custom.css" rel="stylesheet" />
+       
+        <meta name="msapplication-TileColor" content="#3399cc" />
+        
+       
+    </head>
+    <body>
+        <!--[if lt IE 9]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+        
+        <div id="headerTop"></div>
+        
+        <!--modal popUp on load page-->
+        <div class="modal fade" id="myModal-Popup" tabindex="-1" role="dialog" aria-hidden="true" >
+            <div class="modal-dialog modal-dialog-center"  style="width: 80%;max-width: 400px;">
+                <div class="text-center" style="margin-top:50px;"> 
+                    <a target="_blank" href="#">
+                        <img src="includes/hesabketab/images/Ketabir_Paiize96_PopUp.jpg" class="img-responsive center-block" alt="پاییزه  کتاب">
+                    </a>
+                    <div class="dis-flex" >
+                        <div class="text-right" style="flex: 1" > <a class="sweet-1" target="_blank" href="#"><img src="includes/hesabketab/images/Ketabir_Paiize96_PopUp_Acc.jpg" class="img-responsive center-block" alt="پاییزه  کتاب"></a></div>
+                        <div class="text-left" style="flex: 1"> <a class="sweet-2" target="_blank" href="#"><img src="includes/hesabketab/images/Ketabir_Paiize96_PopUp_Rej.jpg" class="img-responsive center-block" alt="پاییزه  کتاب"></a></div>
+                </div>
+                </div>
+                
+            </div>               
+        </div>
+       <!--End modal popUp on load page-->
+       
+       
+        <!-- #wrapper -->
+        <div id="wrapper">
+                    
+            <div id="sidebarFixedbar"></div>
+            
+            
+            <!--fixed wrapp for phone number-->
+            <div class="amaran-wrapper bottom left">
+                <a href="#" class="MybtnCustom"><span class="icon-phone fixed-ico"></span></a>
+                <div class="amaran default ok">
+                    <p class="bold">تلفن پشتیبانی</p>
+                    <p><span>02166962330</span><span class="light"></span></p>
+                </div>
+            </div>
+            <!--End fixed wrapp-->
+           
+
+            <!-- .page-content -->
+            <div class="page-content sidebar-page right-sidebar-page clearfix">
+                <!-- .page-content-wrapper -->
+                <div class="page-content-wrapper">
+                    <div class="page-content-inner">
+                        <!-- .page-content-inner -->
+                        <div id="page-header" class="clearfix page-header-custom">
+                            <div class="page-header">
+                                <h2>داشبورد</h2>
+                                <span class="txt">به سیستم نرم افزاری <span class="text-danger"> حساب کتاب </span> خوش آمدید</span>
+                            </div>
+                            <div class="header-stats">
+                                <div class="spark clearfix">
+                                    <div class="spark-info"><span class="number">2345</span>کتاب</div>
+                                    <div id="spark-visitors" class="sparkline"></div>
+                                </div>
+                                <div class="spark clearfix">
+                                    <div class="spark-info"><span class="number">17345</span>خریدار</div>
+                                    <div id="spark-templateviews" class="sparkline"></div>
+                                </div>
+                                <div class="spark clearfix">
+                                    <div class="spark-info"><span class="number">3700<span>ریال</span></span>مبلغ فروش</div>
+                                    <div id="spark-sales" class="sparkline"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <!-- .row -->
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                <!-- .col-md-3 -->
+                                <div class="panel panel-info tile panelClose panelRefresh">
+                                    <!-- Start .panel -->
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">تعداد خریدار</h4>
+                                    </div>
+                                    <div class="panel-body pt0">
+                                        <div class="progressbar-stats-1">
+                                            <div class="stats">
+                                                <i class="l-ecommerce-cart-content"></i> 
+                                                <div id="visitor_number" class="stats-number" data-from="0" data-to="76">0</div>
+                                            </div>
+                                            <div class="progress animated-bar flat transparent progress-bar-xs mb10 mt0">
+                                                <div class="progress-bar progress-bar-white" role="progressbar" data-transitiongoal="63"></div>
+                                            </div>
+                                            <div class="comparison">
+                                                <p class="mb0"><i class="fa fa-arrow-circle-o-up s20 mr5 pull-left"></i> 10% بیشتر از ماه قبل</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End .panel -->
+                            </div>
+                            <!-- / .col-md-3 -->
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                <!-- .col-md-3 -->
+                                <div class="panel panel-success tile panelClose panelRefresh">
+                                    <!-- Start .panel -->
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">تعداد کتاب فروحته شده</h4>
+                                    </div>
+                                    <div class="panel-body pt0">
+                                        <div class="progressbar-stats-1">
+                                            <div class="stats">
+                                                <i class="l-basic-geolocalize-05"></i> 
+                                                <div class="stats-number" data-from="0" data-to="2547">0</div>
+                                            </div>
+                                            <div class="progress animated-bar flat transparent progress-bar-xs mb10 mt0">
+                                                <div class="progress-bar progress-bar-white" role="progressbar" data-transitiongoal="86"></div>
+                                            </div>
+                                            <div class="comparison">
+                                                <p class="mb0"><i class="fa fa-arrow-circle-o-up s20 mr5 pull-left"></i> 2% بیشتر از ماه قبل</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End .panel -->
+                            </div>
+                            <!-- / .col-md-3 -->
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                <!-- .col-md-3 -->
+                                <div class="panel panel-danger tile panelClose panelRefresh">
+                                    <!-- Start .panel -->
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">کتاب فروخته شده امروز</h4>
+                                    </div>
+                                    <div class="panel-body pt0">
+                                        <div class="progressbar-stats-1">
+                                            <div class="stats">
+                                                <i class="l-basic-life-buoy"></i> 
+                                                <div class="stats-number" data-from="0" data-to="78">0</div>
+                                            </div>
+                                            <div class="progress animated-bar flat transparent progress-bar-xs mb10 mt0">
+                                                <div class="progress-bar progress-bar-white" role="progressbar" data-transitiongoal="35"></div>
+                                            </div>
+                                            <div class="comparison">
+                                                <p class="mb0"><i class="fa fa-arrow-circle-o-down s20 mr5 pull-left"></i> 2% کمتر از ماه قبل</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End .panel -->
+                            </div>
+                            <!-- / .col-md-3 -->
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                <!-- .col-md-3 -->
+                                <div class="panel panel-default tile panelClose panelRefresh">
+                                    <!-- Start .panel -->
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">تعداد خریدار امروز</h4>
+                                    </div>
+                                    <div class="panel-body pt0">
+                                        <div class="progressbar-stats-1 dark">
+                                            <div class="stats">
+                                                <i class="l-banknote"></i> 
+                                                <div class="stats-number" data-from="0" data-to="24568">0</div>
+                                            </div>
+                                            <div class="progress animated-bar flat transparent progress-bar-xs mb10 mt0">
+                                                <div class="progress-bar progress-bar-white" role="progressbar" data-transitiongoal="55"></div>
+                                            </div>
+                                            <div class="comparison">
+                                                <p class="mb0"><i class="fa fa-arrow-circle-o-down s20 mr5 pull-left"></i> 1% کمتر از ماه قبل</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End .panel -->
+                            </div>
+                            <!-- / .col-md-3 -->
+                        </div>
+                        <!-- / .row -->
+                        <div class="row">
+                            <!-- Start .row -->
+                            <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+                                <!-- col-lg-8 start here -->
+                                <div class="col-lg-9 col-sm-9 col-xs-12 p0">
+                                    <!-- col-lg-9 start here -->
+                                    <div class="panel panel-default plain btrr0 bbrr0 panelRefresh" data-mh="payments">
+                                        <!-- Start .panel -->
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title"><i class="fa fa-money"></i> فروش روزانه</h4>
+                                        </div>
+                                        <div class="panel-body">
+                                            <div id="line-chart" style="width: 100%; height:250px;"></div>
+                                        </div>
+                                    </div>
+                                    <!-- End .panel -->
+                                </div>
+                                <!-- col-lg-9 end here -->
+                                <div class="col-lg-3 col-sm-3 col-xs-12 p0">
+                                    <!-- col-lg-3 start here -->
+                                    <div class="panel panel-default tile btlr0 bblr0" data-mh="payments">
+                                        <!-- Start .panel -->
+                                        <div class="panel-body">
+                                            <div class="spark clearfix">
+                                                <div class="spark-info mb0"><span class="number stats-number money s32" data-from="0" data-to="12857">0</span>
+                                                </div>
+                                                <div class="spark-info mtm5">فروش امروز</div>
+                                            </div>
+                                            <div class="spark clearfix">
+                                                <div class="spark-info mb0"><span class="number stats-number money s32 color-gray-light" data-from="0" data-to="4578"></span>
+                                                </div>
+                                                <div class="sparkline spark-payments mt0"></div>
+                                                <div class="spark-info">تخفیف فروشگاه</div>
+                                            </div>
+                                            <div class="spark clearfix">
+                                                <div class="spark-info mb0"><span class="number stats-number money s32 color-gray-light" data-from="0" data-to="5241"></span>
+                                                </div>
+                                                <div class="sparkline spark-payments mt0"></div>
+                                                <div class="spark-info">مبلغ یارانه</div>
+                                            </div>
+                                            <div class="db per100">
+                                                <a href="index.html#" class="btn btn-info ml20 mt5">جزییات بیشتر</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End .panel -->
+                                </div>
+                                <!-- col-lg-3 end here -->
+                            </div>
+                            <!-- col-lg-8 end here -->
+                            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                                <!-- col-lg-4 start here -->
+                                <div class="panel panel-default plain toggle panelMove panelRefresh">
+                                    <!-- Start .panel -->
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">فروش براساس ساعت کار </h4>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div id="donut-chart" style="width: 100%; height:250px;"></div>
+                                    </div>
+                                </div>
+                                <!-- End .panel -->
+                            </div>
+                            <!-- col-lg-4 end here -->
+                        </div>
+                        <!-- End .row -->
+                        
+                    </div>
+                    <!-- / .page-content-inner -->
+                </div>
+                <!-- / page-content-wrapper -->
+            </div>
+            <!-- / page-content -->
+
+            
+             <!-- .page-content -->
+            <div class="page-content sidebar-page right-sidebar-page clearfix">
+                <!-- .page-content-wrapper -->
+                <div class="page-content-wrapper">
+                    <div class="page-content-inner">
+                        <!-- .page-content-inner -->
+                        <div class="clearfix page-header-custom">
+                            <div class="page-header">
+                                <h2>داشبورد انبار</h2>
+                                <span class="txt">به سیستم نرم افزاری <span class="text-danger"> حساب کتاب </span> خوش آمدید</span>
+                            </div>
+                            <div class="header-stats">
+                                <div class="spark clearfix">
+                                    <div class="spark-info"><span class="number">2345</span>کتاب</div>
+                                    <div id="spark-visitors2" class="sparkline"></div>
+                                </div>
+                                <div class="spark clearfix">
+                                    <div class="spark-info"><span class="number">17345</span>خریدار</div>
+                                    <div id="spark-templateviews2" class="sparkline"></div>
+                                </div>
+                                <div class="spark clearfix">
+                                    <div class="spark-info"><span class="number">3700<span>ریال</span></span>مبلغ فروش</div>
+                                    <div id="spark-sales2" class="sparkline"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <!-- .row -->
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                <!-- .col-md-3 -->
+                                <div class="panel panel-info tile panelClose panelRefresh">
+                                    <!-- Start .panel -->
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">تعداد خریدار</h4>
+                                    </div>
+                                    <div class="panel-body pt0">
+                                        <div class="progressbar-stats-1">
+                                            <div class="stats">
+                                                <i class="l-ecommerce-cart-content"></i> 
+                                                <div id="visitor_number" class="stats-number" data-from="0" data-to="76">0</div>
+                                            </div>
+                                            <div class="progress animated-bar flat transparent progress-bar-xs mb10 mt0">
+                                                <div class="progress-bar progress-bar-white" role="progressbar" data-transitiongoal="63"></div>
+                                            </div>
+                                            <div class="comparison">
+                                                <p class="mb0"><i class="fa fa-arrow-circle-o-up s20 mr5 pull-left"></i> 10% بیشتر از ماه قبل</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End .panel -->
+                            </div>
+                            <!-- / .col-md-3 -->
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                <!-- .col-md-3 -->
+                                <div class="panel panel-success tile panelClose panelRefresh">
+                                    <!-- Start .panel -->
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">تعداد کتاب فروحته شده</h4>
+                                    </div>
+                                    <div class="panel-body pt0">
+                                        <div class="progressbar-stats-1">
+                                            <div class="stats">
+                                                <i class="l-basic-geolocalize-05"></i> 
+                                                <div class="stats-number" data-from="0" data-to="2547">0</div>
+                                            </div>
+                                            <div class="progress animated-bar flat transparent progress-bar-xs mb10 mt0">
+                                                <div class="progress-bar progress-bar-white" role="progressbar" data-transitiongoal="86"></div>
+                                            </div>
+                                            <div class="comparison">
+                                                <p class="mb0"><i class="fa fa-arrow-circle-o-up s20 mr5 pull-left"></i> 2% بیشتر از ماه قبل</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End .panel -->
+                            </div>
+                            <!-- / .col-md-3 -->
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                <!-- .col-md-3 -->
+                                <div class="panel panel-danger tile panelClose panelRefresh">
+                                    <!-- Start .panel -->
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">کتاب فروخته شده امروز</h4>
+                                    </div>
+                                    <div class="panel-body pt0">
+                                        <div class="progressbar-stats-1">
+                                            <div class="stats">
+                                                <i class="l-basic-life-buoy"></i> 
+                                                <div class="stats-number" data-from="0" data-to="78">0</div>
+                                            </div>
+                                            <div class="progress animated-bar flat transparent progress-bar-xs mb10 mt0">
+                                                <div class="progress-bar progress-bar-white" role="progressbar" data-transitiongoal="35"></div>
+                                            </div>
+                                            <div class="comparison">
+                                                <p class="mb0"><i class="fa fa-arrow-circle-o-down s20 mr5 pull-left"></i> 2% کمتر از ماه قبل</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End .panel -->
+                            </div>
+                            <!-- / .col-md-3 -->
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                <!-- .col-md-3 -->
+                                <div class="panel panel-default tile panelClose panelRefresh">
+                                    <!-- Start .panel -->
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">تعداد خریدار امروز</h4>
+                                    </div>
+                                    <div class="panel-body pt0">
+                                        <div class="progressbar-stats-1 dark">
+                                            <div class="stats">
+                                                <i class="l-banknote"></i> 
+                                                <div class="stats-number" data-from="0" data-to="24568">0</div>
+                                            </div>
+                                            <div class="progress animated-bar flat transparent progress-bar-xs mb10 mt0">
+                                                <div class="progress-bar progress-bar-white" role="progressbar" data-transitiongoal="55"></div>
+                                            </div>
+                                            <div class="comparison">
+                                                <p class="mb0"><i class="fa fa-arrow-circle-o-down s20 mr5 pull-left"></i> 1% کمتر از ماه قبل</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End .panel -->
+                            </div>
+                            <!-- / .col-md-3 -->
+                        </div>
+                        <!-- / .row -->
+                        <div class="row">
+                            <!-- Start .row -->
+                            <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+                                <!-- col-lg-8 start here -->
+                                <div class="col-lg-9 col-sm-9 col-xs-12 p0">
+                                    <!-- col-lg-9 start here -->
+                                    <div class="panel panel-default plain btrr0 bbrr0 panelRefresh" data-mh="payments">
+                                        <!-- Start .panel -->
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title"><i class="fa fa-money"></i> فروش روزانه</h4>
+                                        </div>
+                                        <div class="panel-body">
+                                            <div id="line-chart-dots" style="width: 100%; height:250px;"></div>
+                                        </div>
+                                    </div>
+                                    <!-- End .panel -->
+                                </div>
+                                <!-- col-lg-9 end here -->
+                                <div class="col-lg-3 col-sm-3 col-xs-12 p0">
+                                    <!-- col-lg-3 start here -->
+                                    <div class="panel panel-default tile btlr0 bblr0" data-mh="payments">
+                                        <!-- Start .panel -->
+                                        <div class="panel-body">
+                                            <div class="spark clearfix">
+                                                <div class="spark-info mb0"><span class="number stats-number money s32" data-from="0" data-to="12857">0</span>
+                                                </div>
+                                                <div class="spark-info mtm5">فروش امروز</div>
+                                            </div>
+                                            <div class="spark clearfix">
+                                                <div class="spark-info mb0"><span class="number stats-number money s32 color-gray-light" data-from="0" data-to="4578"></span>
+                                                </div>
+                                                <div class="sparkline spark-payments mt0"></div>
+                                                <div class="spark-info">تخفیف فروشگاه</div>
+                                            </div>
+                                            <div class="spark clearfix">
+                                                <div class="spark-info mb0"><span class="number stats-number money s32 color-gray-light" data-from="0" data-to="5241"></span>
+                                                </div>
+                                                <div class="sparkline spark-payments mt0"></div>
+                                                <div class="spark-info">مبلغ یارانه</div>
+                                            </div>
+                                            <div class="db per100">
+                                                <a href="index.html#" class="btn btn-info ml20 mt5">جزییات بیشتر</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End .panel -->
+                                </div>
+                                <!-- col-lg-3 end here -->
+                            </div>
+                            <!-- col-lg-8 end here -->
+                            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                                <!-- col-lg-4 start here -->
+                                <div class="panel panel-default plain toggle panelMove panelRefresh">
+                                    <!-- Start .panel -->
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">فروش براساس ساعت کار </h4>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div id="donut-chart1" style="width: 100%; height:250px;"></div>
+                                    </div>
+                                </div>
+                                <!-- End .panel -->
+                            </div>
+                            <!-- col-lg-4 end here -->
+                        </div>
+                        <!-- End .row -->
+                        
+                    </div>
+                    <!-- / .page-content-inner -->
+                </div>
+                <!-- / page-content-wrapper -->
+            </div>
+            <!-- / page-content -->
+
+ </div>
+        <!-- / #wrapper -->
+        <div style="margin-top: 100px !important; " class="clearfix sidebar-page left-sidebar-page text-center">
+            <!-- Start #footer  -->
+            <div>
+                طراحی و اجرا توسط  نرم افزار حساب کتاب   &copy;  1396 
+            </div>
+        </div>
+        <!-- End #footer  -->
+        <!-- Back to top -->
+        <div id="back-to-top"><a href="blank.html#">Back to Top</a>
+        </div>
+       <!-- Javascripts -->
+        <!-- Load pace first -->
+        <script src="includes\hesabketab\js\pace.min.js"></script>
+        <!-- Important javascript libs(put in all pages) -->
+        <script src="includes\hesabketab\js\jquery-2.1.1.min.js"></script>
+                  
+ 
+        <script>
+        window.jQuery || document.write('<script src="includes\hesabketab\js\jquery-2.1.1.min_2.js">\x3C/script>')
+        </script>
+        <script src="includes\hesabketab\js\jquery-ui.js"></script>
+        <script>
+        window.jQuery || document.write('<script src="includes\hesabketab\js\jquery-ui-1.10.4.min.js">\x3C/script>')
+        </script>
+        <!--[if lt IE 9]>
+  <script type="text/javascript" src="js/libs/excanvas.min.js"></script>
+  <script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <script type="text/javascript" src="js/libs/respond.min.js"></script>
+<![endif]-->
+        <!-- Bootstrap plugins -->
+        <script src="includes\hesabketab\js\bootstrap.js"></script>
+        <!-- Core plugins ( not remove ) -->
+        <script src="includes/hesabketab/js/modernizr.custom.js" type="text/javascript"></script>
+        <!-- Handle responsive view functions -->
+        <script src="includes\hesabketab\js\jRespond.min.js"></script>
+        <!-- Custom scroll for sidebars,tables and etc. -->
+        <script src="includes\hesabketab\js\jquery.slimscroll.min.js"></script>
+        <script src="includes\hesabketab\js\jquery.slimscroll.horizontal.min.js"></script>
+        <!-- Remove click delay in touch -->
+        <script src="includes\hesabketab\js\fastclick.js"></script>
+         <script src="includes/hesabketab/js/main.js"></script>
+        <script src="includes/hesabketab/js/dashboard.js"></script>
+        <script src="includes/hesabketab/js/jquery.countTo.js" type="text/javascript"></script>
+        
+        
+        
+        
+        <!--for this page-->
+        <script src="includes/hesabketab/js/charts-flot_dashboard2.js" type="text/javascript"></script>
+        
+       
+       
+        <!-- Other plugins ( load only nessesary plugins for every page) -->
+        <script src="includes/hesabketab/js/date.js"></script>
+        <script src="includes/hesabketab/js/jquery.flot.custom.js"></script>
+        <script src="includes/hesabketab/js/jquery.flot.pie.js"></script>
+      
+        <script src="includes/hesabketab/js/jquery.sparkline.js"></script>
+        <script src="includes/hesabketab/js/progressbar.js"></script>
+        <script src="includes/hesabketab/js/waypoints.js"></script>
+        <script src="includes/hesabketab/js/skyicons.js"></script>
+        <script src="includes/hesabketab/js/jquery.gritter.js"></script>
+                
+        <!--mask number-->
+        <script src="includes/hesabketab/js/jquery.mask.js" type="text/javascript"></script>
+        <!--End mask number-->
+        
+        <!-- Increase jquery animation speed -->
+        <script src="includes\hesabketab\js\jquery.velocity.min.js"></script>
+        <!-- Quick search plugin (fast search for many widgets) -->
+        <script src="includes\hesabketab\js\jquery.quicksearch.js"></script>
+        <!-- Bootbox fast bootstrap modals -->
+        <script src="includes\hesabketab\js\notifications.js"></script>
+        <script src="includes\hesabketab\js\title_notifier.js"></script>
+        <script src="includes\hesabketab\js\jquery.gritter.js"></script>
+        <script src="includes\hesabketab\js\sweet-alert.js"></script>
+        <script src="includes\hesabketab\js\bootbox.js"></script>
+        <!-- Other plugins ( load only nessesary plugins for every page) -->
+        <script src="includes\hesabketab\js\jquery.dynamic.js"></script>
+        
+        
+         <script> 
+            <!-- header and sidebar-->
+            $(function(){
+                $("#headerTop").load("headerTop.html"); 
+              $("#sidebarFixedbar").load("sidebarFixedbar.html"); 
+              
+            });
+            <!--End header and sidebar-->
+            
+            <!--fixed wrapp for phone number-->
+            var min = "-270px", // remember to set in css the same value
+                    max = "0px";
+
+                $(function() {
+
+                  $(".MybtnCustom").click(function() {
+
+                    if($(".ok").css("marginRight") == min)
+                      $(".ok").animate({ marginRight: max });
+                    else
+                      $(".ok").animate({ marginRight: min });
+
+                  });
+
+                });
+            
+            <!--myModal-Popup-->
+            $(window).load(function(){
+                $('#myModal-Popup').modal('show');
+            });
+            
+        </script>
+    </body>
+</html>
+

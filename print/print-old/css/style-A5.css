@@ -1,0 +1,266 @@
+/*-------------LOADS AND IMPORTS-------------*/
+
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: bold;
+	src: url('../fonts/eot/IRANSansWeb(FaNum)_Bold.eot');
+	src: url('../fonts/eot/IRANSansWeb(FaNum)_Bold.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../fonts/woff2/IRANSansWeb(FaNum)_Bold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../fonts/woff/IRANSansWeb(FaNum)_Bold.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('../fonts/ttf/IRANSansWeb(FaNum)_Bold.ttf') format('truetype');
+}
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: 500;
+	src: url('../fonts/eot/IRANSansWeb(FaNum)_Medium.eot');
+	src: url('../fonts/eot/IRANSansWeb(FaNum)_Medium.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../fonts/woff2/IRANSansWeb(FaNum)_Medium.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../fonts/woff/IRANSansWeb(FaNum)_Medium.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('../fonts/ttf/IRANSansWeb(FaNum)_Medium.ttf') format('truetype');
+}
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: 300;
+	src: url('../fonts/eot/IRANSansWeb(FaNum)_Light.eot');
+	src: url('../fonts/eot/IRANSansWeb(FaNum)_Light.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../fonts/woff2/IRANSansWeb(FaNum)_Light.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../fonts/woff/IRANSansWeb(FaNum)_Light.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('../fonts/ttf/IRANSansWeb(FaNum)_Light.ttf') format('truetype');
+}
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: 200;
+	src: url('../fonts/eot/IRANSansWeb(FaNum)_UltraLight.eot');
+	src: url('../fonts/eot/IRANSansWeb(FaNum)_UltraLight.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../fonts/woff2/IRANSansWeb(FaNum)_UltraLight.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../fonts/woff/IRANSansWeb(FaNum)_UltraLight.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('../fonts/ttf/IRANSansWeb(FaNum)_UltraLight.ttf') format('truetype');
+}
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: normal;
+	src: url('../fonts/eot/IRANSansWeb(FaNum).eot');
+	src: url('../fonts/eot/IRANSansWeb(FaNum).eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../fonts/woff2/IRANSansWeb(FaNum).woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../fonts/woff/IRANSansWeb(FaNum).woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('../fonts/ttf/IRANSansWeb(FaNum).ttf') format('truetype');
+}
+
+
+
+/*---------------- GENERAL -----------------*/
+body.A5 {
+    width: 148mm;
+    height: 209mm;
+}
+
+
+
+body{
+	direction: rtl;
+	font-family: IRANSans;
+	font-weight: 300;
+}
+
+.inner{
+  float: none;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+    box-shadow: none;
+	font-size: 0.6em;
+	position: absolute;
+    top: 34%;
+    left: 16px;
+	font-weight: 700;
+
+}
+
+
+.rotate {
+    -moz-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+    transform:  translateX(-50%) translateY(-50%) rotate(-90deg);
+}
+.details-fish {
+    margin:5px 0;
+    border: 1px solid #000;
+    border-radius: 25px;
+}
+
+.detail-list {
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;   
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+	    padding-right: 10px;
+}
+.detail-item p {
+    padding: 3px 0;
+}
+
+
+.detail-item {
+	padding: 30px 5px;
+	font-weight: 700;
+	font-size: .6em;
+}
+.detail-header{
+	position: relative;
+   	font-size: 2em;
+    left: 0px;
+    text-align: center;
+    font-weight: 700;
+}
+.detail-header-brand{
+	position: relative;
+	position: relative;
+    top: 10px;
+    font-weight: 700;
+	font-size: 0.8em;
+}
+
+.detail-item-center {
+   
+    padding: 5px;
+    text-align: center;
+    border-right: 1px solid #000;
+    border-left: 1px solid #000;
+}
+.detail-item-center img{
+	margin-left: 5px;
+}
+.details-fish-center{
+	margin:5px 0;
+    border: 1px solid #000;
+    border-radius: 25px;
+    padding: 0px 10px;
+
+}
+.details-fish-center .tabs > thead:first-child > tr:first-child > th:nth-child(1) {
+    border-right: 0;
+}
+.details-fish-center .tabs > thead:first-child > tr:first-child > th {
+    text-align: center;
+    border: 1px solid #e3e3e3;
+    border-top: 0;
+    font-size: 0.8em;
+    max-width: 48px;
+}
+.radif{
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    padding: 0!important;
+}
+.details-fish-center .tabs > thead:first-child > tr:first-child > th:nth-last-child(1) {
+    border-left: 0;
+}
+.tabs{
+	width: 100%;
+}
+.tabs > thead > tr > th{
+	padding: 8px;
+    line-height: 1.42857143;
+}
+.paper-body{
+	
+}
+
+.Logo {
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;   
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.result-underLogo {
+    width: 100%;
+    background-color: #000;
+    border-radius: 25px;
+    padding: 5px 15px;
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;   
+    justify-content: center;
+    color: #fff;
+    margin: 5px;
+    align-items: center;
+}
+.detail-item-center span {
+    padding: 0 15px;
+}
+.barcode {
+    text-align: center;
+
+}
+.paper-body > tr > td {
+	padding: 3px;
+	text-align: center;
+    font-size: 0.65em;
+    border-left: 1px solid #e3e3e3;
+    font-weight: 800;
+    max-width: 109px;
+    line-height: 2;
+    min-height: 100px;
+	border-top: 1px solid #eee;
+} 
+.paper-body > tr > td:last-child {
+    border-left: 0;
+}
+.stamp-item{
+	width: 50%;
+    text-align: center;
+    padding-top: 7px;
+    height: 120px;
+    flex-grow: 1;
+	font-weight: 600;
+    font-size: 0.8em;
+}
+.stamp-item:nth-last-child(1) {
+    border-right: 1px solid;
+}
+.font-weight{
+    font-weight: 300;
+}
+.p20{
+    padding: 20px!important;
+}
+.pt20{
+    padding-top: 20px!important;
+}
+.pb20{
+    padding-bottom: 20px!important;
+}
+.pardakht{
+    width: 50%;
+    margin: 0 auto;
+    background: #000;
+    border-radius: 40px;
+    padding: 15px;
+    color: #fff;
+}
+.list-unstyled{
+    padding-left: auto!important;
+    padding-right: 0;
+}
+td.barcodtd{
+    position: relative;
+    right: -10px;
+    transform: scale(.7);
+}
